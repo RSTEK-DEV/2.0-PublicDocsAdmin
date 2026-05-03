@@ -1,9 +1,11 @@
 ---
 title: Configuração do Empreendimento
-description: Estruture o projeto, monte o menu, gerencie unidades e acompanhe o estágio de obra.
+description: Estruture o projeto, monte o menu, gerencie unidades, conteúdos e acompanhe o estágio de obra.
 sidebar:
   order: 3
 ---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
 
 Aqui ficam as telas centrais de configuração do empreendimento.
 
@@ -13,8 +15,54 @@ Aqui ficam as telas centrais de configuração do empreendimento.
 - como montar a navegação do stand;
 - como tratar configurações administrativas do projeto;
 - como estruturar unidades;
+- como manter mídias, compartilháveis e playbooks do empreendimento;
 - como manter o cronograma de obra.
 
 ## Benefício para a operação
 
-Essa etapa transforma um cadastro básico em um empreendimento pronto para apresentação comercial, navegação pública e atualização recorrente.
+Essa etapa transforma um cadastro básico em um empreendimento pronto para apresentação comercial, navegação pública, distribuição de conteúdo e atualização recorrente.
+
+## Páginas desta seção
+
+<CardGrid stagger>
+  <Card title="Ficha técnica">
+    Base cadastral e ativação do empreendimento.
+    <br />
+    <a href="/03-configuracao-do-empreendimento/ficha-tecnica/">Abrir página →</a>
+  </Card>
+  <Card title="Gerenciador de telas">
+    Organize a navegação e o conteúdo do stand.
+    <br />
+    <a href="/03-configuracao-do-empreendimento/gerenciador-de-telas/">Abrir página →</a>
+  </Card>
+  <Card title="Ajustes avançados do empreendimento">
+    Ajustes administrativos e ações sensíveis.
+    <br />
+    <a href="/03-configuracao-do-empreendimento/configuracao-do-empreendimento/">Abrir página →</a>
+  </Card>
+  <Card title="Unidades">
+    Estruture estoque, preço, status e pagamentos.
+    <br />
+    <a href="/03-configuracao-do-empreendimento/unidades/">Abrir página →</a>
+  </Card>
+  <Card title="Mídias do empreendimento">
+    Biblioteca principal de imagens, vídeos e arquivos do stand.
+    <br />
+    <a href="/03-configuracao-do-empreendimento/midias-do-empreendimento/">Abrir página →</a>
+  </Card>
+  <Card title="Compartilháveis">
+    Materiais prontos para distribuição comercial do projeto.
+    <br />
+    <a href="/03-configuracao-do-empreendimento/compartilhaveis/">Abrir página →</a>
+  </Card>
+  <Card title="Playbooks">
+    Roteiros de atendimento ligados ao empreendimento.
+    <br />
+    <a href="/03-configuracao-do-empreendimento/playbooks/">Abrir página →</a>
+  </Card>
+  <Card title="Estágio de obra">
+    Atualize cronograma e progresso da obra.
+    <br />
+    <a href="/03-configuracao-do-empreendimento/estagio-de-obra/">Abrir página →</a>
+  </Card>
+</CardGrid>

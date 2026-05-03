@@ -5,6 +5,8 @@ sidebar:
   order: 2
 ---
 
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
 Esta seção cobre a entrada da operação de projetos no painel.
 
 ## Você vai aprender
@@ -17,3 +19,23 @@ Esta seção cobre a entrada da operação de projetos no painel.
 ## Benefício para a operação
 
 Uma gestão organizada dos empreendimentos melhora velocidade de manutenção, reduz duplicidade de cadastros e dá mais clareza sobre o que está ativo, em teste ou em expansão.
+
+## Páginas desta seção
+
+<CardGrid stagger>
+  <Card title="Lista de empreendimentos">
+    Consulte, filtre e abra projetos cadastrados.
+    <br />
+    <a href="/02-empreendimentos/empreendimentos/">Abrir página →</a>
+  </Card>
+  <Card title="Novo empreendimento">
+    Cadastre um projeto com os dados iniciais mínimos.
+    <br />
+    <a href="/02-empreendimentos/novo-empreendimento/">Abrir página →</a>
+  </Card>
+  <Card title="Contratar projeto">
+    Entenda o fluxo comercial de expansão.
+    <br />
+    <a href="/02-empreendimentos/contratar-projeto/">Abrir página →</a>
+  </Card>
+</CardGrid>

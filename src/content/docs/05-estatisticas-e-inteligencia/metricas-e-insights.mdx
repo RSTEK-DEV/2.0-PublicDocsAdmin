@@ -2,16 +2,30 @@
 title: Métricas e Insights
 description: Use a visão executiva para acompanhar acessos, leads, contatos e tendência de desempenho.
 sidebar:
-  order: 3
+  order: 6
 ---
 
-**Rota:** `https://admin.standdigital.com.br/inteligencia`
+import { Aside, Card, CardGrid, Steps } from '@astrojs/starlight/components';
+
+<div class="doc-route-box">
+  <p class="doc-route-label">Como Acessar</p>
+  <code>https://admin.standdigital.com.br/inteligencia</code>
+  <p class="doc-route-note">Use esta tela como visão executiva da operação comercial do empreendimento.</p>
+</div>
 
 ## Para que serve
 
-Apresenta uma visão executiva do desempenho comercial do stand.
+Esta é a tela mais útil para quem precisa responder, de forma rápida, se o empreendimento está ganhando tração comercial ou apenas acumulando tráfego.
 
-## O que você acompanha
+Ela reúne os principais sinais de:
+
+- alcance do stand;
+- geração de leads;
+- conversão em contato;
+- comportamento por período;
+- desempenho de canais e janelas de atividade.
+
+## O que você acompanha na prática
 
 - acessos ao stand;
 - leads únicos;
@@ -21,12 +35,120 @@ Apresenta uma visão executiva do desempenho comercial do stand.
 - funil de conversão;
 - heatmap e compartilhamentos.
 
-## Como interpretar
+## O que cada bloco ajuda a decidir
+
+### KPIs principais
+
+Os indicadores do topo mostram se o volume recebido está se convertendo em oportunidade real.
+
+- `Acessos ao stand` mostram circulação e distribuição do material;
+- `Leads únicos` mostram interesse comercial sem inflar duplicidade;
+- `Contatos realizados` mostram resposta comercial efetivamente registrada;
+- `Taxa de contato` mostra eficiência entre audiência e resultado.
+
+### Evolução temporal
+
+Ajuda a entender se a operação está:
+
+- crescendo com consistência;
+- oscilando por campanha;
+- perdendo força;
+- melhorando conversão ou apenas acumulando picos de visita.
+
+### Funil de conversão
+
+Mostra onde o volume cai mais e, portanto, onde a gestão deve investigar primeiro.
+
+### Heatmap e visões por hora ou semana
+
+Ajudam a decidir:
+
+- melhor horário para disparo;
+- melhor janela para reforço comercial;
+- momentos em que a equipe precisa estar mais preparada para responder.
+
+### Compartilhamentos agregados
+
+Ajudam a entender quais canais geram mais propagação do material e quais tendem a trazer retorno comercial melhor.
+
+## Como interpretar no mercado imobiliário
 
 - muitos acessos com poucos contatos sugerem gargalo de conversão;
 - poucos acessos com boa taxa indicam audiência menor, mas mais qualificada;
 - crescimento de leads sem crescimento de contatos pede revisão comercial.
 
+Mas a leitura boa não para aí.
+
+### Quando o painel mostra crescimento saudável
+
+Em geral, o crescimento é mais confiável quando:
+
+- acessos sobem;
+- leads únicos também sobem;
+- contatos acompanham;
+- a taxa de contato se mantém estável ou melhora.
+
+Nesse cenário, o empreendimento não está apenas aparecendo mais. Ele está transformando visibilidade em oportunidade.
+
+### Quando o painel mostra crescimento frágil
+
+É comum ver aumento de acessos sem aumento proporcional de contato. Isso pode significar:
+
+- campanha de alcance amplo, mas pouco aderente;
+- curiosidade alta com proposta comercial fraca;
+- stand interessante, mas CTA pouco claro;
+- resposta lenta da equipe.
+
+### Quando a taxa melhora, mas o volume cai
+
+Esse cenário nem sempre é ruim. Muitas vezes indica perda de volume com ganho de qualidade. Para produto de ticket mais alto, isso pode ser mais valioso do que tráfego massivo e pouco qualificado.
+
+## Como usar a tela em rotina de gestão
+
+<Steps>
+1. Escolha um período coerente com a ação analisada.
+
+   Para campanha curta, use janela curta. Para tendência de operação, use leitura mais ampla.
+
+2. Leia os KPIs do topo antes de entrar no detalhe.
+
+   Eles mostram se o empreendimento está em fase de tração, estabilidade ou perda.
+
+3. Verifique o gráfico temporal.
+
+   Procure picos, quedas e mudanças de comportamento.
+
+4. Leia o funil.
+
+   Identifique se a maior perda está na entrada, na navegação ou na transformação em contato.
+
+5. Revise heatmap e compartilhamentos.
+
+   Só depois disso decida se a ação precisa ser de mídia, conteúdo ou operação comercial.
+</Steps>
+
+## Diagnósticos rápidos
+
+<CardGrid stagger>
+  <Card title="Muito acesso, pouco lead">
+    O stand está recebendo atenção, mas o interesse não amadurece. Vale revisar aderência do tráfego, clareza da proposta e páginas de entrada.
+  </Card>
+  <Card title="Lead sobe, contato não sobe">
+    O marketing está entregando intenção, mas a operação comercial pode não estar acompanhando. É sinal forte de gargalo de atendimento.
+  </Card>
+  <Card title="Contato sobe com pouco acesso">
+    Sinal de público mais qualificado ou de corretores mais eficientes. Pode indicar boa aderência, mesmo com volume menor.
+  </Card>
+  <Card title="Heatmap concentrado">
+    Há janelas de maior resposta. Isso ajuda a organizar equipe, disparos e reforço de campanha.
+  </Card>
+</CardGrid>
+
 ## Benefício de uso
 
 Essa tela ajuda gestores a sair do volume bruto e entender eficiência real da operação.
+
+<Aside type="tip" title="Leitura recomendada">
+  Se esta tela mostrar perda entre audiência e resultado, o próximo passo ideal é abrir
+  <a href="/05-estatisticas-e-inteligencia/leitura-do-funil-comercial-imobiliario/">Leitura do Funil Comercial Imobiliário</a>.
+</Aside>

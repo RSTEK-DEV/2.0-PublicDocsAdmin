@@ -2,28 +2,135 @@
 title: Inteligência de Corretores
 description: Analise ranking, eficiência e necessidade de apoio comercial por corretor.
 sidebar:
-  order: 4
+  order: 7
 ---
 
-**Rota:** `https://admin.standdigital.com.br/corretores`
+import { Aside, Card, CardGrid, Steps } from '@astrojs/starlight/components';
+
+<div class="doc-route-box">
+  <p class="doc-route-label">Como Acessar</p>
+  <code>https://admin.standdigital.com.br/corretores</code>
+  <p class="doc-route-note">Use esta tela para comparar volume, eficiência e consistência comercial entre corretores.</p>
+</div>
 
 ## Para que serve
 
-Mostra desempenho comercial dos corretores com ranking, comparações e leitura individual.
+Esta tela ajuda a separar três perfis que aparecem o tempo todo na operação imobiliária:
+
+- o corretor que gera muito acesso, mas converte pouco;
+- o corretor que converte bem, mas trabalha com pouco alcance;
+- o corretor que consegue combinar visibilidade e eficiência.
+
+Essa distinção é importante porque evita uma leitura simplista de ranking. Nem sempre quem aparece mais no topo é quem está mais saudável em todos os aspectos.
 
 ## Como usar
 
-1. Ajuste o período.
-2. Revise o ranking.
-3. Mude o critério de ordenação.
-4. Selecione um corretor para análise individual.
+<Steps>
+1. Ajuste o período que deseja analisar.
+2. Revise os KPIs gerais do conjunto.
+3. Leia o ranking conforme o critério mais relevante.
+4. Abra a análise individual para entender o caso de cada corretor.
+5. Compare volume e taxa antes de tomar qualquer decisão de gestão.
+</Steps>
 
-## Como interpretar
+## O que a tela mostra na prática
+
+### KPIs consolidados
+
+Eles mostram a força comercial da rede de corretores no período:
+
+- taxa média de contato;
+- corretores ativos;
+- contatos realizados;
+- leads únicos.
+
+### Ranking
+
+O ranking ajuda a responder quem está:
+
+- trazendo mais volume;
+- convertendo melhor;
+- conseguindo equilibrar alcance e eficiência.
+
+### Distribuição de performance
+
+Esse bloco evita erro comum de ler apenas os primeiros colocados. Ele ajuda a enxergar dispersão da base e concentração de resultado.
+
+### Análise individual
+
+É onde a gestão consegue entender se um corretor precisa:
+
+- mais distribuição;
+- melhor abordagem;
+- mais treinamento;
+- ajuste de horário;
+- revisão da qualidade do público que está recebendo.
+
+## Como interpretar no contexto imobiliário
 
 - muito acesso com baixa taxa mostra alcance sem eficiência;
 - pouco acesso com taxa alta mostra eficiência com baixa distribuição;
 - alto acesso com alta taxa indica corretor forte em alcance e conversão.
 
+### O que normalmente vale observar
+
+#### Corretor com muito acesso e baixa taxa
+
+Pode indicar:
+
+- discurso comercial fraco;
+- demora na resposta;
+- tráfego pouco qualificado;
+- distribuição sem critério;
+- excesso de curiosos e poucos leads maduros.
+
+#### Corretor com pouco acesso e alta taxa
+
+Costuma indicar:
+
+- boa qualidade de atendimento;
+- público mais aderente;
+- carteira menor, mas melhor trabalhada;
+- potencial para escalar distribuição sem perder eficiência.
+
+#### Corretor com alto acesso e alta taxa
+
+É o perfil que costuma reunir:
+
+- boa presença comercial;
+- melhor timing de resposta;
+- discurso mais consistente;
+- maior capacidade de transformar visibilidade em resultado.
+
+## Como usar isso na gestão
+
+<CardGrid stagger>
+  <Card title="Treinamento">
+    Se vários corretores têm acesso alto e taxa baixa, o problema pode ser estrutural de abordagem, não apenas individual.
+  </Card>
+  <Card title="Distribuição">
+    Se alguns poucos convertem bem e recebem pouco volume, a operação pode redistribuir melhor oportunidades.
+  </Card>
+  <Card title="Mentoria">
+    Corretores com boa taxa podem servir de referência prática para elevar o padrão do grupo.
+  </Card>
+  <Card title="Cobrança justa">
+    A tela ajuda a evitar cobrança baseada só em volume bruto de acesso, que costuma distorcer a leitura de performance.
+  </Card>
+</CardGrid>
+
+## Sinais de alerta
+
+- poucos corretores concentrando quase todo o resultado;
+- taxa média baixa no grupo inteiro;
+- muito acesso com pouco contato em vários nomes ao mesmo tempo;
+- picos de atividade sem sustentação de conversão;
+- diferença grande demais entre os melhores e os piores.
+
 ## Benefício de uso
 
 Esse painel ajuda a identificar líderes, gargalos, necessidade de treinamento e oportunidades de padronização da atuação comercial.
+
+<Aside type="note" title="Leitura importante">
+  A tela não serve para punir automaticamente quem está abaixo. Ela serve para entender se o problema é de capacidade comercial, distribuição, aderência do público ou processo de atendimento.
+</Aside>

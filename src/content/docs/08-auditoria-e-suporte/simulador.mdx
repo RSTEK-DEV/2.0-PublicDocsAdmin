@@ -5,18 +5,69 @@ sidebar:
   order: 3
 ---
 
-**Rota:** `https://admin.standdigital.com.br/simulate`
+import { Aside, Card, CardGrid } from '@astrojs/starlight/components';
+
+<div class="doc-route-box">
+  <p class="doc-route-label">Como Acessar</p>
+  <code>https://admin.standdigital.com.br/simulate</code>
+  <p class="doc-route-note">A simulação é aberta por fluxos internos do painel e depende de token de acesso gerado pela aplicação.</p>
+</div>
 
 ## Para que serve
 
-Permite visualizar o stand em modo de simulação.
+Permite visualizar o stand em modo controlado, sem depender de acesso público real, para validar experiência, navegação e comportamento da interface.
+
+## O que pode ser simulado
+
+<CardGrid stagger>
+  <Card title="Dispositivo móvel">
+    Ajuda a validar a experiência em celular, que costuma concentrar grande parte do tráfego vindo de campanhas e compartilhamentos.
+  </Card>
+  <Card title="Desktop">
+    Permite revisar a navegação em telas maiores, útil para jornadas mais analíticas e apresentação comercial detalhada.
+  </Card>
+  <Card title="Tablet">
+    Serve para conferir um formato intermediário de navegação e apresentação visual.
+  </Card>
+</CardGrid>
+
+## Perfis de simulação
+
+A simulação pode representar contextos diferentes de acesso:
+
+- **como corretor**, para validar a experiência comercial e os recursos disponíveis nesse perfil;
+- **como cliente**, quando o acesso acontece por um link de compartilhamento, simulando a visão de quem recebeu o material.
 
 ## Como usar
 
 1. Inicie a simulação a partir do fluxo que fornece o token.
-2. Aguarde o carregamento do iframe.
-3. Revise a experiência nas molduras disponíveis.
+2. Aguarde o carregamento da tela.
+3. Escolha a moldura de visualização desejada, como móvel, desktop ou tablet.
+4. Revise o comportamento do stand no perfil de simulação aberto.
+5. Valide navegação, hierarquia visual, conteúdo e CTA de acordo com o cenário testado.
+
+## O que observar durante a simulação
+
+- clareza da navegação em cada dispositivo;
+- legibilidade do conteúdo;
+- comportamento dos blocos visuais;
+- consistência da jornada de quem acessa como corretor;
+- experiência de quem chega por link de compartilhamento.
+
+## Limitações importantes
+
+Por se tratar de uma simulação, algumas funções podem aparecer desativadas ou limitadas.
+
+Exemplo comum:
+
+- recursos de compartilhamento como corretor podem não estar disponíveis dentro da própria simulação.
+
+Isso não significa necessariamente erro. Em muitos casos é apenas uma limitação natural do ambiente simulado.
+
+<Aside type="note" title="Importante">
+  O simulador serve para validar experiência e apresentação. Algumas ações dependentes de contexto real de uso, autenticação completa ou fluxo externo podem ficar indisponíveis.
+</Aside>
 
 ## Benefício de uso
 
-A simulação ajuda a validar apresentação e experiência antes de compartilhar ou ajustar conteúdo do empreendimento.
+A simulação ajuda a validar apresentação, responsividade e comportamento por perfil antes de publicar ajustes, distribuir links ou revisar a experiência do empreendimento.

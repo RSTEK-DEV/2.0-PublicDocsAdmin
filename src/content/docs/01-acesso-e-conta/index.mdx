@@ -5,6 +5,8 @@ sidebar:
   order: 1
 ---
 
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
 Esta seção cobre o primeiro contato com o painel e as configurações pessoais do usuário.
 
 ## Você vai aprender
@@ -18,3 +20,38 @@ Esta seção cobre o primeiro contato com o painel e as configurações pessoais
 ## Benefício para a operação
 
 Quando essa etapa está bem configurada, o usuário reduz erros de contexto, evita atuar na empresa errada e ganha mais autonomia para manter acesso, aparência e dados pessoais sem depender de suporte a cada ajuste.
+
+## Páginas desta seção
+
+<CardGrid stagger>
+  <Card title="Login">
+    Entrada segura no painel administrativo.
+    <br />
+    <a href="/01-acesso-e-conta/login/">Abrir página →</a>
+  </Card>
+  <Card title="Seleção de empresa">
+    Escolha o contexto correto antes de operar.
+    <br />
+    <a href="/01-acesso-e-conta/selecao-de-empresa/">Abrir página →</a>
+  </Card>
+  <Card title="Página inicial">
+    Valide empresa ativa, projetos e status geral.
+    <br />
+    <a href="/01-acesso-e-conta/pagina-inicial/">Abrir página →</a>
+  </Card>
+  <Card title="Suporte">
+    Canais de ajuda e dados úteis para atendimento.
+    <br />
+    <a href="/01-acesso-e-conta/suporte/">Abrir página →</a>
+  </Card>
+  <Card title="Meu perfil">
+    Atualize dados pessoais, foto e senha.
+    <br />
+    <a href="/01-acesso-e-conta/meu-perfil/">Abrir página →</a>
+  </Card>
+  <Card title="Minhas preferências">
+    Ajuste aparência, ajuda flutuante e notificações.
+    <br />
+    <a href="/01-acesso-e-conta/minhas-preferencias/">Abrir página →</a>
+  </Card>
+</CardGrid>

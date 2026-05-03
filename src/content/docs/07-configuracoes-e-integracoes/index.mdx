@@ -5,6 +5,8 @@ sidebar:
   order: 7
 ---
 
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
 Esta seção cobre as configurações institucionais da empresa e o catálogo de integrações.
 
 ## Você vai aprender
@@ -18,3 +20,23 @@ Esta seção cobre as configurações institucionais da empresa e o catálogo de
 ## Benefício para a operação
 
 Centralizar essas decisões ajuda a manter consistência institucional, governança técnica e menor dependência de ajustes manuais espalhados pelo sistema.
+
+## Páginas desta seção
+
+<CardGrid stagger>
+  <Card title="Ajustes">
+    Dados da empresa, corretores, analytics e publicação.
+    <br />
+    <a href="/07-configuracoes-e-integracoes/ajustes/">Abrir página →</a>
+  </Card>
+  <Card title="Integrações">
+    Catálogo e ponto de entrada das integrações disponíveis.
+    <br />
+    <a href="/07-configuracoes-e-integracoes/integracoes/">Abrir página →</a>
+  </Card>
+  <Card title="Configuração CVCRM">
+    Credenciais, eventos, sincronização e logs.
+    <br />
+    <a href="/07-configuracoes-e-integracoes/configuracao-de-integracao-cvcrm/">Abrir página →</a>
+  </Card>
+</CardGrid>

@@ -2,27 +2,114 @@
 title: Analytics de Páginas
 description: Entenda quais páginas recebem mais atenção e quanto tempo a audiência permanece nelas.
 sidebar:
-  order: 7
+  order: 10
 ---
 
-**Rota:** `https://admin.standdigital.com.br/analytics/pages`
+import { Aside, Card, CardGrid, Steps } from '@astrojs/starlight/components';
+
+<div class="doc-route-box">
+  <p class="doc-route-label">Como Acessar</p>
+  <code>https://admin.standdigital.com.br/analytics/pages</code>
+  <p class="doc-route-note">Use esta tela para entender quais páginas do stand puxam interesse, seguram atenção e apoiam conversão.</p>
+</div>
 
 ## Para que serve
 
-Analisa desempenho das páginas do stand.
+No mercado imobiliário, nem toda página importante é a mais acessada, e nem toda página muito acessada é a que mais ajuda a vender. Esta tela existe para separar visibilidade de relevância.
+
+Ela ajuda a responder:
+
+- quais páginas recebem mais entrada;
+- quais páginas seguram mais tempo de leitura;
+- quais conteúdos funcionam como vitrine;
+- quais conteúdos ajudam na decisão;
+- quais páginas podem estar escondidas ou mal posicionadas na jornada.
 
 ## Como usar
 
-1. Ajuste o período.
-2. Revise visualizações e tempo médio.
+<Steps>
+1. Ajuste o período de análise.
+2. Revise visualizações e tempo médio da página.
 3. Consulte a tabela de páginas populares.
-4. Selecione uma página para aprofundar a leitura.
+4. Selecione uma página para abrir o detalhamento.
+5. Compare a importância comercial da página com o desempenho observado.
+</Steps>
+
+## O que cada parte da tela mostra
+
+### Visualizações
+
+Mostram alcance por página. No contexto imobiliário, ajudam a ver o que está sendo descoberto com mais facilidade.
+
+### Tempo médio na página
+
+Ajuda a diferenciar:
+
+- página que recebe clique rápido;
+- página que sustenta leitura;
+- página que o usuário revisita com intenção.
+
+### Páginas populares
+
+A tabela mostra a hierarquia real de atenção do stand, não a hierarquia que a equipe imaginou.
+
+### Detalhamento individual
+
+Permite entender se uma página específica está performando acima ou abaixo do papel que deveria cumprir na jornada.
 
 ## Como interpretar
 
 - muita visualização com pouco tempo indica leitura superficial;
 - pouco volume com muito tempo pode mostrar conteúdo relevante para nicho específico;
 - páginas importantes com baixa visibilidade merecem revisão de destaque na jornada.
+
+## Leitura imobiliária recomendada
+
+### Página com muito acesso e pouco tempo
+
+Costuma indicar:
+
+- curiosidade rápida;
+- promessa forte na entrada, mas pouca sustentação no conteúdo;
+- informação que não entrega o que o usuário esperava encontrar.
+
+### Página com pouco acesso e muito tempo
+
+Pode indicar:
+
+- conteúdo relevante, mas mal exposto;
+- página útil para decisão, porém pouco descoberta;
+- etapa mais profunda da jornada, acessada por público mais qualificado.
+
+### Página decisiva com baixa visibilidade
+
+Se páginas como tipologia, diferenciais, localização ou materiais estratégicos aparecem pouco, o problema pode estar em:
+
+- ordem do menu;
+- destaque visual;
+- clareza do CTA;
+- excesso de competição com outras páginas.
+
+## Como usar isso para melhorar o stand
+
+<CardGrid stagger>
+  <Card title="Reordenar menu">
+    Se páginas comerciais importantes estão escondidas, a hierarquia do stand pode precisar mudar.
+  </Card>
+  <Card title="Reforçar conteúdo">
+    Se uma página recebe atenção, mas segura pouco tempo, talvez falte profundidade, clareza ou material visual.
+  </Card>
+  <Card title="Ajustar CTA">
+    Se o usuário consome páginas relevantes e ainda assim não avança, pode faltar chamada clara para ação.
+  </Card>
+  <Card title="Priorizar mídia">
+    Páginas que recebem muita atenção merecem melhor acabamento visual e atualização frequente.
+  </Card>
+</CardGrid>
+
+<Aside type="tip" title="Boa prática">
+  Não avalie uma página apenas por volume. Em imobiliário, páginas de decisão às vezes recebem menos acessos, mas têm mais peso na conversão.
+</Aside>
 
 ## Benefício de uso
 

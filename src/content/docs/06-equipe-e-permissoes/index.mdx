@@ -5,6 +5,8 @@ sidebar:
   order: 6
 ---
 
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
 Esta seção cobre a gestão de pessoas e acessos no ambiente administrativo.
 
 ## Você vai aprender
@@ -17,3 +19,23 @@ Esta seção cobre a gestão de pessoas e acessos no ambiente administrativo.
 ## Benefício para a operação
 
 Uma base de usuários bem administrada melhora governança, reduz problemas de acesso e ajuda o time a crescer sem perder controle.
+
+## Páginas desta seção
+
+<CardGrid stagger>
+  <Card title="Corretores">
+    Aprovação, cadastro e importação em lote.
+    <br />
+    <a href="/06-equipe-e-permissoes/corretores/">Abrir página →</a>
+  </Card>
+  <Card title="Equipe interna">
+    Administração dos acessos internos do painel.
+    <br />
+    <a href="/06-equipe-e-permissoes/equipe-interna/">Abrir página →</a>
+  </Card>
+  <Card title="Usuários da equipe">
+    Gestão de equipe pela rota de configurações.
+    <br />
+    <a href="/06-equipe-e-permissoes/usuarios-da-equipe/">Abrir página →</a>
+  </Card>
+</CardGrid>

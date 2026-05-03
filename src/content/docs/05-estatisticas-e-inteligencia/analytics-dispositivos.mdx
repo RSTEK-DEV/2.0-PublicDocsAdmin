@@ -2,20 +2,104 @@
 title: Analytics de Dispositivos
 description: Analise acessos por tipo de aparelho, sistema operacional, navegador e resolução.
 sidebar:
-  order: 9
+  order: 12
 ---
 
-**Rota:** `https://admin.standdigital.com.br/analytics/devices`
+import { Aside, Card, CardGrid, Steps } from '@astrojs/starlight/components';
+
+<div class="doc-route-box">
+  <p class="doc-route-label">Como Acessar</p>
+  <code>https://admin.standdigital.com.br/analytics/devices</code>
+  <p class="doc-route-note">Use esta tela para entender o contexto técnico da audiência e priorizar experiência, testes e acabamento visual.</p>
+</div>
 
 ## Para que serve
 
-Mostra em que contexto técnico a audiência acessa o stand.
+Esta tela mostra como o público realmente consome o stand. Em imobiliário, isso é decisivo porque a experiência varia muito entre:
+
+- clique rápido em anúncio no celular;
+- navegação mais analítica no desktop;
+- revisão de material em horários e dispositivos diferentes.
+
+## O que a tela ajuda a decidir
+
+### Tipo de dispositivo
+
+Mostra se a audiência está majoritariamente em:
+
+- celular;
+- desktop;
+- tablet;
+- outros contextos de navegação.
+
+### Sistema operacional e navegador
+
+Ajuda a definir onde vale concentrar esforço de teste, QA e correção.
+
+### Resolução de tela
+
+Ajuda a perceber em quais faixas visuais a experiência precisa estar mais refinada.
 
 ## Como interpretar
 
 - predominância de mobile aumenta a prioridade de experiência em celular;
 - navegadores dominantes devem receber mais atenção em testes;
 - resoluções frequentes ajudam a priorizar ajustes de layout.
+
+## Leitura imobiliária recomendada
+
+### Predominância de mobile
+
+Esse é o cenário mais comum em campanhas de tráfego. Quando ele aparece, a gestão deve assumir que:
+
+- a entrada será rápida;
+- a proposta precisa ficar clara cedo;
+- CTA, velocidade e legibilidade são críticos;
+- páginas longas ou pesadas custam mais em conversão.
+
+### Predominância de desktop
+
+Pode indicar:
+
+- público mais analítico;
+- fase de pesquisa mais madura;
+- acesso vindo de ambiente de trabalho;
+- interesse em material mais detalhado.
+
+### Navegadores ou resoluções dominantes
+
+Quando poucos navegadores ou resoluções concentram grande parte da audiência, a priorização técnica fica mais clara. Isso evita dispersar esforço em cenários raros antes de garantir boa experiência nos cenários majoritários.
+
+## Como usar a tela
+
+<Steps>
+1. Ajuste o período.
+2. Veja a distribuição entre mobile, desktop e tablet.
+3. Revise sistemas operacionais e navegadores dominantes.
+4. Consulte as resoluções mais frequentes.
+5. Cruze essa leitura com comportamento e conversão.
+</Steps>
+
+## Aplicações práticas
+
+<CardGrid stagger>
+  <Card title="Priorizar QA">
+    Teste primeiro nos navegadores e dispositivos que concentram a maior parte do tráfego real.
+  </Card>
+  <Card title="Ajustar layout">
+    Resoluções mais frequentes ajudam a orientar cortes, hierarquia visual e tamanho de blocos.
+  </Card>
+  <Card title="Melhorar CTA">
+    Em audiência mobile, CTA e formulário precisam ser mais diretos e confortáveis ao toque.
+  </Card>
+  <Card title="Refinar material visual">
+    Saber onde a experiência é mais consumida ajuda a decidir recorte, proporção e densidade de informação.
+  </Card>
+</CardGrid>
+
+<Aside type="tip" title="Leitura prática">
+  Essa tela não serve só para tecnologia. Ela ajuda a decidir como o empreendimento deve ser apresentado para o contexto real de consumo da audiência.
+</Aside>
 
 ## Benefício de uso
 

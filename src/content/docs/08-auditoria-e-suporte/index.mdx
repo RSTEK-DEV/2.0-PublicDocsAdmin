@@ -5,6 +5,8 @@ sidebar:
   order: 8
 ---
 
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
 Esta seção reúne recursos de rastreabilidade, apoio operacional e tratamento de exceções.
 
 ## Você vai aprender
@@ -17,3 +19,38 @@ Esta seção reúne recursos de rastreabilidade, apoio operacional e tratamento 
 ## Benefício para a operação
 
 Esses recursos dão mais segurança para suporte, auditoria, troubleshooting e manutenção contínua do ambiente.
+
+## Páginas desta seção
+
+<CardGrid stagger>
+  <Card title="Auditoria de logs ativos">
+    Eventos recentes para suporte e investigação.
+    <br />
+    <a href="/08-auditoria-e-suporte/auditoria-logs-ativos/">Abrir página →</a>
+  </Card>
+  <Card title="Auditoria em cold storage">
+    Histórico prolongado e integridade dos lotes.
+    <br />
+    <a href="/08-auditoria-e-suporte/auditoria-cold-storage/">Abrir página →</a>
+  </Card>
+  <Card title="Simulador">
+    Visualização controlada do stand.
+    <br />
+    <a href="/08-auditoria-e-suporte/simulador/">Abrir página →</a>
+  </Card>
+  <Card title="Recuperar senha">
+    Redefinição de acesso ao painel.
+    <br />
+    <a href="/08-auditoria-e-suporte/recuperar-senha/">Abrir página →</a>
+  </Card>
+  <Card title="Acesso negado">
+    Entenda bloqueios por permissão.
+    <br />
+    <a href="/08-auditoria-e-suporte/acesso-negado/">Abrir página →</a>
+  </Card>
+  <Card title="Página não encontrada">
+    Tratamento de rotas inválidas.
+    <br />
+    <a href="/08-auditoria-e-suporte/pagina-nao-encontrada/">Abrir página →</a>
+  </Card>
+</CardGrid>
