@@ -15,6 +15,7 @@ concurrency:
   cancel-in-progress: false
 
 env:
+  GITHUB_PAGES: true
   BUILD_PATH: "."
 
 jobs:
