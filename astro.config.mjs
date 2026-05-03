@@ -10,7 +10,7 @@ export default defineConfig({
 		: 'https://adm-docs.standdigital.com.br',
 
 	base: isGithubPages
-		? '/2.0-PublicDocs/'  // ← CORRIGIDO: precisa da base quando no GitHub Pages
+		? '/2.0-PublicDocsAdmin/'  // ← CORRIGIDO: precisa da base quando no GitHub Pages
 		: '/',
 
 	integrations: [
