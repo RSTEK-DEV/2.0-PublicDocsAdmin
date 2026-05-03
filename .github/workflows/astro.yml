@@ -15,7 +15,6 @@ concurrency:
   cancel-in-progress: false
 
 env:
-  GITHUB_PAGES: true
   BUILD_PATH: "."
 
 jobs:
@@ -64,8 +63,8 @@ jobs:
       - name: Build with Astro
         run: |
           ${{ steps.detect-package-manager.outputs.runner }} astro build \
-            --site "https://rstek-dev.github.io" \
-            --base "/2.0-PublicDocsAdmin/"
+            --site "https://adm-docs.standdigital.com.br" \
+            --base "/"
         working-directory: ${{ env.BUILD_PATH }}
 
       - name: Upload artifact
