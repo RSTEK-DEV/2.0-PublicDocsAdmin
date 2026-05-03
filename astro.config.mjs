@@ -36,32 +36,56 @@ export default defineConfig({
 				alt: 'Logomarca StandDigital',
 			},
 			sidebar: [
-					{
+				{
 					label: 'Contrate hoje mesmo',
 					link: 'https://wa.me/5511988157196',
-					attrs: { target: '_blank', class: 'cta-button' }
+					attrs: { target: '_blank', class: 'cta-button' },
 				},
 				{
-					label: 'Stand Digital',
-					collapsed: true,
+					label: 'Visão Geral',
+					collapsed: false,
 					badge: { text: '+2.1', variant: 'success' },
-					autogenerate: { directory: 'docs-stand' },
+					autogenerate: { directory: '00-visao-geral' },
 				},
 				{
-					label: 'Área administrativa',
-					collapsed: true,
-					badge: { text: '+2.1', variant: 'success' },
-					autogenerate: { directory: 'docs-admin' },
+					label: 'Acesso e Conta',
+					collapsed: false,
+					autogenerate: { directory: '01-acesso-e-conta' },
 				},
 				{
-					label: 'Guias corretores',
-					collapsed: true,
-					autogenerate: { directory: 'guides-stand' },
+					label: 'Empreendimentos',
+					collapsed: false,
+					autogenerate: { directory: '02-empreendimentos' },
 				},
 				{
-					label: 'Guias Administradores',
-					collapsed: true,
-					autogenerate: { directory: 'guides-admin' },
+					label: 'Configuração do Empreendimento',
+					collapsed: false,
+					autogenerate: { directory: '03-configuracao-do-empreendimento' },
+				},
+				{
+					label: 'Conteúdo Comercial',
+					collapsed: false,
+					autogenerate: { directory: '04-conteudo-comercial' },
+				},
+				{
+					label: 'Estatísticas e Inteligência',
+					collapsed: false,
+					autogenerate: { directory: '05-estatisticas-e-inteligencia' },
+				},
+				{
+					label: 'Equipe e Permissões',
+					collapsed: false,
+					autogenerate: { directory: '06-equipe-e-permissoes' },
+				},
+				{
+					label: 'Configurações e Integrações',
+					collapsed: false,
+					autogenerate: { directory: '07-configuracoes-e-integracoes' },
+				},
+				{
+					label: 'Auditoria e Suporte Operacional',
+					collapsed: false,
+					autogenerate: { directory: '08-auditoria-e-suporte' },
 				},
 			],
 		}),

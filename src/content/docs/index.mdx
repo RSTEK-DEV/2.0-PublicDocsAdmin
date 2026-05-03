@@ -1,70 +1,78 @@
 ---
 title: STAND DIGITAL
-description: Centralize todo o lançamento em um único ambiente digital.
+description: Documentação oficial da área administrativa do Stand Digital.
 template: splash
 hero:
-  tagline: A plataforma completa para lançamentos imobiliários.
+  tagline: Organize a operação administrativa, configure empreendimentos e use dados para decidir melhor.
   image:
     file: ../../assets/logo.svg
   actions:
-    - text: Documentação Geral
-      link: /docs-stand/
-      icon: open-book
-    - text: Área Administrativa
-      link: /docs-admin/
-      icon: setting
-    - text: Guia "Como Fazer" - Administrativo
-      link: /guides-admin/
-      icon: document
-    - text: Guia "Como Fazer" - Corretor
-      link: /guides-stand/
-      icon: right-arrow
+    - text: Visão geral da plataforma
+      link: /00-visao-geral/
+    - text: Entender estatísticas
+      link: /05-estatisticas-e-inteligencia/como-usar-estatisticas/
 ---
 
 import { Card, CardGrid } from '@astrojs/starlight/components';
 
-## Bem-vindo ao StandDigital
+## Bem-vindo à documentação administrativa
 
-O **Stand Digital** centraliza toda a operação comercial do lançamento em um único ambiente digital: acesso seguro, seleção de empresa, painel de trabalho, materiais de venda, simulações e acompanhamento de resultados.
+Esta documentação agora é focada exclusivamente na **área administrativa** do Stand Digital. Aqui você encontra o fluxo completo para operar o painel, configurar empreendimentos, manter usuários e interpretar estatísticas com foco em uso prático e benefício real para a operação.
 
-O fluxo de uso foi pensado para ser simples:
-1. O usuário acessa a **tela de login**.
-2. Após autenticar, escolhe a **empresa** que deseja operar.
-3. Entra no **painel principal** com os módulos liberados para seu perfil.
-4. Em **Configurações**, pode acessar recursos administrativos, incluindo a **administração de usuários**.
+## O que você consegue fazer aqui
 
-Isso permite organizar múltiplas operações em um só lugar, com mais controle de acesso e mais clareza para times comerciais e administrativos.
+- acessar o painel e operar no contexto correto da empresa;
+- criar, configurar e publicar empreendimentos;
+- organizar mídias, materiais comerciais e playbooks;
+- acompanhar estatísticas com leitura prática de negócio;
+- manter equipe, permissões, integrações e auditoria sob controle.
 
-## Explore a documentação
+## Como navegar
 
 <CardGrid stagger>
-  <Card title="Documentação Geral" icon="open-book">
-    Entenda o conceito, o fluxo de acesso e o funcionamento geral da plataforma StandDigital.
+  <Card title="Acesso e conta" icon="user">
+    Login, seleção de empresa, perfil, preferências e suporte para o uso diário do painel.
     <br />
-    <a href="/docs-stand/">Acessar documentação geral →</a>
+    <a href="/01-acesso-e-conta/">Abrir seção →</a>
   </Card>
 
-  <Card title="Documentação da Área Administrativa" icon="setting">
-    Consulte o painel administrativo, as configurações da plataforma e a gestão de usuários.
+  <Card title="Visão geral" icon="open-book">
+    Entenda a estrutura completa da documentação e a lógica da jornada administrativa.
     <br />
-    <a href="/docs-admin/">Ver documentação administrativa →</a>
+    <a href="/00-visao-geral/">Abrir seção →</a>
   </Card>
 
-  <Card title="Guia 'Como Fazer' — Administrativo" icon="document">
-    Tutoriais passo a passo para configurar, gerenciar e personalizar o ambiente administrativo.
+  <Card title="Empreendimentos" icon="open-book">
+    Criação de projetos, listagem dos empreendimentos ativos e fluxo de contratação de novos projetos.
     <br />
-    <a href="/guides-admin/">Acessar guia administrativo →</a>
+    <a href="/02-empreendimentos/">Abrir seção →</a>
   </Card>
 
-  <Card title="Guia 'Como Fazer' — Corretor" icon="user">
-    Aprenda como os corretores utilizam o StandDigital para apresentar e vender com eficiência.
+  <Card title="Configuração do empreendimento" icon="setting">
+    Ficha técnica, gerenciador de telas, unidades, estágio de obra e configurações administrativas do projeto.
     <br />
-    <a href="/guides-stand/">Acessar guia do corretor →</a>
+    <a href="/03-configuracao-do-empreendimento/">Abrir seção →</a>
   </Card>
 
-  <Card title="Fale Conosco" icon="chat">
-    Dúvidas ou sugestões? Entre em contato com a equipe StandDigital.
+  <Card title="Conteúdo comercial" icon="document">
+    Mídias, compartilháveis, playbooks e ferramentas de apoio à produção comercial.
     <br />
-    <a href="mailto:suporte@standdigital.com">suporte@standdigital.com</a>
+    <a href="/04-conteudo-comercial/">Abrir seção →</a>
+  </Card>
+
+  <Card title="Estatísticas e inteligência" icon="chart">
+    Métricas, analytics e orientação para transformar números em ação comercial e operacional.
+    <br />
+    <a href="/05-estatisticas-e-inteligencia/">Abrir seção →</a>
+  </Card>
+
+  <Card title="Equipe, integrações e auditoria" icon="checklist">
+    Gestão de usuários, ajustes institucionais, integrações e rastreabilidade operacional.
+    <br />
+    <a href="/06-equipe-e-permissoes/">Abrir seção →</a>
   </Card>
 </CardGrid>
+
+## Atalho recomendado
+
+Se o objetivo é entender como usar os números do painel, comece por [Como Usar Estatísticas](/05-estatisticas-e-inteligencia/como-usar-estatisticas/).
