@@ -1,6 +1,6 @@
 # Metricas e insights
 
-URL principal: `https://admin.standdigital.com.br/inteligencia`
+URL principal: `https://admin.standdigital.com.br/compartilhamento`
 
 ## Objetivo da tela
 
@@ -54,7 +54,7 @@ Apresentar uma visão executiva de desempenho comercial e comportamento dos aces
 
 ### Ver os indicadores gerais do empreendimento
 
-1. Acesse `https://admin.standdigital.com.br/inteligencia`.
+1. Acesse `https://admin.standdigital.com.br/compartilhamento`.
 2. Defina o periodo no filtro superior.
 3. Leia os cards de acessos, leads e contatos.
 
