@@ -10,67 +10,26 @@ import { Aside, Card, CardGrid, Steps } from '@astrojs/starlight/components';
 <div class="doc-route-box">
   <p class="doc-route-label">Como Acessar</p>
   <code>https://admin.standdigital.com.br/analytics/devices</code>
-  <p class="doc-route-note">Use esta tela para entender o contexto técnico da audiência e priorizar experiência, testes e acabamento visual.</p>
 </div>
 
 ## Para que serve
 
-Esta tela mostra como o público realmente consome o stand. Em imobiliário, isso é decisivo porque a experiência varia muito entre:
+Esta tela mostra como o público realmente consome o stand. No imobiliário, isso é decisivo porque a experiência varia muito entre um clique rápido em anúncio no celular, uma navegação mais analítica no desktop e uma revisão de material em horários e dispositivos diferentes.
 
-- clique rápido em anúncio no celular;
-- navegação mais analítica no desktop;
-- revisão de material em horários e dispositivos diferentes.
+## O que a tela mostra na prática
 
-## O que a tela ajuda a decidir
+- distribuição por tipo de dispositivo (mobile, desktop, tablet);
+- sistemas operacionais mais usados;
+- navegadores dominantes;
+- faixas de resolução de tela.
 
-### Tipo de dispositivo
+**O que cada bloco orienta:**
 
-Mostra se a audiência está majoritariamente em:
+- **Tipo de dispositivo** — define onde concentrar esforço de experiência e UX;
+- **Sistema operacional e navegador** — ajuda a definir onde priorizar testes e validação de qualidade;
+- **Resolução de tela** — indica em quais faixas visuais a experiência precisa estar mais refinada.
 
-- celular;
-- desktop;
-- tablet;
-- outros contextos de navegação.
-
-### Sistema operacional e navegador
-
-Ajuda a definir onde vale concentrar esforço de teste, validação de qualidade e correção.
-
-### Resolução de tela
-
-Ajuda a perceber em quais faixas visuais a experiência precisa estar mais refinada.
-
-## Como interpretar
-
-- predominância de mobile aumenta a prioridade de experiência em celular;
-- navegadores dominantes devem receber mais atenção em testes;
-- resoluções frequentes ajudam a priorizar ajustes de layout.
-
-## Leitura imobiliária recomendada
-
-### Predominância de mobile
-
-Esse é o cenário mais comum em campanhas de tráfego. Quando ele aparece, a gestão deve assumir que:
-
-- a entrada será rápida;
-- a proposta precisa ficar clara cedo;
-- CTA, velocidade e legibilidade são críticos;
-- páginas longas ou pesadas custam mais em conversão.
-
-### Predominância de desktop
-
-Pode indicar:
-
-- público mais analítico;
-- fase de pesquisa mais madura;
-- acesso vindo de ambiente de trabalho;
-- interesse em material mais detalhado.
-
-### Navegadores ou resoluções dominantes
-
-Quando poucos navegadores ou resoluções concentram grande parte da audiência, a priorização técnica fica mais clara. Isso evita dispersar esforço em cenários raros antes de garantir boa experiência nos cenários majoritários.
-
-## Como usar a tela
+## Como usar
 
 <Steps>
 1. Ajuste o período.
@@ -80,11 +39,23 @@ Quando poucos navegadores ou resoluções concentram grande parte da audiência,
 5. Cruze essa leitura com comportamento e conversão.
 </Steps>
 
+## Como interpretar
+
+- predominância de mobile aumenta a prioridade de experiência em celular;
+- navegadores dominantes devem receber mais atenção em testes;
+- resoluções frequentes ajudam a priorizar ajustes de layout.
+
+**Audiência mobile** — é o cenário mais comum em campanhas de tráfego. A gestão deve assumir que a entrada será rápida, a proposta precisa ficar clara cedo, e CTA, velocidade e legibilidade são críticos.
+
+**Audiência desktop** — pode indicar público mais analítico, fase de pesquisa mais madura, acesso vindo de ambiente de trabalho ou interesse em material mais detalhado.
+
+**Navegadores ou resoluções dominantes** — quando poucos cenários concentram grande parte da audiência, a priorização técnica fica mais clara e evita dispersar esforço antes de garantir boa experiência nos casos majoritários.
+
 ## Aplicações práticas
 
 <CardGrid stagger>
   <Card title="Priorizar QA">
-    Priorizar QA significa priorizar a validação da qualidade. Na prática, isso quer dizer testar primeiro nos navegadores e dispositivos que concentram a maior parte do tráfego real.
+    Testar primeiro nos navegadores e dispositivos que concentram a maior parte do tráfego real.
   </Card>
   <Card title="Ajustar layout">
     Resoluções mais frequentes ajudam a orientar cortes, hierarquia visual e tamanho de blocos.
@@ -97,8 +68,8 @@ Quando poucos navegadores ou resoluções concentram grande parte da audiência,
   </Card>
 </CardGrid>
 
-<Aside type="note" title="O que significa QA">
-  `QA` vem de `Quality Assurance`. Aqui, o termo significa dar prioridade aos testes e à verificação da experiência antes de avançar para ajustes menos críticos.
+<Aside type="note" title="QA">
+  QA — Quality Assurance — significa priorizar os testes e a verificação da experiência antes de avançar para ajustes menos críticos.
 </Aside>
 
 <Aside type="tip" title="Leitura prática">
