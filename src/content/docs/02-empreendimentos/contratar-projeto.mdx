@@ -1,9 +1,11 @@
 ---
 title: Contratar Projeto
-description: Use o fluxo comercial quando a empresa precisar expandir a operação com novos projetos.
+description: Use o fluxo comercial quando a empresa precisar expandir a operação e liberar novos projetos além do escopo atual.
 sidebar:
   order: 3
 ---
+
+import { Aside, Card, CardGrid } from '@astrojs/starlight/components';
 
 <div class="doc-route-box">
   <p class="doc-route-label">Como Acessar</p>
@@ -12,14 +14,42 @@ sidebar:
 
 ## Para que serve
 
-Orienta a contratação comercial de novos projetos quando a criação direta não está liberada.!
+Esta tela orienta a expansão comercial do ambiente quando a empresa precisa liberar novos projetos, mas a criação direta não é o caminho adequado ou não está disponível para o perfil atual.
+
+## O que você encontra
+
+- destaque visual de novo projeto sob contratação;
+- mensagem explicando que a expansão depende de atendimento comercial;
+- botão `Contratar via WhatsApp`;
+- botão `Voltar para empreendimentos`;
+- sinalização do ganho esperado, como `+1 projeto`;
+- cards com benefícios e recursos associados à expansão.
 
 ## Como usar
 
-1. Abra a tela quando precisar ampliar a operação.
+1. Abra a tela quando a empresa precisar ampliar a operação com mais um projeto.
 2. Clique em `Contratar via WhatsApp`.
-3. Continue o atendimento comercial no canal aberto.
+3. Continue o atendimento no canal comercial aberto pelo sistema.
+4. Se não quiser seguir naquele momento, use `Voltar para empreendimentos`.
+
+## Como interpretar essa etapa
+
+<CardGrid stagger>
+  <Card title="Cadastro não é contratação">
+    A tela separa claramente a criação operacional de um projeto da expansão comercial do ambiente.
+  </Card>
+  <Card title="Escopo atual">
+    Quando o fluxo aponta para contratação, isso normalmente significa que a empresa precisa ampliar o escopo contratado.
+  </Card>
+  <Card title="Canal rápido">
+    O WhatsApp reduz atrito e acelera o início do atendimento comercial.
+  </Card>
+</CardGrid>
+
+<Aside type="note" title="Importante">
+  Esta tela não cria o projeto diretamente. Ela apenas inicia o contato comercial necessário para liberar a expansão do ambiente.
+</Aside>
 
 ## Benefício de uso
 
-Essa tela separa claramente o que é cadastro operacional do que é expansão comercial, evitando confusão entre criação técnica e contratação de novo projeto.
+Esse fluxo evita confusão entre criação técnica e contratação comercial, deixando claro quando a necessidade é operacional e quando depende de ampliação formal da conta.

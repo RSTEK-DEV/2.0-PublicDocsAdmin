@@ -1,9 +1,11 @@
 ---
 title: Auditoria em Cold Storage
-description: Pesquise histórico prolongado de auditoria e valide a integridade de lotes diários.
+description: Pesquise histórico prolongado de auditoria e valide a integridade de lotes diários com hash e certificado.
 sidebar:
   order: 2
 ---
+
+import { Aside } from '@astrojs/starlight/components';
 
 <div class="doc-route-box">
   <p class="doc-route-label">Como Acessar</p>
@@ -12,14 +14,27 @@ sidebar:
 
 ## Para que serve
 
-Mantém acesso ao histórico frio de auditoria com verificação de integridade.
+Mantém acesso ao histórico frio de auditoria para períodos mais longos, com recursos adicionais de verificação de integridade e validação por lote diário.
+
+## O que você encontra
+
+- filtros equivalentes aos logs ativos;
+- tabela de consulta histórica;
+- área de integridade do arquivo frio;
+- campo de data do lote;
+- ações para verificar integridade e abrir certificado;
+- resumo com hash, blockchain, quantidade de linhas e transação.
 
 ## Como usar
 
-1. Filtre os eventos históricos.
-2. Informe a data do lote diário.
-3. Execute a verificação de integridade.
-4. Consulte hash, certificado e status.
+1. Use os filtros para localizar eventos históricos.
+2. Revise a lista retornada.
+3. Quando precisar validar um lote diário, informe a data e execute a verificação de integridade.
+4. Consulte certificado e resumo técnico quando a análise exigir comprovação.
+
+<Aside type="tip" title="Diferença em relação aos logs ativos">
+  `Logs ativos` focam na operação recente. `Cold storage` cobre histórico prolongado e validação de integridade para cenários de compliance, auditoria ou investigação mais profunda.
+</Aside>
 
 ## Benefício de uso
 

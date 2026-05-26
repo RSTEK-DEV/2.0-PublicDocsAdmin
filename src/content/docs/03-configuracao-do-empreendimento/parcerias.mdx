@@ -1,0 +1,48 @@
+---
+title: Parcerias
+description: Compartilhe stands com outras empresas e acompanhe convites, ativações, recusas e revogações de parceria.
+sidebar:
+  order: 6
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+<div class="doc-route-box">
+  <p class="doc-route-label">Como Acessar</p>
+  <code>https://admin.standdigital.com.br/standDigital/parcerias</code>
+  <p class="doc-route-note">A visão de convites recebidos também pode ser aberta pela rota <code>https://admin.standdigital.com.br/standDigital/parcerias/minhas</code>.</p>
+</div>
+
+## Para que serve
+
+Permite que uma empresa compartilhe stands com outras empresas e acompanhe tanto convites enviados quanto convites recebidos no fluxo de parceria.
+
+## Como a tela se organiza
+
+<CardGrid stagger>
+  <Card title="Meus stands">
+    Visão da empresa proprietária do stand, usada para convidar parceiros e administrar acessos concedidos.
+  </Card>
+  <Card title="Minhas">
+    Visão da empresa convidada, usada para aceitar, recusar ou sair de parcerias já existentes.
+  </Card>
+</CardGrid>
+
+## Como usar
+
+1. Abra a tela de parcerias.
+2. Escolha a aba conforme seu papel no fluxo.
+3. Se for empresa dona, selecione o stand e envie convites por suburl.
+4. Se for empresa convidada, revise pendências e responda aos convites.
+
+## O que observar
+
+- a empresa proprietária precisa selecionar um stand antes de convidar;
+- a busca da parceira é feita pela `suburl` pública da empresa;
+- convites pendentes aparecem primeiro para facilitar tratativa;
+- uma parceria pode estar pendente, ativa, revogada ou recusada;
+- a empresa parceira mantém histórico de relações encerradas.
+
+## Benefício de uso
+
+Parcerias ajudam a ampliar operação compartilhada entre empresas sem perder rastreabilidade sobre quem convidou, quem aceitou e qual stand está sendo operado em conjunto.

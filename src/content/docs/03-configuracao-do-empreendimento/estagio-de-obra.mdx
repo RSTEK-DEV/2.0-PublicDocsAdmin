@@ -1,9 +1,11 @@
 ---
 title: Estágio de Obra
-description: Monte o cronograma do empreendimento e atualize o progresso das etapas.
+description: Monte o cronograma do empreendimento e atualize o progresso ponderado das etapas da obra.
 sidebar:
   order: 5
 ---
+
+import { Aside, Steps } from '@astrojs/starlight/components';
 
 <div class="doc-route-box">
   <p class="doc-route-label">Como Acessar</p>
@@ -12,19 +14,36 @@ sidebar:
 
 ## Para que serve
 
-Controla o cronograma e o percentual de avanço da obra.
+Controla o cronograma da obra e o percentual de avanço de cada etapa, permitindo uma leitura mais transparente da evolução física do empreendimento.
+
+## O que você encontra
+
+- definição de estágios;
+- pesos e percentuais por etapa;
+- indicador de progresso geral da obra;
+- sugestões prontas de estrutura;
+- recursos para adicionar, remover e reordenar etapas;
+- ação para remover todo o cronograma.
 
 ## Como usar
 
-1. Defina as etapas da obra.
-2. Ajuste peso e ordem de cada etapa.
-3. Informe o percentual concluído.
-4. Salve o cronograma.
+<Steps>
+1. Defina ou revise a estrutura dos estágios.
+2. Ajuste nomes, pesos e ordem das etapas.
+3. Informe os percentuais realizados em cada fase.
+4. Salve para enviar cronograma e progresso ao servidor.
+</Steps>
+
+## Como interpretar
+
+- o progresso geral não é uma média simples: ele considera pesos diferentes entre as etapas;
+- estágios sem nome ou com peso inválido bloqueiam o salvamento;
+- nada é enviado ao servidor até o clique em `Salvar`.
+
+<Aside type="tip" title="Começo mais rápido">
+  Se a obra ainda não tiver estrutura definida, vale usar uma sugestão pronta como base e depois adaptar nomes, ordem e pesos à realidade do empreendimento.
+</Aside>
 
 ## Benefício de uso
 
 Um estágio de obra bem mantido melhora transparência comercial, reforça confiança do cliente e ajuda a comunicação de evolução do projeto.
-
-## Dica de interpretação
-
-O progresso geral não é uma média simples. Ele considera pesos diferentes entre as etapas.

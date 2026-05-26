@@ -1,37 +1,54 @@
 ---
 title: Minhas Preferências
-description: Ajuste tema, fonte, ajuda flutuante e sons do painel.
+description: Ajuste aparência, fonte, ajuda flutuante e notificações para adaptar o painel ao seu ritmo de uso.
 sidebar:
-  order: 6
+  order: 8
 ---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
 
 <div class="doc-route-box">
   <p class="doc-route-label">Como Acessar</p>
   <code>https://admin.standdigital.com.br/config/minhas-preferencias</code>
+  <p class="doc-route-note">Há links contextuais com foco direto em tema, tamanho da fonte, ajuda flutuante e notificações.</p>
 </div>
 
 ## Para que serve
 
-Personaliza a forma como o usuário enxerga e utiliza a interface.
+Permite personalizar a forma como o painel é exibido e como certos apoios visuais ou sonoros aparecem no uso diário.
+
+## O que você configura
+
+- tema visual;
+- tamanho da fonte;
+- comportamento da ajuda flutuante;
+- sons e notificações do painel.
 
 ## Como usar
 
-1. Defina o tema visual.
-2. Ajuste o tamanho da fonte.
-3. Escolha como a ajuda flutuante será exibida.
-4. Ative ou desative sons.
-5. Salve as alterações nas ações correspondentes.
+1. Defina o tema mais adequado ao seu contexto de trabalho.
+2. Ajuste o tamanho da fonte para melhorar legibilidade.
+3. Escolha como a ajuda flutuante deve aparecer na interface.
+4. Ative ou desative sons de notificação conforme a rotina da equipe.
+5. Salve cada grupo de mudanças nas ações correspondentes.
+
+## O que observar
+
+<CardGrid stagger>
+  <Card title="Aparência">
+    Tema e fonte afetam conforto visual e leitura em jornadas longas de operação.
+  </Card>
+  <Card title="Ajuda flutuante">
+    Esse ajuste define o quanto os atalhos visuais de ajuda acompanham sua navegação.
+  </Card>
+  <Card title="Notificações">
+    Sons podem ser úteis em fluxos de acompanhamento, mas também podem gerar ruído em rotinas mais concentradas.
+  </Card>
+  <Card title="Persistência">
+    Algumas mudanças podem aparecer imediatamente na tela, mas ainda precisam ser salvas para permanecer no servidor.
+  </Card>
+</CardGrid>
 
 ## Benefício de uso
 
-Esses ajustes melhoram conforto de leitura, acessibilidade e produtividade no uso diário do painel, principalmente em jornadas longas de operação.
-
-## Dúvidas comuns
-
-### As mudanças afetam outros usuários
-
-Não. As preferências são pessoais.
-
-### Posso ocultar os atalhos flutuantes
-
-Sim. A própria tela permite esse ajuste.
+Esses ajustes melhoram conforto de leitura, acessibilidade e produtividade no uso diário do painel, principalmente para usuários que passam muitas horas em operação contínua.

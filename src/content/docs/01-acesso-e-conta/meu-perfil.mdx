@@ -1,34 +1,52 @@
 ---
 title: Meu Perfil
-description: Atualize dados pessoais, foto e senha do usuário autenticado.
+description: Mantenha seus dados pessoais, foto, documento e senha atualizados dentro da empresa ativa.
 sidebar:
-  order: 5
+  order: 7
 ---
+
+import { Aside, Steps } from '@astrojs/starlight/components';
 
 <div class="doc-route-box">
   <p class="doc-route-label">Como Acessar</p>
   <code>https://admin.standdigital.com.br/config/meu-perfil</code>
+  <p class="doc-route-note">Há links contextuais com foco direto em áreas como dados pessoais, foto e segurança dentro da mesma tela.</p>
 </div>
 
 ## Para que serve
 
-Permite manter o próprio cadastro atualizado dentro da empresa ativa.
-
-## Como usar
-
-1. Revise os dados pessoais.
-2. Atualize nome, documento e foto, quando necessário.
-3. Salve o perfil.
-4. Use o fluxo separado para alterar a senha.
+Permite que o próprio usuário mantenha o cadastro pessoal atualizado dentro da empresa ativa, sem depender de outro administrador para tarefas simples como revisão de nome, foto ou senha.
 
 ## O que você encontra
 
-- resumo do usuário;
+- resumo do usuário autenticado;
+- foto, nome, empresa, e-mail, função e status;
 - formulário de dados pessoais;
-- upload de foto;
-- ação de alteração de senha;
-- painel de ações relacionadas à conta.
+- área de upload ou remoção de foto;
+- ação dedicada para alteração de senha;
+- painel LGPD ligado aos dados da conta.
+
+## Como usar
+
+<Steps>
+1. Revise o resumo do perfil e confirme se o contexto da empresa ativa está correto.
+2. Atualize os dados permitidos no formulário principal.
+3. Salve o perfil sempre que concluir mudanças cadastrais.
+4. Use o bloco de foto quando precisar ajustar a identificação visual da conta.
+5. Abra o fluxo de segurança quando a necessidade for trocar a senha.
+</Steps>
+
+## O que observar
+
+- o fluxo de foto costuma ser separado do botão principal de salvar perfil;
+- a troca de senha segue um diálogo próprio;
+- alguns campos exigem consistência entre nacionalidade e documento informado;
+- status como ativo ou pendente ajudam a entender a situação do cadastro dentro do ambiente.
+
+<Aside type="tip" title="Acesso direto por contexto">
+  Se o objetivo for alterar uma área específica, os links com `tab` e `focus` ajudam a abrir diretamente os blocos de dados pessoais, foto ou segurança.
+</Aside>
 
 ## Benefício de uso
 
-Perfis atualizados melhoram identificação interna, evitam ruído em comunicação e ajudam a manter o acesso seguro sem depender de outro administrador para mudanças simples.
+Perfis atualizados melhoram identificação interna, reduzem ruído de comunicação e ajudam a manter o acesso seguro sem depender de intervenção de terceiros.

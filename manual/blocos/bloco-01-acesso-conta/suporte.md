@@ -1,40 +1,42 @@
 # Suporte
 
-URL principal: `https://admin.standdigital.com.br/suporte`
+URL principal: `https://admin.standdigital.com.br/saiba-mais/ajuda-e-suporte`
 
 Link contextual relacionado:
 
-- Pagina de suporte: `https://admin.standdigital.com.br/suporte`
+- Atalho legado: `https://admin.standdigital.com.br/suporte`
+- Area atual: `https://admin.standdigital.com.br/saiba-mais/ajuda-e-suporte`
 
 ## Objetivo da tela
 
-Centralizar informacoes de contato, recursos de ajuda e dados basicos do ambiente para atendimento.
+Centralizar recursos de ajuda, canais oficiais de suporte e atalhos de apoio ao uso do painel.
 
 ## O que existe na tela
 
-- cabecalho `Central de Suporte`;
-- nome da empresa licenciada;
-- parceiro tecnico responsavel;
-- versao atual do sistema;
-- area de novidades com navegacao entre cards;
-- card `Recursos` com acesso a documentacao e blog;
-- area de redes sociais;
-- card `Suporte Tecnico` com canais disponiveis;
+- introducao `Ajuda e suporte`;
+- card `Recursos`;
+- links para `Documentacao do Stand` e `Documentacao do Painel`;
+- atalho para `Artigos`;
+- link para `Status da plataforma`;
+- acao `Refazer tour guiado`;
+- lembrete de atalho `Ctrl + K` para ajuda contextual;
+- card de redes sociais;
+- card `Suporte Tecnico`;
 - botoes de WhatsApp, e-mail e telefone, quando configurados;
 - informacao de horario de atendimento, quando configurada.
 
 ## Como usar
 
 1. Abra a tela para localizar rapidamente o melhor canal de atendimento.
-2. Use os recursos para consultar documentacao ou conteudo complementar.
+2. Use o card `Recursos` para consultar documentacao, status e conteudo complementar.
 3. Caso precise falar com o suporte, clique no canal desejado.
-4. Se estiver reportando problema, anote a versao exibida no topo.
+4. Se precisar repetir a orientacao inicial da plataforma, use `Refazer tour guiado`.
 
 ## Como fazer
 
 ### Abrir a documentacao de apoio
 
-1. Acesse `https://admin.standdigital.com.br/suporte`.
+1. Acesse `https://admin.standdigital.com.br/saiba-mais/ajuda-e-suporte`.
 2. No card `Recursos`, clique em `Documentacao`.
 3. O link abre em nova aba.
 
@@ -50,15 +52,21 @@ Centralizar informacoes de contato, recursos de ajuda e dados basicos do ambient
 2. Clique no botao com o endereco configurado.
 3. Seu aplicativo de e-mail sera aberto com o destinatario preenchido.
 
+### Reiniciar o tour guiado
+
+1. No card `Recursos`, clique em `Refazer tour guiado`.
+2. Aguarde a confirmacao do painel.
+3. O onboarding volta a aparecer no proximo acesso.
+
 ## Perguntas e respostas
 
 ### Nem todos os canais aparecem para mim. Isso e erro?
 
 Nao necessariamente. Os canais exibidos dependem do que foi configurado para a empresa.
 
-### Onde vejo a versao do sistema para informar ao suporte?
+### A rota `/suporte` ainda funciona?
 
-No topo da tela, dentro da area `Central de Suporte`.
+Sim. Ela funciona como atalho e redireciona para a tela atual em `Saiba mais > Ajuda e suporte`.
 
 ### O item Blog e parte do painel?
 

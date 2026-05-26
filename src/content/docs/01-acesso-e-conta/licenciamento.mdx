@@ -1,0 +1,58 @@
+---
+title: Licenciamento
+description: Consulte o plano da empresa, o status operacional da conta e os módulos liberados no ambiente ativo.
+sidebar:
+  order: 5
+---
+
+import { Aside, Card, CardGrid } from '@astrojs/starlight/components';
+
+<div class="doc-route-box">
+  <p class="doc-route-label">Como Acessar</p>
+  <code>https://admin.standdigital.com.br/saiba-mais/licenciamento</code>
+</div>
+
+## Para que serve
+
+Esta tela mostra o estado atual do licenciamento da empresa. Ela ajuda a entender o que já está contratado, quais módulos estão ativos e onde existe dependência de upgrade ou ampliação de escopo.
+
+## O que a tela mostra na prática
+
+- plano associado à empresa ativa;
+- status operacional da conta;
+- quantidade de módulos ativos;
+- grade de módulos macro com indicação de disponibilidade;
+- lista ampliada de recursos;
+- atalhos para suporte e exportação em PDF.
+
+## Como interpretar
+
+<CardGrid stagger>
+  <Card title="Plano">
+    Resume o tipo de licença vinculado à empresa e serve como ponto de referência para leitura do escopo atual.
+  </Card>
+  <Card title="Status">
+    Indica a situação operacional da conta, como ambiente ativo ou fase de teste.
+  </Card>
+  <Card title="Módulos ativos">
+    Mostram quais frentes do produto estão realmente liberadas no ambiente.
+  </Card>
+  <Card title="Upgrade">
+    Sinaliza recursos existentes na plataforma, mas ainda não incluídos no plano atual.
+  </Card>
+</CardGrid>
+
+## Como usar
+
+1. Abra a tela para revisar plano, status e módulos disponíveis.
+2. Leia a grade principal para identificar rapidamente o que está ativo e o que depende de upgrade.
+3. Use `Ver todos os recursos` para abrir o detalhamento ampliado.
+4. Se for necessário discutir expansão ou liberação, acione `Falar com suporte`.
+
+<Aside type="tip" title="Quando esta tela é mais útil">
+  Ela é especialmente útil antes de abrir demanda sobre um recurso ausente, porque ajuda a separar limitação de plano de problema técnico.
+</Aside>
+
+## Benefício de uso
+
+O licenciamento reduz ambiguidade sobre o escopo contratado e ajuda a alinhar expectativa comercial, operação e suporte com o que está efetivamente liberado para a empresa.

@@ -19,7 +19,7 @@ Elevar a documentacao de analytics para um nivel mais explicativo do que o resta
 - [glossario-de-metricas.md](./glossario-de-metricas.md)
 - revisao aprofundada de:
 - [metricas-e-insights.md](./metricas-e-insights.md)
-- [compartilhamento-de-corretores.md](./compartilhamento-de-corretores.md)
+- [inteligencia-de-corretores.md](./inteligencia-de-corretores.md)
 - [analytics-overview.md](./analytics-overview.md)
 - [analytics-retencao.md](./analytics-retencao.md)
 - [analytics-paginas.md](./analytics-paginas.md)

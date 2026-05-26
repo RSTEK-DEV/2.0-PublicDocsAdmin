@@ -1,9 +1,11 @@
 ---
-title: Lista de Empreendimentos
-description: Consulte, filtre e abra os projetos cadastrados na empresa ativa.
+title: Empreendimentos
+description: Consulte, filtre e abra os projetos cadastrados na empresa ativa, com atalhos para edição, cópia de link e revisão de status.
 sidebar:
   order: 1
 ---
+
+import { Aside, Card, CardGrid } from '@astrojs/starlight/components';
 
 <div class="doc-route-box">
   <p class="doc-route-label">Como Acessar</p>
@@ -12,22 +14,47 @@ sidebar:
 
 ## Para que serve
 
-É a tela principal de consulta e entrada para edição dos projetos.
-
-## Como usar
-
-1. Use a busca por nome ou cidade.
-2. Aplique filtros por país e estado.
-3. Abra o card do projeto desejado.
-4. Copie a URL pública quando precisar compartilhar.
+Esta é a tela principal de consulta da carteira de empreendimentos. Ela funciona como ponto de entrada para edição, revisão rápida de status e acesso ao link público de cada projeto.
 
 ## O que você encontra
 
-- grid de cards dos empreendimentos;
-- selo de status;
+- campo de busca por nome ou cidade;
+- filtros por país e estado ou região;
+- botão `Novo Projeto`, quando o perfil permite criação direta;
+- grid de cards dos empreendimentos da empresa ativa;
+- selo de situação, como ativo ou inativo;
 - indicação de `TRIAL`, quando aplicável;
-- atalhos para copiar link e editar.
+- atalhos para copiar link, editar e revisar plano ou status.
+
+## Como usar
+
+1. Abra a tela para visualizar os empreendimentos da empresa ativa.
+2. Use a busca e os filtros para reduzir a lista até o grupo relevante.
+3. Clique no card do projeto ou no atalho de edição para seguir para a configuração.
+4. Use o ícone de cópia quando precisar compartilhar a URL pública.
+5. Se o perfil for master, revise plano e status diretamente pelo atalho financeiro.
+
+## O que a tela ajuda a decidir
+
+<CardGrid stagger>
+  <Card title="Qual projeto abrir">
+    Busca, filtros e cards ajudam a chegar rapidamente ao empreendimento certo sem depender de navegação longa.
+  </Card>
+  <Card title="Qual projeto já está publicado">
+    Selos de status e indicação de trial ajudam a diferenciar operação ativa, teste e ambientes ainda não estabilizados.
+  </Card>
+  <Card title="Quando compartilhar">
+    O atalho de cópia reduz atrito para distribuir o link público sem abrir a edição do projeto.
+  </Card>
+  <Card title="Quando ajustar plano ou status">
+    Para perfis master, o atalho financeiro acelera decisões administrativas ligadas ao stand.
+  </Card>
+</CardGrid>
+
+<Aside type="tip" title="Leitura rápida">
+  Se nenhum projeto aparecer, vale validar primeiro se a empresa ativa está correta ou se os filtros aplicados não eliminaram todos os resultados.
+</Aside>
 
 ## Benefício de uso
 
-Essa tela centraliza o portfólio ativo da empresa e acelera tanto a manutenção dos projetos quanto o acesso ao material público.
+Essa tela centraliza o portfólio da empresa e acelera tanto a manutenção operacional quanto o acesso ao material público de cada empreendimento.

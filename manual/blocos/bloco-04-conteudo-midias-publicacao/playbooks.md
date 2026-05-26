@@ -15,7 +15,8 @@ Criar roteiros de atendimento guiados para apoiar corretores durante o processo 
 - titulo `Playbooks`;
 - botao `Novo Playbook`;
 - painel esquerdo com lista de roteiros;
-- selo `ATIVO` no roteiro publicado como principal;
+- selo `ATIVO` no roteiro ativo dentro da categoria;
+- categoria visivel em cada playbook;
 - acoes para ativar, renomear e excluir;
 - painel direito com editor de passos;
 - botao `Preview`;
@@ -35,6 +36,7 @@ Criar roteiros de atendimento guiados para apoiar corretores durante o processo 
 3. Edite os passos no painel da direita.
 4. Salve os passos.
 5. Ative o roteiro desejado quando ele estiver pronto.
+6. Se houver outra categoria, ela pode manter seu proprio playbook ativo ao mesmo tempo.
 
 ## Como fazer
 
@@ -43,7 +45,7 @@ Criar roteiros de atendimento guiados para apoiar corretores durante o processo 
 1. Acesse `https://admin.standdigital.com.br/standDigital/playbooks/<id-do-empreendimento>`.
 2. Clique em `Novo Playbook`.
 3. Escolha `Criar em branco`.
-4. Informe nome e descricao.
+4. Informe nome, categoria e descricao.
 5. Adicione os passos do roteiro.
 6. Clique em `Salvar passos`.
 
@@ -61,6 +63,7 @@ Criar roteiros de atendimento guiados para apoiar corretores durante o processo 
 1. Na lista da esquerda, localize o roteiro desejado.
 2. Clique no botao de ativacao.
 3. Aguarde a confirmacao.
+4. Apenas outro playbook da mesma categoria sera desativado.
 
 ### Editar o fluxo por cenario
 
@@ -77,7 +80,11 @@ Sim. A tela foi feita para listar varios roteiros.
 
 ### O que significa o selo ATIVO?
 
-Ele identifica o playbook atualmente ativo para o empreendimento.
+Ele identifica o playbook atualmente ativo naquela categoria.
+
+### Posso ter mais de um playbook ativo ao mesmo tempo?
+
+Sim. Categorias diferentes podem ter playbooks ativos em paralelo.
 
 ### Existe visualizacao previa no celular?
 

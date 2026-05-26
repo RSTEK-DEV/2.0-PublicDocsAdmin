@@ -1,0 +1,72 @@
+---
+title: Campanhas
+description: Analise a performance das campanhas dos compartilhamentos e administre o cadastro operacional usado na distribuição.
+sidebar:
+  order: 9
+---
+
+import { Aside, Card, CardGrid, Steps } from '@astrojs/starlight/components';
+
+<div class="doc-route-box">
+  <p class="doc-route-label">Como Acessar</p>
+  <code>https://admin.standdigital.com.br/compartilhamentos/campanhas</code>
+  <p class="doc-route-note">A mesma tela combina análise de desempenho com ações operacionais como administrar campanhas e criar compartilhamento da empresa.</p>
+</div>
+
+## Para que serve
+
+Analisa a performance das campanhas usadas nos compartilhamentos e mantém o cadastro operacional dessas campanhas para distribuição futura.
+
+## O que a tela mostra na prática
+
+- ranking geral de campanhas no período;
+- KPIs por campanha, como acessos, leads únicos, contatos e taxa;
+- drill-down da campanha selecionada;
+- evolução temporal;
+- ranking de corretores que usaram a campanha;
+- ações para administrar campanhas e criar compartilhamento institucional.
+
+## Como interpretar
+
+- campanha com muito acesso e baixa taxa pode indicar boa distribuição com baixa qualificação;
+- campanha com pouco acesso e taxa alta pode ser eficiente, mas com alcance limitado;
+- campanha concentrada em poucos corretores pode depender demais de execução individual;
+- crescimento sustentado ao longo do período tende a indicar campanha ativa e bem distribuída.
+
+## Como usar
+
+<Steps>
+1. Ajuste o período desejado.
+2. Revise o ranking principal de campanhas.
+3. Clique em uma campanha para abrir o drill-down.
+4. Analise KPIs, evolução temporal e ranking de corretores.
+5. Use `Administrar` quando precisar manter o cadastro das campanhas.
+6. Use `Criar compartilhamento` quando a necessidade for gerar um link institucional da empresa.
+</Steps>
+
+## O que observar no cadastro operacional
+
+<CardGrid stagger>
+  <Card title="Campanhas vigentes">
+    Só campanhas válidas aparecem como opção ativa no fluxo de criação de compartilhamento.
+  </Card>
+  <Card title="Encerramento manual">
+    Campanhas encerradas saem do uso operacional, mas continuam relevantes para leitura histórica.
+  </Card>
+  <Card title="Sem campanha">
+    O sistema aceita esse uso, mas o rastreamento fica mais fraco do que com campanha estruturada.
+  </Card>
+  <Card title="Histórico preservado">
+    Excluir o cadastro não apaga automaticamente os compartilhamentos já criados com aquele nome.
+  </Card>
+</CardGrid>
+
+<Aside type="tip" title="Leitura recomendada">
+  Quando a performance da campanha parecer boa, mas os resultados finais não acompanharem, vale cruzar a análise com
+  <a href="/05-estatisticas-e-inteligencia/overview-de-compartilhamentos/">Overview de Compartilhamentos</a> e
+  <a href="/05-estatisticas-e-inteligencia/compartilhamento-de-corretores/">Inteligência de Corretores</a>.
+</Aside>
+
+## Benefício de uso
+
+Essa tela ajuda a separar desempenho de origem comercial, disciplina de rastreamento e execução individual dos corretores dentro das campanhas ativas.

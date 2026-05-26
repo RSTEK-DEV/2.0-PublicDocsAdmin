@@ -5,6 +5,8 @@ sidebar:
   order: 3
 ---
 
+import { Aside, Steps } from '@astrojs/starlight/components';
+
 <div class="doc-route-box">
   <p class="doc-route-label">Como Acessar</p>
   <code>https://admin.standdigital.com.br/config/integracoes/config/cvcrm</code>
@@ -12,20 +14,38 @@ sidebar:
 
 ## Para que serve
 
-Conduz a implantação e manutenção da integração com o CVCRM.
+Conduz a implantação e a manutenção da integração com o CVCRM, incluindo autenticação, eventos, mapeamento dos empreendimentos locais e leitura de sincronização e logs.
+
+## O que você configura
+
+- credenciais e dados da integração;
+- `Inbound Secret`, quando usado para validar webhooks;
+- eventos processados pelo sistema;
+- mapeamento entre stands locais e IDs do CVCRM;
+- sincronização inicial;
+- consulta de logs de webhook.
 
 ## Como usar
 
+<Steps>
 1. Preencha credenciais e dados da integração.
 2. Defina eventos e regras de recebimento.
 3. Mapeie stands locais com IDs do CVCRM.
-4. Salve a integração.
+4. Salve ou crie a integração.
 5. Execute sincronização inicial e acompanhe logs.
+</Steps>
+
+## O que observar
+
+- sincronização e logs dependem da integração já criada;
+- o mapeamento dos stands é necessário para que webhooks e sincronizações funcionem corretamente;
+- o bloco de webhook só aparece depois que a integração existe;
+- excluir a integração interrompe imediatamente o processamento associado a ela.
+
+<Aside type="note" title="Contexto atual">
+  No material deste projeto, o CVCRM continua documentado como integração em implantação. Isso significa que o fluxo existe e é utilizável, mas deve ser tratado com atenção de implantação e acompanhamento.
+</Aside>
 
 ## Benefício de uso
 
 Uma integração bem configurada reduz trabalho manual, melhora sincronização operacional e dá mais previsibilidade ao fluxo de dados entre sistemas.
-
-## Atenção
-
-Sincronização e logs dependem da integração já criada e salva.

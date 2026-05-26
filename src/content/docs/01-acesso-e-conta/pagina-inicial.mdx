@@ -1,9 +1,11 @@
 ---
 title: Página Inicial
-description: Use a tela inicial para validar contexto, projetos contratados e status geral da plataforma.
+description: Use a tela inicial para validar a empresa ativa, consultar a carteira contratada e acompanhar o status geral da plataforma.
 sidebar:
   order: 3
 ---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
 
 <div class="doc-route-box">
   <p class="doc-route-label">Como Acessar</p>
@@ -12,23 +14,42 @@ sidebar:
 
 ## Para que serve
 
-Funciona como recepção do painel e mostra o contexto da empresa ativa.
+Funciona como recepção do painel e resume o contexto da empresa ativa. Em vez de aprofundar a operação de um empreendimento específico, ela ajuda a confirmar rapidamente em que ambiente o usuário entrou e qual é a situação geral da conta.
 
 ## O que você encontra
 
-- dados da empresa ativa;
+- card com dados da empresa ativa;
 - quantidade de projetos contratados e ativos;
-- atalhos comerciais;
-- vídeo de demonstração;
-- status geral da plataforma.
+- referência de início do relacionamento;
+- selo visual do plano ou licença;
+- atalhos comerciais e vídeo de demonstração;
+- indicadores resumidos de status da plataforma.
 
 ## Como usar
 
-1. Confirme se a empresa ativa está correta.
-2. Verifique a quantidade de projetos ativos.
-3. Use os atalhos para contratação ou demonstração quando necessário.
-4. Consulte o status geral da plataforma antes de abrir chamados técnicos.
+1. Confirme no card lateral se a empresa ativa está correta.
+2. Revise a quantidade de projetos contratados e ativos.
+3. Use os atalhos comerciais quando a empresa precisar ampliar a carteira.
+4. Abra a demonstração se precisar revisar o posicionamento do produto.
+5. Consulte o status geral antes de abrir chamado sobre indisponibilidade.
+
+## O que observar
+
+<CardGrid stagger>
+  <Card title="Contexto ativo">
+    Nome, marca e dados do card principal ajudam a validar se a sessão está no ambiente correto.
+  </Card>
+  <Card title="Carteira contratada">
+    A diferença entre projetos contratados e ativos ajuda a entender capacidade já adquirida versus operação em andamento.
+  </Card>
+  <Card title="Plano ou licença">
+    O selo visual ajuda a interpretar rapidamente o escopo contratado pela empresa.
+  </Card>
+  <Card title="Status da plataforma">
+    O indicador é consultivo e resume a saúde geral do ambiente, sem substituir monitoramento técnico detalhado.
+  </Card>
+</CardGrid>
 
 ## Benefício de uso
 
-A página inicial ajuda a validar rapidamente o contexto operacional e reduz perda de tempo com dúvidas sobre empresa ativa, quantidade de projetos e situação geral do ambiente.
+A página inicial reduz perda de tempo com dúvidas de contexto, ajuda a validar rapidamente a situação da conta e oferece um ponto de partida claro antes da operação detalhada.

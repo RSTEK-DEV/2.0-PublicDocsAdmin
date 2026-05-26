@@ -1,9 +1,11 @@
 ---
 title: Gerenciador de Telas
-description: Organize o menu do stand e configure o conteúdo de cada item de navegação.
+description: Organize o menu do stand e configure como cada item de navegação será apresentado ao público.
 sidebar:
   order: 2
 ---
+
+import { Aside, Card, CardGrid } from '@astrojs/starlight/components';
 
 <div class="doc-route-box">
   <p class="doc-route-label">Como Acessar</p>
@@ -12,20 +14,43 @@ sidebar:
 
 ## Para que serve
 
-Define a estrutura de navegação do stand digital.
+Define a estrutura de navegação do stand digital e organiza como cada item do menu será exibido dentro da jornada pública do empreendimento.
+
+## O que você controla aqui
+
+- ordem dos itens livres do menu;
+- conteúdo de cada item configurável;
+- comportamento da tela inicial do stand;
+- leitura do item fixo `Diferenciais`, baseado em dados já cadastrados no empreendimento.
 
 ## Como usar
 
-1. Selecione um item do menu.
+1. Selecione um item do menu na coluna de navegação.
 2. Reordene os itens livres conforme a jornada desejada.
 3. Ajuste o conteúdo do item na área de configuração.
-4. Salve pela barra superior.
+4. Salve pela barra superior para publicar a nova estrutura.
 
 ## Regras importantes
 
-- `Home` e `Diferenciais` são itens fixos;
-- `Diferenciais` usa dados de localização e facilidades;
-- mudanças no menu só entram em vigor após salvar.
+<CardGrid stagger>
+  <Card title="Home">
+    É um item fixo e possui configuração própria para o ponto de entrada do stand.
+  </Card>
+  <Card title="Diferenciais">
+    Também é fixo e usa dados de localização e facilidades já cadastrados na ficha técnica.
+  </Card>
+  <Card title="Itens livres">
+    São os elementos que podem ser reorganizados e ajustados conforme a narrativa comercial do projeto.
+  </Card>
+  <Card title="Publicação">
+    Mudanças no menu só entram em vigor depois do salvamento pela barra superior.
+  </Card>
+</CardGrid>
+
+<Aside type="note" title="Importante">
+  Se o objetivo for mudar o conteúdo exibido em `Diferenciais`, o caminho não é esta tela, mas a
+  <a href="/03-configuracao-do-empreendimento/ficha-tecnica/">Ficha Técnica</a>, nas áreas de localização e facilidades.
+</Aside>
 
 ## Benefício de uso
 

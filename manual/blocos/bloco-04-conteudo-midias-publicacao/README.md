@@ -13,6 +13,7 @@ Este bloco cobre o gerenciamento de midias do empreendimento, os materiais de co
 - [Playbooks](./playbooks.md)
 - [Resumo de vendas](./resumo-de-vendas.md)
 - [Redator inteligente](./redator-inteligente.md)
+- [Analisador de imagem](./analisador-de-imagem.md)
 
 ## Resultado do bloco
 
@@ -23,11 +24,12 @@ O usuario consegue:
 - montar materiais comerciais compartilhaveis com filtros por tipo e status;
 - criar playbooks de atendimento e editar seus passos;
 - usar modelos prontos de playbook;
-- gerar resumos e textos comerciais com apoio das ferramentas beta.
+- gerar resumos e textos comerciais com apoio das ferramentas beta;
+- analisar pecas visuais com IA, contexto de canal e exportacao em PDF.
 
 ## Observacoes de uso
 
 - `Midias do empreendimento` e `Compartilhaveis` possuem fluxos proprios de upload, edicao e exclusao;
 - `Playbooks` trabalha em dois paineis: lista de roteiros e editor de passos;
-- `Resumo de vendas` e `Redator inteligente` aparecem com indicacao `Beta`;
+- `Resumo de vendas`, `Redator inteligente` e `Analisador de imagem` aparecem com indicacao `Beta`;
 - nas ferramentas beta, a geracao depende das configuracoes escolhidas pelo usuario e dos dados disponiveis do empreendimento.

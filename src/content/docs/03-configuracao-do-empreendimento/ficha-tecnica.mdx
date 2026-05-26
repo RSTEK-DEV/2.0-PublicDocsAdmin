@@ -1,39 +1,53 @@
 ---
 title: Ficha Técnica
-description: Edite os dados principais do empreendimento e prepare o stand para ativação.
+description: Edite os dados centrais do empreendimento e prepare o stand para ativação com base em requisitos mínimos.
 sidebar:
   order: 1
 ---
 
+import { Aside, Steps } from '@astrojs/starlight/components';
+
 <div class="doc-route-box">
-  <p class="doc-route-label">Rota base</p>
+  <p class="doc-route-label">Como Acessar</p>
   <code>https://admin.standdigital.com.br/standDigital/edit/&lt;id-do-empreendimento&gt;</code>
+  <p class="doc-route-note">A tela possui links contextuais com foco direto em dados gerais, ativação, localização, visual e facilidades.</p>
 </div>
 
 ## Para que serve
 
-É a base cadastral do empreendimento.
+Esta é a base cadastral do empreendimento. É nela que o projeto recebe nome, identidade visual, localização, facilidades e os elementos mínimos necessários para ativação do stand.
 
 ## O que você configura
 
 - nome e descrição;
 - slug público;
-- localização;
-- imagens e identidade visual;
-- facilidades do projeto;
-- ativação do empreendimento.
+- marcadores de lançamento e destaque;
+- localização e endereço;
+- capa, logomarca e paleta de cores;
+- facilidades e amenidades;
+- status de ativação do empreendimento.
 
 ## Como usar
 
-1. Abra a aba correspondente ao tipo de dado.
-2. Faça as alterações necessárias.
-3. Salve pela barra superior.
-4. Revise as pendências antes de ativar.
+<Steps>
+1. Abra a aba correspondente ao tipo de dado que deseja revisar.
+2. Edite os campos do empreendimento de acordo com a necessidade da operação.
+3. Use o botão `Salvar` da barra superior para gravar as alterações.
+4. Revise o bloco de ativação para entender se o projeto já cumpre os requisitos mínimos.
+</Steps>
+
+## O que observar antes de ativar
+
+- o slug não é o mesmo nome exibido ao cliente: ele funciona como identificador da URL pública;
+- localização, imagens e dados gerais costumam influenciar diretamente a liberação do projeto;
+- facilidades não são obrigatórias, mas enriquecem a apresentação comercial;
+- a tela bloqueia ativação quando ainda existem pendências mínimas.
+
+<Aside type="tip" title="Acesso contextual">
+  Se o objetivo for revisar um ponto específico, os links com `tab` e `focus` ajudam a abrir diretamente áreas como
+  dados gerais, ativação, localização, imagens ou cores do projeto.
+</Aside>
 
 ## Benefício de uso
 
 Uma ficha técnica completa melhora apresentação comercial, consistência da marca e prontidão do projeto para publicação.
-
-## Atenção
-
-O status de ativação depende do cumprimento de requisitos mínimos. O painel bloqueia a ativação quando ainda existem pendências.

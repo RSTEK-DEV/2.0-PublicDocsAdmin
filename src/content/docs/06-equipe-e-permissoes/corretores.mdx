@@ -1,25 +1,59 @@
 ---
 title: Corretores
-description: Gerencie cadastro, aprovação, status e importação em lote de corretores.
+description: Gerencie cadastro, aprovação, status, onboarding e importação em lote da rede comercial.
 sidebar:
   order: 1
 ---
 
+import { Aside, Card, CardGrid } from '@astrojs/starlight/components';
+
 <div class="doc-route-box">
   <p class="doc-route-label">Como Acessar</p>
   <code>https://admin.standdigital.com.br/brokers/users</code>
+  <p class="doc-route-note">Regras de auto cadastro, convite e CRM ficam em <code>/config/ajustes</code>, não dentro da grade de usuários.</p>
 </div>
 
 ## Para que serve
 
-Mantém o cadastro operacional dos corretores.
+Mantém o cadastro operacional dos corretores, com leitura de aprovação, status do perfil, onboarding e importação em lote.
+
+## O que você encontra
+
+- abas `Aprovados`, `Pendentes` e `Reprovados`;
+- busca por nome, e-mail, CRECI ou CPF;
+- filtros adicionais de status, onboarding, foto e aceite de dados;
+- ações para aprovar, reprovar, ativar, desativar, editar e excluir;
+- importação em lote por planilha;
+- visualização detalhada do corretor.
 
 ## Como usar
 
-1. Escolha a aba de aprovados, pendentes ou reprovados.
+1. Escolha a aba de status que deseja analisar.
 2. Localize o corretor por busca ou filtro.
-3. Use as ações da linha para aprovar, reprovar, ativar, editar ou excluir.
-4. Use `Importar planilha` para cadastros em lote.
+3. Use as ações da linha para tratar um registro individualmente.
+4. Use `Importar planilha` quando a necessidade for cadastrar vários corretores de uma vez.
+
+## O que a tela ajuda a controlar
+
+<CardGrid stagger>
+  <Card title="Qualidade cadastral">
+    Busca, filtros e detalhe do usuário ajudam a revisar consistência de dados, documentos e completude do perfil.
+  </Card>
+  <Card title="Aprovação operacional">
+    A separação entre aprovados, pendentes e reprovados reduz ambiguidade no tratamento da base comercial.
+  </Card>
+  <Card title="Onboarding">
+    A tela ajuda a enxergar quem entrou, quem ainda não concluiu jornada inicial e quem pode precisar de apoio.
+  </Card>
+  <Card title="Escala">
+    A importação em lote reduz esforço manual quando a operação precisa absorver muitos corretores de uma vez.
+  </Card>
+</CardGrid>
+
+<Aside type="tip" title="Importante">
+  Se a necessidade for mudar política de convite, auto cadastro ou CRM, o caminho correto é
+  <code>https://admin.standdigital.com.br/config/ajustes?tab=corretores</code>.
+</Aside>
 
 ## Benefício de uso
 

@@ -1,33 +1,67 @@
 ---
 title: Novo Empreendimento
-description: Cadastre um novo projeto com os dados mínimos para iniciar a configuração.
+description: Cadastre um novo projeto com identificação e localização iniciais antes de seguir para plano, status e configuração detalhada.
 sidebar:
   order: 2
 ---
 
+import { Aside, Steps } from '@astrojs/starlight/components';
+
 <div class="doc-route-box">
   <p class="doc-route-label">Como Acessar</p>
   <code>https://admin.standdigital.com.br/standDigital/new</code>
+  <p class="doc-route-note">Quando o perfil não possui permissão de criação direta, o formulário pode ser substituído por um banner comercial com atalho para contato.</p>
 </div>
 
 ## Para que serve
 
-Cria um novo empreendimento no ambiente administrativo.
+Cria um novo empreendimento com os dados mínimos necessários para que o projeto passe a existir no ambiente administrativo e siga para as próximas etapas de configuração.
+
+## O que você configura
+
+- identificador técnico do projeto;
+- nome exibido do empreendimento;
+- país;
+- estado ou região;
+- cidade;
+- plano e status do stand após a criação.
 
 ## Como usar
 
+<Steps>
 1. Informe o `ID do Projeto`.
-2. Defina o nome do projeto.
-3. Preencha país, estado e cidade.
+
+   Esse identificador é técnico e será usado pelo sistema como referência estrutural da criação.
+
+2. Preencha o nome do empreendimento.
+
+   Esse é o título que representa o projeto de forma mais legível na operação.
+
+3. Defina país, estado ou região e cidade.
+
+   Esses dados ajudam a estruturar o contexto geográfico inicial do empreendimento.
+
 4. Clique em `Criar Projeto`.
-5. Defina o plano e o status do stand.
+
+   Depois da criação, o fluxo ainda pede definição de plano e status do stand.
+
+5. Conclua plano e status.
+
+   Só depois disso o painel retorna para a listagem de empreendimentos.
+</Steps>
 
 ## Regras importantes
 
-- o ID aceita apenas letras, números, `_` e `-`;
+- o `ID do Projeto` aceita apenas letras, números, `_` e `-`;
 - o ID não é o nome exibido ao cliente;
-- o projeto não fica necessariamente ativo logo após a criação.
+- IDs repetidos não podem ser reutilizados;
+- o projeto não fica necessariamente ativo logo após a criação;
+- a criação direta costuma ser restrita a perfis com permissão mais alta, como master.
+
+<Aside type="note" title="Quando o formulário não aparece">
+  Se o usuário não tiver permissão para criar projeto diretamente, a própria tela orienta o fluxo comercial de solicitação em vez do cadastro operacional.
+</Aside>
 
 ## Benefício de uso
 
-Um cadastro inicial bem feito acelera todas as etapas seguintes de configuração e evita correções estruturais depois que o projeto já começou a ser publicado ou distribuído.
+Um cadastro inicial bem feito acelera todas as etapas seguintes de configuração e reduz correções estruturais depois que o projeto já começou a ser operado ou publicado.

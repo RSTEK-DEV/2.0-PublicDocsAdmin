@@ -1,9 +1,11 @@
 ---
 title: Unidades
-description: Cadastre a estrutura comercial do empreendimento e mantenha unidades e pagamentos atualizados.
+description: Cadastre a estrutura comercial do empreendimento e mantenha unidades, status, preços e pagamentos atualizados.
 sidebar:
   order: 4
 ---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
 
 <div class="doc-route-box">
   <p class="doc-route-label">Como Acessar</p>
@@ -12,22 +14,45 @@ sidebar:
 
 ## Para que serve
 
-Gerencia blocos, tipologias, colunas, unidades e pagamentos.
+Gerencia a estrutura comercial do empreendimento: blocos, tipologias, colunas, unidades individuais e regras de pagamento.
+
+## O que você configura
+
+- estrutura de blocos;
+- tipologias e colunas;
+- cadastro individual ou em lote de unidades;
+- preço e status em massa;
+- regras e séries de pagamento.
 
 ## Como usar
 
-1. Configure primeiro a estrutura base.
-2. Cadastre unidades individualmente ou em lote.
-3. Use seleção em massa para preço e status.
-4. Ajuste pagamentos no painel lateral.
+1. Configure primeiro a estrutura base do empreendimento.
+2. Selecione o bloco que deseja revisar.
+3. Cadastre unidades individualmente ou em lote.
+4. Use seleção em massa quando precisar ajustar preço ou status de várias unidades.
+5. Revise pagamentos pelo painel lateral.
 
-## O que isso melhora
+## O que essa tela melhora
 
-- organização comercial do estoque;
-- consistência na oferta das unidades;
-- agilidade para atualizações em massa;
-- controle mais claro de preços e disponibilidade.
+<CardGrid stagger>
+  <Card title="Estoque comercial">
+    Ajuda a manter visão organizada das unidades disponíveis, reservadas, vendidas ou suspensas.
+  </Card>
+  <Card title="Agilidade operacional">
+    Ações em lote reduzem tempo gasto com ajustes repetitivos em preço e status.
+  </Card>
+  <Card title="Consistência estrutural">
+    Blocos, tipologias e colunas bem definidos evitam retrabalho em cadastros futuros.
+  </Card>
+  <Card title="Pagamento">
+    Regras centralizadas ajudam a manter coerência comercial no que é apresentado ao mercado.
+  </Card>
+</CardGrid>
 
 ## Boa prática
 
-Evite criar unidades antes de definir blocos e tipologias. Isso reduz retrabalho estrutural.
+Evite criar unidades antes de definir blocos e tipologias. Isso reduz retrabalho estrutural e melhora a consistência do cadastro desde o início.
+
+## Benefício de uso
+
+Uma estrutura de unidades bem mantida melhora clareza comercial, acelera atualização de estoque e dá mais previsibilidade para operação e atendimento.

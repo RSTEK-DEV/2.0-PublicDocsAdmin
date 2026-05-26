@@ -1,0 +1,77 @@
+---
+title: Compartilhamento da Empresa
+description: Gere links institucionais rastreados com campanha, modo de experiência, vídeo de abertura, QR Code e restrições operacionais.
+sidebar:
+  order: 10
+---
+
+import { Aside, Card, CardGrid, Steps } from '@astrojs/starlight/components';
+
+<div class="doc-route-box">
+  <p class="doc-route-label">Como Acessar</p>
+  <code>Campanhas &gt; Criar compartilhamento</code>
+  <p class="doc-route-note">Este fluxo faz parte do módulo de campanhas e gera links institucionais em nome da empresa, sem associar o compartilhamento a um corretor humano específico.</p>
+</div>
+
+## Para que serve
+
+Gera um link rastreado em nome da empresa para distribuição institucional, com controle de campanha, experiência, vídeo, prazo e formato de entrega.
+
+## O que você configura
+
+- campanha ou `Sem campanha`;
+- um ou vários empreendimentos;
+- modo `Navegação livre` ou `Apresentação guiada`;
+- telas visíveis no modo livre;
+- sequência de telas no modo guiado;
+- canal de distribuição;
+- expiração;
+- limite máximo de acessos;
+- vídeo de abertura opcional.
+
+## Como usar
+
+<Steps>
+1. Abra `Campanhas`.
+2. Clique em `Criar compartilhamento`.
+3. Avance pelas etapas do wizard.
+4. Revise as configurações escolhidas.
+5. Gere o link final.
+6. Copie a URL curta ou abra o QR Code para distribuição.
+</Steps>
+
+## O que muda entre os modos de experiência
+
+<CardGrid stagger>
+  <Card title="Navegação livre">
+    O visitante circula pelas telas liberadas no próprio ritmo. É útil quando a intenção é dar autonomia de exploração.
+  </Card>
+  <Card title="Apresentação guiada">
+    O visitante percorre um fluxo linear com ordem definida. É útil quando a empresa quer conduzir a narrativa comercial.
+  </Card>
+</CardGrid>
+
+## Regras operacionais
+
+- no modo único, é obrigatório selecionar um empreendimento;
+- no modo múltiplos, é obrigatório selecionar pelo menos 2 empreendimentos;
+- no modo guiado, é obrigatório definir a sequência de telas;
+- quando houver `Max. acessos`, o valor mínimo aceito é 3;
+- o vídeo não pode estar com erro ou processamento pendente no momento da conclusão;
+- o link final usa um identificador curto próprio para distribuição.
+
+## O que observar sobre o vídeo de abertura
+
+- o vídeo é opcional;
+- sem vídeo, o visitante entra direto no stand;
+- a interface recomenda vídeos curtos;
+- o upload passa por estados como preparo, envio, processamento e pronto;
+- o fluxo não conclui enquanto o vídeo ainda estiver sendo enviado ou processado.
+
+<Aside type="note" title="Quando este fluxo é mais útil">
+  Este compartilhamento é especialmente útil quando a distribuição precisa representar a empresa como origem institucional, e não a atuação individual de um corretor.
+</Aside>
+
+## Benefício de uso
+
+Esse fluxo dá mais controle sobre narrativa, validade, rastreamento e distribuição institucional do empreendimento.

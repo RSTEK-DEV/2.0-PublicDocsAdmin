@@ -1,6 +1,6 @@
 ---
 title: Seleção de Empresa
-description: Escolha qual empresa ficará ativa antes de entrar na operação.
+description: Escolha a empresa que ficará ativa na sessão antes de continuar a operação administrativa.
 sidebar:
   order: 2
 ---
@@ -13,38 +13,48 @@ sidebar:
 
 ## Para que serve
 
-Define o contexto ativo do usuário quando ele possui acesso a mais de uma empresa.
+Define qual empresa ficará ativa no ambiente atual do usuário. É essa escolha que determina quais projetos, configurações, usuários e permissões serão carregados em seguida.
 
 ## Quando essa tela aparece
 
-- logo após o login, quando o usuário tem mais de uma empresa vinculada;
-- ao usar o botão de alteração de empresa disponível na barra superior do painel.
+- logo após o login, quando a conta possui acesso a mais de uma empresa;
+- quando o usuário aciona a troca de empresa pela barra superior;
+- em cenários em que o painel precisa recarregar explicitamente o contexto ativo.
+
+## O que você encontra
+
+- lista de empresas disponíveis para a conta;
+- identificação visual do perfil em cada empresa;
+- ação para recarregar a lista;
+- estados de carregamento e seleção automática;
+- aviso quando não existe empresa liberada para o usuário;
+- botão para voltar ao login quando o acesso não puder prosseguir.
 
 ## Como usar
 
-1. Aguarde o carregamento da lista.
-2. Confira o nome da empresa e o selo do seu perfil.
+1. Aguarde o carregamento da lista vinculada ao usuário.
+2. Confira o nome da empresa e o selo do perfil disponível naquele ambiente.
 3. Clique na empresa desejada.
-4. Aguarde o recarregamento do contexto antes de continuar a operação.
+4. Aguarde o recarregamento completo do contexto antes de continuar a operação.
 
 ## O que isso evita
 
-Selecionar a empresa correta reduz risco de editar projetos, usuários ou configurações no ambiente errado.
+Selecionar a empresa correta reduz o risco de editar projetos, usuários ou configurações no ambiente errado, especialmente em grupos que operam mais de uma marca, incorporadora ou carteira.
 
 ## Benefício de uso
 
-Esse passo garante mais controle operacional para grupos com múltiplas empresas ou perfis diferentes.
+Esse passo garante mais controle operacional para estruturas multiempresa e evita erros de contexto logo no início da sessão.
 
 ## Dúvidas comuns
 
 ### Por que essa tela aparece depois do login
 
-Porque o painel precisa saber qual empresa carregar quando o mesmo usuário opera mais de um ambiente.
+Porque o painel precisa saber qual empresa carregar quando a mesma conta opera mais de um ambiente.
 
-### Posso trocar de empresa sem sair do painel
+### O que acontece quando existe apenas uma empresa
 
-Sim. Quando esse recurso estiver disponível para o seu perfil, a troca também pode ser feita pelo botão da barra superior.
+O sistema pode selecionar automaticamente essa empresa para acelerar a entrada.
 
-### O que fazer se nenhuma empresa aparecer
+### O que fazer se nenhuma empresa estiver disponível
 
-É necessário solicitar a liberação de acesso a um administrador.
+É necessário solicitar a um administrador a liberação de acesso a pelo menos uma empresa.

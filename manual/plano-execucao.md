@@ -121,7 +121,7 @@ Paginas executadas:
 
 - `Resumo do bloco` -> [blocos/bloco-05-inteligencia-analytics/README.md](./blocos/bloco-05-inteligencia-analytics/README.md)
 - `Metricas e insights` -> [blocos/bloco-05-inteligencia-analytics/metricas-e-insights.md](./blocos/bloco-05-inteligencia-analytics/metricas-e-insights.md)
-- `Compartilhamento de corretores` -> [blocos/bloco-05-inteligencia-analytics/compartilhamento-de-corretores.md](./blocos/bloco-05-inteligencia-analytics/inteligencia-de-corretores.md)
+- `Inteligencia de corretores` -> [blocos/bloco-05-inteligencia-analytics/inteligencia-de-corretores.md](./blocos/bloco-05-inteligencia-analytics/inteligencia-de-corretores.md)
 - `Analytics overview` -> [blocos/bloco-05-inteligencia-analytics/analytics-overview.md](./blocos/bloco-05-inteligencia-analytics/analytics-overview.md)
 - `Analytics retencao` -> [blocos/bloco-05-inteligencia-analytics/analytics-retencao.md](./blocos/bloco-05-inteligencia-analytics/analytics-retencao.md)
 - `Analytics paginas` -> [blocos/bloco-05-inteligencia-analytics/analytics-paginas.md](./blocos/bloco-05-inteligencia-analytics/analytics-paginas.md)

@@ -5,30 +5,54 @@ sidebar:
   order: 1
 ---
 
+import { Aside, Card, CardGrid } from '@astrojs/starlight/components';
+
 <div class="doc-route-box">
   <p class="doc-route-label">Como Acessar</p>
   <code>https://admin.standdigital.com.br/config/ajustes</code>
+  <p class="doc-route-note">A tela possui links contextuais com `tab` e `focus` para empresa, corretores, avançado e publicação.</p>
 </div>
 
 ## Para que serve
 
-É a tela principal de parametrização institucional da empresa.
+É a tela principal de parametrização institucional da empresa. Aqui ficam centralizados os ajustes que definem identidade, operação de corretores, publicação e comportamentos mais avançados do ambiente.
 
 ## O que você configura
 
-- identidade e contatos da empresa;
-- regras de cadastro e convite de corretores;
-- CRM;
-- PWA, SEO e analytics;
-- modo de publicação do stand.
+- identidade, contatos e visual da empresa;
+- regras de cadastro, convite e CRM de corretores;
+- PWA, SEO, Open Graph e analytics;
+- modo de publicação do stand;
+- publicação manual do catálogo.
 
 ## Como usar
 
-1. Escolha a aba adequada.
+1. Escolha a aba adequada ao tipo de configuração.
 2. Edite os campos necessários.
-3. Revise impactos de publicação e cadastro.
-4. Salve a aba atual.
+3. Revise impactos da alteração, principalmente em corretores e publicação.
+4. Salve a configuração da aba atual.
+
+## O que observar
+
+<CardGrid stagger>
+  <Card title="Empresa">
+    Concentra identidade, contatos, visual e dados institucionais que sustentam a presença da marca.
+  </Card>
+  <Card title="Corretores">
+    Define como a rede comercial entra no ambiente, por cadastro aberto, convite e integração com CRM.
+  </Card>
+  <Card title="Avançado">
+    Reúne ajustes técnicos que influenciam apresentação, indexação e rastreamento.
+  </Card>
+  <Card title="Publicação">
+    Controla o modo do stand e permite disparar publicação manual quando necessário.
+  </Card>
+</CardGrid>
+
+<Aside type="tip" title="Importante">
+  Publicar agora não significa propagação imediata em todos os pontos. Dependendo do cache e do processo de distribuição, a atualização pode levar alguns minutos.
+</Aside>
 
 ## Benefício de uso
 
-Essa central reduz dispersão de configuração e facilita padronização operacional entre empresa, comercial e marketing.
+Essa central reduz dispersão de configuração e facilita padronização operacional entre empresa, comercial, marketing e tecnologia.

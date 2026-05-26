@@ -1,9 +1,11 @@
 ---
-title: Ajustes Avançados do Empreendimento
-description: Acesse configurações administrativas do projeto e a área de ações irreversíveis.
+title: Configuração do Empreendimento
+description: Acesse ajustes administrativos do projeto e trate ações irreversíveis em uma área separada do fluxo operacional comum.
 sidebar:
   order: 3
 ---
+
+import { Aside } from '@astrojs/starlight/components';
 
 <div class="doc-route-box">
   <p class="doc-route-label">Como Acessar</p>
@@ -12,18 +14,32 @@ sidebar:
 
 ## Para que serve
 
-Concentra ajustes administrativos avançados do empreendimento e a área de exclusão.
+Concentra configurações administrativas do empreendimento e a área reservada para ações definitivas, como exclusão do stand.
+
+## O que você encontra
+
+- área de carregamento ou erro do projeto;
+- bloco de configurações avançadas, quando habilitado no ambiente;
+- `Área de Perigo`;
+- botão `Excluir Empreendimento`;
+- diálogo de confirmação com digitação obrigatória de `EXCLUIR`.
 
 ## Como usar
 
-1. Revise a tela apenas quando precisar de manutenção administrativa específica.
-2. Use a área avançada se ela estiver habilitada no ambiente.
-3. Acesse a `Área de Perigo` somente em operações definitivas.
+1. Abra a tela apenas quando precisar de manutenção administrativa específica.
+2. Revise a seção avançada quando ela estiver disponível no seu ambiente.
+3. Use a `Área de Perigo` somente em operações realmente definitivas.
+
+## O que observar
+
+- parte do conteúdo avançado pode não aparecer em todos os ambientes;
+- a exclusão é tratada como permanente e irreversível;
+- a própria tela exige confirmação textual para reduzir risco de acionamento acidental.
+
+<Aside type="danger" title="Atenção">
+  A exclusão do empreendimento não pode ser desfeita. Use essa ação apenas quando houver segurança operacional e aprovação adequada para encerramento definitivo do stand.
+</Aside>
 
 ## Benefício de uso
 
-Centralizar configurações sensíveis em uma tela separada reduz risco de exclusões acidentais e preserva o fluxo operacional principal para o trabalho do dia a dia.
-
-## Atenção
-
-A exclusão do empreendimento é permanente e exige confirmação explícita com a palavra `EXCLUIR`.
+Centralizar configurações sensíveis em uma área separada reduz o risco de erro e preserva o fluxo operacional principal para o trabalho do dia a dia.

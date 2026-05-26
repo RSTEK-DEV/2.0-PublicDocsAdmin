@@ -1,6 +1,12 @@
 # Inteligencia de corretores
 
-URL principal: `https://admin.standdigital.com.br/corretores`
+URL principal: `https://admin.standdigital.com.br/compartilhamentos/corretores`
+
+Fluxos relacionados:
+
+- overview consolidado de compartilhamentos;
+- campanhas por origem comercial;
+- detalhe individual do corretor.
 
 ## Objetivo da tela
 
@@ -37,7 +43,8 @@ Analisar o desempenho comercial dos corretores com ranking, comparacoes e recome
 - a analise individual mostra se um corretor gera muito volume, muita qualidade ou os dois;
 - o grafico de distribuicao cruza volume de acessos com taxa de contato;
 - o funil mostra quanto do interesse gerado pelos corretores avanca ate virar contato;
-- o mapa de calor mostra quando a atividade comercial acontece com mais intensidade.
+- o mapa de calor mostra quando a atividade comercial acontece com mais intensidade;
+- esta tela explica desempenho por pessoa, enquanto `Campanhas` explica desempenho por origem comercial.
 
 ## Como interpretar a tela
 
@@ -59,7 +66,7 @@ Analisar o desempenho comercial dos corretores com ranking, comparacoes e recome
 
 ### Ver o ranking dos corretores
 
-1. Acesse `https://admin.standdigital.com.br/corretores`.
+1. Acesse `https://admin.standdigital.com.br/compartilhamentos/corretores`.
 2. Consulte o card `Top 10 Corretores`.
 3. Se necessario, altere a ordenacao.
 
@@ -79,6 +86,10 @@ Analisar o desempenho comercial dos corretores com ranking, comparacoes e recome
 ### Posso comparar corretores entre si?
 
 Sim. O ranking e o grafico de distribuicao foram feitos para isso.
+
+### Essa tela substitui campanhas?
+
+Nao. Aqui a leitura e por corretor. Em `Campanhas`, a leitura e por origem comercial e pelo conjunto de compartilhamentos associados a cada campanha.
 
 ### O que vale mais: volume ou taxa?
 

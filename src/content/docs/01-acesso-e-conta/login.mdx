@@ -1,9 +1,11 @@
 ---
 title: Login
-description: Acesse o painel administrativo com e-mail, senha e verificação de segurança.
+description: Acesse o painel administrativo com e-mail, senha e verificação de segurança antes de seguir para a empresa ativa.
 sidebar:
   order: 1
 ---
+
+import { Aside } from '@astrojs/starlight/components';
 
 <div class="doc-route-box">
   <p class="doc-route-label">Como Acessar</p>
@@ -12,22 +14,35 @@ sidebar:
 
 ## Para que serve
 
-Permite a entrada do usuário administrativo no painel.
+Esta é a porta de entrada do ambiente administrativo. O login confirma a identidade do usuário antes de carregar as empresas e permissões vinculadas à conta.
 
 ## O que você encontra
 
 - campo de e-mail;
 - campo de senha;
 - verificação de segurança;
-- link para recuperação de senha;
-- botão `Entrar`.
+- link `Esqueci minha senha`;
+- botão `Entrar`;
+- versão atual do sistema.
 
 ## Como usar
 
 1. Informe o e-mail cadastrado.
-2. Digite a senha.
+2. Digite a senha correspondente.
 3. Conclua a verificação de segurança.
 4. Clique em `Entrar`.
+5. Depois da autenticação, siga para a empresa ativa ou para a tela de seleção de empresa.
+
+## O que observar
+
+- o botão de entrada costuma permanecer desabilitado quando falta um campo obrigatório ou a verificação de segurança;
+- erro de autenticação normalmente significa combinação incorreta entre e-mail e senha;
+- quando a conta está vinculada a mais de uma empresa, o login não abre a operação diretamente: ele primeiro exige definição de contexto.
+
+<Aside type="tip" title="Próximo passo">
+  Se a conta tiver acesso a mais de uma empresa, a sequência natural após o login é
+  <a href="/01-acesso-e-conta/selecao-de-empresa/">Seleção de empresa</a>.
+</Aside>
 
 ## Benefício de uso
 
@@ -35,10 +50,14 @@ O login protege o ambiente administrativo e garante que cada usuário entre apen
 
 ## Dúvidas comuns
 
-### O botão está desabilitado
+### O botão Entrar está desabilitado
 
-Geralmente falta preencher um campo obrigatório ou concluir a verificação de segurança.
+Normalmente falta preencher e-mail, senha ou concluir a verificação de segurança.
 
-### Quem pode acessar essa área
+### O que acontece se eu errar a senha
 
-Usuários administrativos e equipe interna autorizada no painel.
+O painel informa falha de autenticação e não carrega o ambiente.
+
+### Posso entrar sem a verificação de segurança
+
+Não. Ela faz parte do processo normal de autenticação dessa tela.

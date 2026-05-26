@@ -1,56 +1,52 @@
 ---
 title: Auditoria e Suporte Operacional
-description: Consulte trilhas de auditoria, simulação, recuperação de acesso e telas auxiliares.
+description: Consulte trilhas de auditoria, simulação, recuperação de acesso e telas auxiliares para investigação e suporte.
 sidebar:
   order: 8
 ---
 
 import { Card, CardGrid } from '@astrojs/starlight/components';
 
-Esta seção reúne recursos de rastreabilidade, apoio operacional e tratamento de exceções.
+Esta seção reúne recursos usados quando a operação precisa investigar comportamento, validar experiência, recuperar acesso ou tratar cenários fora do fluxo mais comum.
 
-## Você vai aprender
+## O que você resolve aqui
 
-- como investigar eventos recentes;
-- como consultar histórico frio com verificação de integridade;
-- como usar a simulação do stand;
-- como agir em casos de perda de acesso ou rota inválida.
+- investigar eventos recentes e histórico prolongado;
+- validar experiência do stand em ambiente controlado;
+- recuperar acesso ao painel;
+- entender bloqueios de permissão;
+- orientar o usuário quando a rota acessada não existe.
 
 ## Benefício para a operação
 
-Esses recursos dão mais segurança para suporte, auditoria, troubleshooting e manutenção contínua do ambiente.
+Esses recursos dão mais segurança para troubleshooting, auditoria, suporte interno e validação antes de mudanças mais sensíveis.
 
 ## Páginas desta seção
 
 <CardGrid stagger>
   <Card title="Auditoria de logs ativos">
-    Eventos recentes para suporte e investigação.
+    Consulte eventos recentes para suporte, verificação operacional e investigação rápida.
     <br />
     <a href="/08-auditoria-e-suporte/auditoria-logs-ativos/">Abrir página →</a>
   </Card>
   <Card title="Auditoria em cold storage">
-    Histórico prolongado e integridade dos lotes.
+    Acesse histórico de prazo maior e verificação de integridade dos lotes.
     <br />
     <a href="/08-auditoria-e-suporte/auditoria-cold-storage/">Abrir página →</a>
   </Card>
   <Card title="Simulador">
-    Visualização controlada do stand.
+    Valide a experiência do stand em diferentes molduras e contextos controlados.
     <br />
     <a href="/08-auditoria-e-suporte/simulador/">Abrir página →</a>
   </Card>
   <Card title="Recuperar senha">
-    Redefinição de acesso ao painel.
+    Reestabeleça o acesso quando a credencial não puder mais ser usada normalmente.
     <br />
     <a href="/08-auditoria-e-suporte/recuperar-senha/">Abrir página →</a>
   </Card>
   <Card title="Acesso negado">
-    Entenda bloqueios por permissão.
+    Entenda o que fazer quando uma rota está bloqueada por permissão ou contexto.
     <br />
     <a href="/08-auditoria-e-suporte/acesso-negado/">Abrir página →</a>
-  </Card>
-  <Card title="Página não encontrada">
-    Tratamento de rotas inválidas.
-    <br />
-    <a href="/08-auditoria-e-suporte/pagina-nao-encontrada/">Abrir página →</a>
   </Card>
 </CardGrid>

@@ -1,6 +1,6 @@
 ---
 title: Recuperar Senha
-description: Solicite o e-mail de redefinição de senha quando o acesso for perdido.
+description: Solicite o e-mail de redefinição de senha quando o acesso for perdido ou a credencial não puder mais ser usada.
 sidebar:
   order: 4
 ---
@@ -12,18 +12,21 @@ sidebar:
 
 ## Para que serve
 
-Permite solicitar um novo fluxo de redefinição de senha.
+Permite solicitar um novo fluxo de redefinição de senha sem depender de intervenção manual da equipe de suporte para um problema comum de acesso.
 
 ## Como usar
 
 1. Informe o e-mail cadastrado.
 2. Clique em `Recuperar Senha`.
 3. Verifique a caixa de entrada.
+4. Siga o link recebido para redefinir a credencial.
+
+## O que observar
+
+- a tela aplica um intervalo de segurança entre solicitações;
+- o botão pode ficar desabilitado quando o e-mail é inválido ou o cooldown ainda está ativo;
+- depois do envio bem-sucedido, o fluxo pode redirecionar de volta para o login.
 
 ## Benefício de uso
 
-Reduz dependência de suporte para um problema comum de acesso.
-
-## Atenção
-
-Há um intervalo de segurança entre solicitações.
+Reduz dependência de suporte para um problema recorrente e acelera retomada do acesso ao painel.
