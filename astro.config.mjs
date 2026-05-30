@@ -56,22 +56,53 @@ export default defineConfig({
 				{
 					label: 'Empreendimentos',
 					collapsed: true,
-					autogenerate: { directory: '02-empreendimentos' },
+					items: [
+						{ label: 'Empreendimentos', slug: '02-empreendimentos/empreendimentos' },
+						{ label: 'Novo Empreendimento', slug: '02-empreendimentos/novo-empreendimento' },
+						{ label: 'Contratar Projeto', slug: '02-empreendimentos/contratar-projeto' },
+						
+						{
+							label: 'Configuração',
+							collapsed: true,
+							autogenerate: { directory: '02-empreendimentos/Configuração' },
+						},
+						{
+							label: 'Comercial e Marketing',
+							collapsed: true,
+							autogenerate: { directory: '02-empreendimentos/conteudo-comercial' },
+						},
+					],
 				},
 				{
-					label: 'Configuração do Empreendimento',
+					label: 'Inteligência de Negócio',
 					collapsed: true,
-					autogenerate: { directory: '03-configuracao-do-empreendimento' },
-				},
-				{
-					label: 'Conteúdo Comercial',
-					collapsed: true,
-					autogenerate: { directory: '04-conteudo-comercial' },
+					items: [
+						{ label: 'Resumo de Vendas', slug: '04-inteligencia-negocio/resumo-de-vendas' },
+						{ label: 'Redator Inteligente', slug: '04-inteligencia-negocio/redator-inteligente' },
+						{ label: 'Analisador de Imagem', slug: '04-inteligencia-negocio/analisador-de-imagem' },
+					],
 				},
 				{
 					label: 'Estatísticas e Inteligência',
 					collapsed: true,
-					autogenerate: { directory: '05-estatisticas-e-inteligencia' },
+					items: [
+						{ label: 'Como Usar Estatísticas', slug: '05-estatisticas-e-inteligencia/como-usar-estatisticas' },
+						{ label: 'Funil Comercial Imobiliário', slug: '05-estatisticas-e-inteligencia/leitura-do-funil-comercial-imobiliario' },
+						{ label: 'Decisões por Fase do Lançamento', slug: '05-estatisticas-e-inteligencia/decisoes-por-fase-do-lancamento' },
+						{ label: 'Diagnóstico de Canais e Campanhas', slug: '05-estatisticas-e-inteligencia/diagnostico-de-canais-e-campanhas' },
+						{ label: 'Glossário de Métricas', slug: '05-estatisticas-e-inteligencia/glossario-de-metricas' },
+						{ label: 'Métricas e Insights', slug: '05-estatisticas-e-inteligencia/metricas-e-insights' },
+						{
+							label: 'Compartilhamento e Campanhas',
+							collapsed: true,
+							autogenerate: { directory: '05-estatisticas-e-inteligencia/compartilhamento-e-campanhas' },
+						},
+						{
+							label: 'Analytics',
+							collapsed: true,
+							autogenerate: { directory: '05-estatisticas-e-inteligencia/analytics' },
+						},
+					],
 				},
 				{
 					label: 'Equipe e Permissões',
