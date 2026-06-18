@@ -60,7 +60,8 @@ export default defineConfig({
 						{ label: 'Empreendimentos', slug: '02-empreendimentos/empreendimentos' },
 						{ label: 'Novo Empreendimento', slug: '02-empreendimentos/novo-empreendimento' },
 						{ label: 'Contratar Projeto', slug: '02-empreendimentos/contratar-projeto' },
-						
+						{ label: 'Situação do Empreendimento', slug: '02-empreendimentos/situacao-do-empreendimento' },
+
 						{
 							label: 'Configuração',
 							collapsed: true,
