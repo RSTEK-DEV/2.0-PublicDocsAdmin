@@ -1,0 +1,81 @@
+---
+title: Analytics de Jornada
+description: Veja quem está no stand agora, os caminhos mais percorridos e onde a navegação avança ou some.
+sidebar:
+  order: 7
+---
+
+import { Aside, Card, CardGrid, Steps } from '@astrojs/starlight/components';
+
+<div class="doc-route-box">
+  <p class="doc-route-label">Como Acessar</p>
+  <code>https://admin.standdigital.com.br/analytics/jornada</code>
+</div>
+
+<Aside type="note" title="Fonte de dados">
+  Esta tela usa exclusivamente a leitura em **Tempo real**, sem seletor de fonte — os números aparecem sem atraso e consideram todos os visitantes.
+</Aside>
+
+## Para que serve
+
+Enquanto outras telas mostram totais e médias, a Jornada mostra o caminho — para onde o visitante vai depois de entrar, em que ordem, e em qual etapa a navegação se perde. É a leitura mais próxima de "acompanhar alguém navegando pelo stand em tempo real".
+
+## O que a tela mostra na prática
+
+- visitantes ativos no stand agora (últimos minutos), com atualização automática;
+- visitantes ativos numa área específica, quando um filtro de página ou empreendimento está aplicado;
+- caminhos mais percorridos — sequências de páginas que os visitantes seguiram na mesma sessão;
+- funil de navegação — quantas sessões avançam para cada sub-página depois de uma página base, quando há filtro aplicado;
+- páginas de entrada — por onde as sessões começam;
+- páginas de saída — por onde as sessões terminam;
+- origens de tráfego — de quais sites ou canais os visitantes chegaram (ou "Direto", quando não há origem identificada).
+
+**O que cada bloco representa:**
+
+- **Visitantes ao vivo** — pulso do stand no momento, útil durante uma divulgação, evento ou pico de mídia;
+- **Caminhos mais percorridos** — mostra a rota real que a maioria segue, não a rota que o menu sugere;
+- **Funil de navegação** — aparece ao filtrar uma página específica (por exemplo, a página de um empreendimento) e mostra quanto da audiência avança para cada sub-página (galeria, plantas, contato etc.), com o percentual de conversão em relação a quem chegou à página base;
+- **Páginas de entrada e saída** — mostram onde a jornada começa e onde ela termina, ajudando a identificar se a saída acontece num ponto natural (como um formulário) ou num ponto de perda;
+- **Origens de tráfego** — mostram se o visitante veio de busca, rede social, link direto ou outro site.
+
+## Como usar
+
+<Steps>
+1. Ajuste o período e, se quiser aprofundar em um empreendimento ou página específica, aplique o filtro.
+2. Acompanhe o número de visitantes ao vivo para saber o que está acontecendo agora.
+3. Veja os caminhos mais percorridos para entender a rota real da audiência.
+4. Com um filtro de página aplicado, revise o funil de navegação para ver onde a jornada avança ou perde força.
+5. Cheque páginas de entrada e saída e as origens de tráfego para fechar o quadro.
+</Steps>
+
+## Como interpretar
+
+- um caminho concentrado em poucas rotas sugere jornada bem guiada pelo menu e pelos CTAs;
+- caminhos muito dispersos podem indicar audiência explorando sem direção clara, ou menu pouco intuitivo;
+- funil com queda forte logo na primeira sub-página aponta perda de interesse cedo, mesmo com boa entrada;
+- páginas de saída que coincidem com etapas de decisão (como formulário de contato) costumam ser positivas; saídas em páginas iniciais pedem atenção.
+
+<Aside type="tip" title="Leitura prática">
+  Combine o funil de navegação com a página de Páginas: se uma página está entre as mais visitadas mas raramente aparece nos caminhos seguintes do funil, pode ser um ponto de saída disfarçado de sucesso.
+</Aside>
+
+## Aplicações práticas
+
+<CardGrid stagger>
+  <Card title="Acompanhar campanha ao vivo">
+    Use visitantes ao vivo para ver o efeito imediato de um disparo de mídia, e-mail ou evento.
+  </Card>
+  <Card title="Revisar ordem do menu">
+    Caminhos mais percorridos mostram a rota real, ajudando a decidir o que priorizar na navegação.
+  </Card>
+  <Card title="Encontrar gargalos">
+    O funil de navegação aponta a etapa exata onde a audiência para de avançar.
+  </Card>
+  <Card title="Avaliar canais de entrada">
+    Origens de tráfego ajudam a entender de onde vem a audiência mais engajada.
+  </Card>
+</CardGrid>
+
+## Benefício de uso
+
+Ajuda a enxergar o comportamento real de navegação, não apenas totais — o que facilita encontrar gargalos específicos e acompanhar o stand em tempo real durante ações de divulgação.

@@ -1,0 +1,77 @@
+---
+title: Analytics de Campanhas
+description: Descubra de quais campanhas, canais e fontes vêm os visitantes do stand.
+sidebar:
+  order: 8
+---
+
+import { Aside, Card, CardGrid, Steps } from '@astrojs/starlight/components';
+
+<div class="doc-route-box">
+  <p class="doc-route-label">Como Acessar</p>
+  <code>https://admin.standdigital.com.br/analytics/utm</code>
+</div>
+
+<Aside type="note" title="Fonte de dados">
+  Esta tela usa exclusivamente a leitura em **Tempo real**, sem seletor de fonte — os números aparecem sem atraso e consideram todos os visitantes.
+</Aside>
+
+## Para que serve
+
+Quando um link leva um parâmetro de rastreamento de campanha (o famoso "UTM"), esta tela identifica de onde exatamente veio cada visitante: qual fonte, qual meio e qual campanha. Isso separa o tráfego identificado do tráfego genérico e mostra o retorno real de cada ação de divulgação.
+
+## O que a tela mostra na prática
+
+- total de fontes de tráfego identificadas;
+- total de meios de tráfego identificados;
+- total de campanhas ativas com visitantes no período;
+- ranking de fontes de tráfego (de onde vêm os cliques: um site, uma rede social, um parceiro etc.);
+- ranking de meios de tráfego (o tipo de canal: anúncio pago, e-mail, redes sociais, busca orgânica, indicação, WhatsApp etc.);
+- ranking de campanhas (o nome dado a cada ação de divulgação).
+
+**O que cada bloco representa:**
+
+- **Fontes** — de onde o clique partiu; ajuda a identificar quais parceiros, portais ou perfis geram mais audiência;
+- **Meios** — o tipo de canal usado; separa tráfego pago de orgânico, e-mail, indicação e mensagens diretas;
+- **Campanhas** — o nome de cada ação específica de divulgação, permitindo comparar o desempenho entre peças, datas ou ofertas diferentes.
+
+<Aside type="caution" title="Só aparece o que tem link marcado">
+  Links sem parâmetro de rastreamento não aparecem nesta tela. Para uma campanha aparecer aqui, o link usado nela (anúncio, e-mail, mensagem no WhatsApp etc.) precisa ser gerado com essas marcações. Sem isso, o acesso ainda é contado nas demais telas de analytics, mas entra como tráfego direto ou orgânico, não como campanha identificada.
+</Aside>
+
+## Como usar
+
+<Steps>
+1. Ajuste o período de análise.
+2. Veja os totais de fontes, meios e campanhas identificadas.
+3. Compare o ranking de fontes para saber quais canais geram mais volume.
+4. Revise o ranking de meios para separar tráfego pago, orgânico, e-mail e indicação.
+5. Analise o ranking de campanhas para comparar o retorno de cada ação específica.
+</Steps>
+
+## Como interpretar
+
+- concentração em uma única fonte ou campanha pode indicar dependência de um canal só;
+- meio pago com bom volume, mas baixa presença nas demais telas de qualidade (tempo de sessão, páginas por sessão), pode sinalizar tráfego pouco qualificado;
+- campanhas com poucos visitantes identificados podem indicar link sem marcação correta, e não necessariamente baixo desempenho real.
+
+## Aplicações práticas
+
+<CardGrid stagger>
+  <Card title="Comparar campanhas">
+    Veja qual peça, oferta ou período gerou mais visitantes identificados.
+  </Card>
+  <Card title="Justificar investimento">
+    Use o ranking de meios para mostrar o peso real de mídia paga frente a canais orgânicos.
+  </Card>
+  <Card title="Padronizar links">
+    Se muitas campanhas aparecem sem identificação, é sinal para padronizar a geração de links com marcação em toda a equipe.
+  </Card>
+  <Card title="Avaliar parceiros">
+    Fontes recorrentes com bom volume podem indicar parceiros ou canais para reforçar.
+  </Card>
+</CardGrid>
+
+## Benefício de uso
+
+Ajuda a enxergar o retorno de cada canal e campanha de divulgação, desde que os links usados estejam devidamente marcados.

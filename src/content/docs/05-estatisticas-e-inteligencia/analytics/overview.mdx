@@ -16,14 +16,17 @@ import { Aside, Steps } from '@astrojs/starlight/components';
 
 Esta é a porta de entrada do analytics do stand. Ela resume se o empreendimento está recebendo atenção e se essa atenção se transforma em navegação qualificada.
 
+<Aside type="note" title="Duas fontes disponíveis">
+  Esta tela tem um seletor no topo com duas opções: **Tempo real · Todos** (todos os visitantes, sem atraso) e **Com consentimento · GA4** (apenas quem aceitou cookies, com até 24h de atraso). Veja mais em [Analytics](/05-estatisticas-e-inteligencia/analytics/).
+</Aside>
+
 ## O que a tela mostra na prática
 
 - visitantes;
 - duração média da sessão;
 - páginas por sessão;
 - taxa de rejeição;
-- conversões;
-- taxa de conversão.
+- visitantes ao vivo nos últimos minutos (somente na leitura em **Tempo real**) ou sessões no período (na leitura **Com consentimento · GA4**).
 
 **O que cada indicador representa:**
 
@@ -31,16 +34,16 @@ Esta é a porta de entrada do analytics do stand. Ela resume se o empreendimento
 - `Duração média` indica permanência e interesse;
 - `Páginas por sessão` mostram profundidade de exploração;
 - `Taxa de rejeição` mostra perda de atenção logo na entrada;
-- `Conversões` e `taxa de conversão` mostram resultado comercial do tráfego.
+- `Visitantes ao vivo` mostra quem está no site agora, útil para acompanhar picos durante uma divulgação ou evento.
 
 ## Como usar
 
 <Steps>
-1. Ajuste o período.
-2. Leia visitantes e sessões para entender volume.
+1. Escolha a fonte de dados (Tempo real ou Com consentimento · GA4) e ajuste o período.
+2. Leia visitantes para entender volume de audiência.
 3. Leia duração e páginas por sessão para entender qualidade.
 4. Revise taxa de rejeição para validar a entrada.
-5. Feche com conversão para saber se a atenção virou oportunidade.
+5. Acompanhe visitantes ao vivo (ou sessões, no GA4) para ver o momento atual.
 </Steps>
 
 ## Como interpretar
@@ -48,12 +51,12 @@ Esta é a porta de entrada do analytics do stand. Ela resume se o empreendimento
 - audiência em alta mostra crescimento de alcance;
 - páginas por sessão e duração maiores sugerem interesse real;
 - rejeição alta pede revisão da experiência inicial;
-- visitantes em alta com conversão em queda indicam perda de eficiência.
+- visitantes em alta com queda de duração e páginas por sessão indicam perda de qualidade na entrada.
 
 <Aside type="tip" title="Sinal de alerta comum">
-  Se a audiência cresce, mas profundidade e conversão caem, o stand está atraindo mais gente sem sustentar o mesmo nível de interesse.
+  Se a audiência cresce, mas profundidade e duração caem, o stand está atraindo mais gente sem sustentar o mesmo nível de interesse.
 </Aside>
 
 ## Benefício de uso
 
-Ajuda a entender rapidamente se o stand está apenas recebendo tráfego ou se está gerando navegação qualificada e resultado comercial.
+Ajuda a entender rapidamente se o stand está apenas recebendo tráfego ou se está gerando navegação qualificada.

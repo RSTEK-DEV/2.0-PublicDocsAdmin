@@ -1,19 +1,36 @@
 ---
 title: Analytics
-description: Acompanhe visitantes, sessões, retenção, páginas, origem demográfica e dispositivos usados no stand.
+description: Acompanhe visitantes, sessões, retenção, páginas, jornada, campanhas, origem demográfica e dispositivos usados no stand.
 sidebar:
   order: 11
 ---
 
-import { Card, CardGrid } from '@astrojs/starlight/components';
+import { Aside, Card, CardGrid } from '@astrojs/starlight/components';
 
-Esta pasta reúne as leituras de analytics do stand. Use estas páginas para entender comportamento de navegação, retorno de usuários, conteúdo mais acessado, origem da audiência e contexto técnico de acesso.
+Esta pasta reúne as leituras de analytics do stand. Use estas páginas para entender comportamento de navegação, retorno de usuários, conteúdo mais acessado, caminho percorrido, origem de campanhas, origem da audiência e contexto técnico de acesso.
+
+## Duas fontes de dados
+
+A maioria das telas de analytics permite escolher entre duas fontes, através de um seletor no topo da página:
+
+- **Tempo real · Todos** — mostra o comportamento de **todos** os visitantes, sem exigir consentimento de cookies. Os números aparecem imediatamente, sem atraso.
+- **Com consentimento · GA4** — mostra apenas visitantes que aceitaram o banner de cookies (LGPD). Os dados podem levar até 24h para aparecer, mas trazem métricas adicionais do Google Analytics 4.
+
+Se o consentimento de cookies estiver desativado nas configurações da empresa, a opção "Com consentimento · GA4" fica bloqueada e a leitura em **Tempo real** passa a ser a única disponível.
+
+A tela de **Retenção** é exceção: ela usa exclusivamente a fonte "Com consentimento · GA4", pois depende de métricas que só essa base fornece. As telas de **Jornada** e **Campanhas** também são exceção, mas no sentido contrário: usam exclusivamente a leitura em **Tempo real**, sem seletor.
+
+<Aside type="tip" title="Qual escolher no dia a dia">
+  Use **Tempo real** para acompanhar o stand no momento (inclusive durante eventos e visitas ao vivo) e para ter o quadro completo de audiência. Use **Com consentimento · GA4** quando precisar de métricas específicas do Google Analytics ou quiser comparar com relatórios que já usam essa base.
+</Aside>
 
 ## O que você encontra aqui
 
 - visão geral de visitantes, sessões e comportamento;
 - retenção e recorrência ao longo do tempo;
 - desempenho de páginas e profundidade de navegação;
+- caminho percorrido, funil de navegação e visitantes ao vivo;
+- origem de campanhas e parâmetros de rastreamento (UTM);
 - distribuição geográfica, cidade, país e idioma;
 - dispositivos, sistemas, navegadores e resoluções usados pela audiência.
 
@@ -34,6 +51,16 @@ Esta pasta reúne as leituras de analytics do stand. Use estas páginas para ent
     Identifique o que mais atrai atenção e onde a navegação perde profundidade.
     <br />
     <a href="/05-estatisticas-e-inteligencia/analytics/paginas/">Abrir página →</a>
+  </Card>
+  <Card title="Jornada">
+    Veja quem está no site agora, os caminhos mais percorridos e o funil de navegação.
+    <br />
+    <a href="/05-estatisticas-e-inteligencia/analytics/jornada/">Abrir página →</a>
+  </Card>
+  <Card title="Campanhas">
+    Descubra de quais campanhas e canais vêm os visitantes por meio de parâmetros UTM.
+    <br />
+    <a href="/05-estatisticas-e-inteligencia/analytics/campanhas/">Abrir página →</a>
   </Card>
   <Card title="Demográfico">
     Leia origem geográfica, idioma e aderência territorial do público.
