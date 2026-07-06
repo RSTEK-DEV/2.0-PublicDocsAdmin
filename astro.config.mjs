@@ -79,6 +79,8 @@ export default defineConfig({
 					collapsed: true,
 					items: [
 						{ label: 'Resumo de Vendas', slug: '04-inteligencia-negocio/resumo-de-vendas' },
+						{ label: 'Relatório Executivo', slug: '04-inteligencia-negocio/relatorio-executivo' },
+						{ label: 'Radar de Oportunidades', slug: '04-inteligencia-negocio/prospeccao-de-local' },
 						{ label: 'Redator Inteligente', slug: '04-inteligencia-negocio/redator-inteligente' },
 						{ label: 'Analisador de Imagem', slug: '04-inteligencia-negocio/analisador-de-imagem' },
 					],
