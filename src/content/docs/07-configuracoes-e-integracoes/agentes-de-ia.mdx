@@ -1,0 +1,77 @@
+---
+title: Agentes de IA
+description: Gere credenciais de acesso somente leitura para que agentes de IA e automações consultem os dados da sua empresa.
+sidebar:
+  order: 4
+---
+
+import { Aside, Steps } from '@astrojs/starlight/components';
+
+<div class="doc-route-box">
+  <p class="doc-route-label">Como Acessar</p>
+  <code>https://admin.standdigital.com.br/config/integracoes/config/agentes-ia</code>
+</div>
+
+## Para que serve
+
+Permite que agentes de IA externos — como ChatGPT — ou scripts próprios consultem dados da sua empresa em modo somente leitura, através de uma credencial gerada por você. Cada credencial é uma "chave de API" escopada ao que você decidir liberar: corretores, campanhas, disponibilidade de estoque, relatórios semanais gerados por IA, créditos de IA, concorrência de preço e prospecção.
+
+<Aside type="note" title="Claude é diferente">
+  O <a href="/07-configuracoes-e-integracoes/agentes-de-ia-claude/">card do Claude</a> não usa este mecanismo de credencial — ele se conecta por login individual do usuário (o Claude não aceita credenciais de serviço como as descritas nesta página). Veja a página dedicada para o passo a passo do Claude.
+</Aside>
+
+## O que você configura
+
+- nome e descrição da credencial;
+- os grupos de dados que ela pode consultar (um checkbox por categoria);
+- rotação do `client_secret`, quando desconfiar de vazamento;
+- revogação imediata, quando a credencial deixar de ser necessária.
+
+## Como usar
+
+<Steps>
+1. Clique em `Nova credencial`.
+2. Dê um nome que identifique quem vai usá-la (ex.: "ChatGPT — Análise comercial").
+3. Marque os grupos de dados que essa credencial pode consultar.
+4. Confirme a criação e copie o `client_id` e o `client_secret` exibidos — o secret só aparece nesta tela, uma única vez.
+5. Configure essas credenciais no agente desejado (ver página do <a href="/07-configuracoes-e-integracoes/agentes-de-ia-chatgpt/">ChatGPT</a>).
+</Steps>
+
+<Aside type="caution" title="Guarde o secret imediatamente">
+  O `client_secret` não pode ser recuperado depois de fechar esta tela. Se perder, rotacione para gerar um novo — a rotação invalida o anterior na hora.
+</Aside>
+
+## Como o acesso funciona por trás
+
+A credencial segue o padrão OAuth 2.0 `client_credentials` (RFC 6749): o agente troca `client_id` + `client_secret` por um `access_token` de curta duração (1 hora) e usa esse token para consultar os dados. Não existe usuário logado nesse fluxo — o acesso é sempre limitado à sua empresa e aos grupos de dados marcados na credencial.
+
+<Aside type="tip" title="Não precisa rodar comando nenhum">
+  Ao lado de cada credencial na lista, o ícone de chave (<code>🔑</code>) gera um `access_token` pronto para copiar, direto no painel — sem precisar montar a chamada abaixo manualmente. O bloco a seguir é referência técnica para quem preferir linha de comando ou automação própria.
+</Aside>
+
+Para uso via linha de comando ou integração própria:
+
+```bash
+curl -X POST https://api.rstekcloud.com.br/v2/oauth/token \
+  -d "grant_type=client_credentials" \
+  -d "client_id=SEU_CLIENT_ID" \
+  -d "client_secret=SEU_CLIENT_SECRET"
+
+curl https://api.rstekcloud.com.br/v2/agent/corretores/ranking \
+  -H "Authorization: Bearer SEU_ACCESS_TOKEN"
+```
+
+## O que observar
+
+- revogar uma credencial interrompe o acesso do agente imediatamente, mesmo que ele ainda tenha um token válido em mãos;
+- cada credencial pode ter escopos diferentes — prefira criar uma credencial por finalidade em vez de uma só com acesso a tudo;
+- o `access_token` expira em 1 hora — gere um novo pelo ícone de chave quando precisar.
+
+## Benefício de uso
+
+Abrir os dados da operação para um agente de IA deixa de depender de compartilhar login ou senha — cada integração tem sua própria chave, com escopo definido e revogação imediata quando necessário.
+
+## Próximos passos recomendados
+
+- <a href="/07-configuracoes-e-integracoes/agentes-de-ia-claude/">Conectar o Claude via MCP</a>
+- <a href="/07-configuracoes-e-integracoes/agentes-de-ia-chatgpt/">Conectar um GPT customizado no ChatGPT</a>

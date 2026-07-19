@@ -1,0 +1,59 @@
+---
+title: Conectar o ChatGPT
+description: Conecte um GPT customizado via Actions para consultar corretores, campanhas, estoque e relatórios.
+sidebar:
+  order: 6
+---
+
+import { Aside, Steps } from '@astrojs/starlight/components';
+
+<div class="doc-route-box">
+  <p class="doc-route-label">Como Acessar</p>
+  <code>https://admin.standdigital.com.br/config/integracoes/config/agentes-ia?agente=chatgpt</code>
+</div>
+
+## Para que serve
+
+Conecta um GPT customizado (via **GPT Actions**) aos dados da sua empresa em modo somente leitura, permitindo consultar corretores, campanhas, estoque e relatórios a partir de uma conversa no ChatGPT.
+
+A credencial usada aqui é a mesma <a href="/07-configuracoes-e-integracoes/agentes-de-ia/">credencial de Agentes de IA</a> — esta página cobre só o passo específico de configuração no ChatGPT.
+
+<Aside type="caution" title="Limitação importante">
+  O ChatGPT (GPT Actions) hoje não renova credenciais automaticamente como o Claude via MCP. A autenticação usada aqui é um **token de acesso estático**, válido por apenas **1 hora** — passado esse tempo, é preciso gerar um novo token e atualizar a Action manualmente. Este caminho é mais indicado para testes pontuais ou para automações que gerem o token sozinhas do que para uso contínuo direto no chat.
+</Aside>
+
+## O que você configura
+
+- uma credencial de Agente de IA com nome sugerido "ChatGPT" e os grupos de dados desejados;
+- um `access_token` (gerado a partir dessa credencial) colado como `API Key` na Action do GPT.
+
+## Como usar
+
+<Steps>
+1. Na tela de Agentes de IA, abra o card `ChatGPT` e clique em `Nova credencial`.
+2. Marque os grupos de dados que o GPT poderá consultar.
+3. Confirme a criação — o `client_id` e o `client_secret` aparecem uma única vez, guarde-os.
+4. Na lista de credenciais, clique no ícone de chave (🔑) ao lado da credencial criada para gerar um `access_token` pronto — não é necessário rodar nenhum comando.
+5. No editor do seu GPT customizado, adicione uma Action com o schema OpenAPI dos endpoints desejados e configure a autenticação como `API Key`, colando o `access_token` copiado no passo anterior.
+6. Teste a Action perguntando algo simples ao GPT, como o ranking de campanhas do mês.
+7. Quando o token expirar (1 hora), volte à tela de Agentes de IA, gere um novo token pelo mesmo ícone e atualize a Action.
+</Steps>
+
+<Aside type="tip" title="Alternativa via linha de comando">
+  Se preferir gerar o token manualmente, a tela também traz a referência de `curl` equivalente, dentro de "Como usar a credencial via linha de comando".
+</Aside>
+
+## O que observar
+
+- o token expira em 1 hora — para uso contínuo, prefira <a href="/07-configuracoes-e-integracoes/agentes-de-ia-claude/">o Claude via MCP</a>, que renova sozinho;
+- o GPT vê somente os grupos de dados marcados na credencial usada para gerar o token;
+- revogar a credencial no painel invalida o token na hora, mesmo antes de expirar.
+
+## Benefício de uso
+
+Permite validar rapidamente, em um GPT customizado, como um agente de IA responde a perguntas de negócio com dados reais da operação — útil para prototipagem e automações que já lidam com renovação de token por conta própria.
+
+## Próximos passos recomendados
+
+- <a href="/07-configuracoes-e-integracoes/agentes-de-ia/">Entenda o conceito geral de Agentes de IA</a>
+- <a href="/07-configuracoes-e-integracoes/agentes-de-ia-claude/">Conectar o Claude via MCP (renovação automática)</a>

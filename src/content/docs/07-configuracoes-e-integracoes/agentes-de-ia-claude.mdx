@@ -1,0 +1,60 @@
+---
+title: Conectar o Claude
+description: Conecte o Claude via MCP para consultar corretores, campanhas, estoque e relatórios diretamente no chat.
+sidebar:
+  order: 5
+---
+
+import { Aside, Steps } from '@astrojs/starlight/components';
+
+<div class="doc-route-box">
+  <p class="doc-route-label">Como Acessar</p>
+  <code>https://admin.standdigital.com.br/config/integracoes/config/agentes-ia?agente=claude</code>
+</div>
+
+## Para que serve
+
+Conecta o Claude à plataforma através de um servidor MCP (Model Context Protocol) — depois de configurado, você pode perguntar diretamente no chat coisas como "quantos corretores temos" ou "qual campanha trouxe mais contatos este mês", e o Claude consulta os dados reais da sua operação.
+
+## Não há credencial para criar
+
+Diferente das demais integrações desta seção, o connector do Claude **não gera nada por empresa**. O endereço do servidor e o `Client ID` que você vai colar no Claude são fixos e compartilhados por todas as empresas da plataforma — o Claude é público, sem `client_secret`: a segurança vem do login que você faz no passo de autorização, não de uma credencial copiada aqui.
+
+Isso significa que **cada usuário autoriza com o próprio login**, e o Claude passa a enxergar só as empresas onde aquele usuário tem acesso — exatamente como acontece hoje ao entrar no painel administrativo.
+
+## O que você configura
+
+- o endereço do servidor MCP (fixo);
+- o `Client ID` do connector (fixo, público);
+- o login com seu próprio usuário, no momento em que o Claude pedir autorização.
+
+## Como usar
+
+<Steps>
+1. Na tela de Agentes de IA, abra o card `Claude` e copie o **endereço do servidor MCP** e o **Client ID** exibidos.
+2. No Claude, abra **Configurações → Conectores** e clique em "Adicionar conector personalizado".
+3. Cole o endereço do servidor MCP exatamente como exibido no painel (o endereço já inclui o caminho correto — não edite nem encurte).
+4. Em "Configurações avançadas", cole o `Client ID` — deixe o campo `Client Secret` em branco.
+5. Salve. O Claude abre uma tela de login própria da plataforma (diferente da tela do painel administrativo) — entre com seu e-mail e senha.
+6. Em seguida aparece a tela de autorização, listando os dados que o Claude poderá consultar. Confirme para concluir a conexão.
+7. Pergunte algo no chat, como "quantos corretores temos cadastrados?".
+</Steps>
+
+<Aside type="note" title="Acesso a mais de uma empresa">
+  Se seu usuário tem acesso a várias empresas, o Claude pergunta (ou você pode pedir explicitamente) qual empresa consultar antes de responder — não é preciso reconectar para trocar de empresa.
+</Aside>
+
+## O que observar
+
+- o Claude só enxerga os dados das empresas onde o seu usuário tem membership — o mesmo controle de acesso do painel;
+- a sessão de autorização é sua, individual — se você perder acesso a uma empresa (ou tiver a conta desativada), o Claude perde o acesso correspondente imediatamente;
+- se o conector parar de responder, verifique primeiro se sua sessão ainda está autorizada (pode ser necessário reconectar e logar novamente).
+
+## Benefício de uso
+
+Perguntas de negócio recorrentes — produção de corretores, estoque disponível, resultado de campanhas — passam a ser respondidas em linguagem natural, sem precisar abrir o painel ou montar um relatório manualmente. Como a autorização é por usuário, não há necessidade de gerenciar credenciais compartilhadas nem se preocupar em revogar acesso de alguém que saiu da equipe — basta remover o acesso dele à empresa, como já é feito hoje.
+
+## Próximos passos recomendados
+
+- <a href="/07-configuracoes-e-integracoes/agentes-de-ia/">Entenda o conceito geral de Agentes de IA</a>
+- <a href="/07-configuracoes-e-integracoes/agentes-de-ia-chatgpt/">Conectar um GPT customizado no ChatGPT</a>
