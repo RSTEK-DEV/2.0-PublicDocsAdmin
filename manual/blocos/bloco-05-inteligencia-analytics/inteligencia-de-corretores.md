@@ -17,23 +17,22 @@ Analisar o desempenho comercial dos corretores com ranking, comparacoes e recome
 - filtro de periodo;
 - KPIs como taxa media de contato, corretores ativos, contatos realizados e leads unicos;
 - ranking `Top 10 Corretores`;
-- ordenacao por conversoes, taxa de contato ou acessos;
+- ordenacao por contatos, taxa de contato ou acessos;
 - analise individual de um corretor selecionado;
 - distribuicao de performance em grafico comparativo;
 - acoes recomendadas;
 - grafico de evolucao temporal;
-- funil de conversao;
+- funil de contato;
 - mapa de calor de atividade;
 - dialogo de detalhes do corretor.
 
 ## O que os termos significam
 
-- `Taxa media de contato`: percentual medio de conversao dos corretores no periodo.
+- `Taxa media de contato`: percentual medio de contato dos corretores no periodo.
 - `Corretores ativos`: quantidade de corretores com participacao ou movimentacao relevante no recorte analisado.
-- `Contatos realizados`: volume de contatos gerados pelos corretores.
+- `Contatos realizados`: volume de contatos gerados pelos corretores. Um mesmo visitante que clica em contato mais de uma vez conta como um unico contato, nao um a cada clique.
 - `Leads unicos`: total de oportunidades sem duplicidade.
-- `Conversoes`: contatos ou resultados comerciais gerados a partir dos acessos.
-- `Taxa de conversao` ou `taxa de contato`: eficiencia do corretor em transformar acessos em contato.
+- `Taxa de contato`: eficiencia do corretor em transformar acessos em contato.
 - `Top 10 Corretores`: ranking dos corretores com melhor resultado conforme o criterio escolhido.
 
 ## O que a informacao representa

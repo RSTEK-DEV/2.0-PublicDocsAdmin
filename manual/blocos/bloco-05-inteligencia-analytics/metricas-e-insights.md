@@ -11,7 +11,7 @@ Apresentar uma visão executiva de desempenho comercial e comportamento dos aces
 - filtro de periodo no topo;
 - cards de KPI como acessos ao stand, leads unicos, contatos realizados e taxa de contato;
 - grafico de evolucao temporal;
-- funil de conversao;
+- funil de contato;
 - comparacao entre periodos;
 - bloco de crescimento percentual;
 - mapa de calor e visoes por semana ou hora;
@@ -23,8 +23,10 @@ Apresentar uma visão executiva de desempenho comercial e comportamento dos aces
 - `Leads unicos`: total de oportunidades sem duplicidade dentro do criterio da analise.
 - `Contatos realizados`: quantidade de interacoes comerciais efetivamente registradas.
 - `Taxa de contato`: relacao percentual entre audiencia e contatos gerados.
-- `Funil de conversao`: mostra como o volume vai diminuindo entre interesse inicial e resultado.
+- `Funil de Contato`: mostra como o volume vai diminuindo entre interesse inicial e resultado.
 - `Mapa de calor`: indica os horarios e dias com maior concentracao de atividade.
+
+**Importante — contato repetido nao conta duas vezes:** cada visitante e identificado por um codigo unico de dispositivo. Se a mesma pessoa clicar em "contato" mais de uma vez, no mesmo acesso ou em retornos posteriores ao mesmo material, o sistema registra apenas um contato. `Contatos realizados` e `Taxa de contato` nao sao inflados por cliques repetidos do mesmo visitante.
 
 ## O que a informacao representa
 
@@ -36,7 +38,7 @@ Apresentar uma visão executiva de desempenho comercial e comportamento dos aces
 
 ## Como interpretar a tela
 
-- muitos acessos com poucos contatos sugerem gargalo de conversao;
+- muitos acessos com poucos contatos sugerem gargalo de contato;
 - poucos acessos com boa taxa de contato sugerem publico menor, mas mais qualificado;
 - crescimento de leads unicos sem crescimento de contatos pede revisao do tratamento comercial;
 - concentracao em certos horarios ajuda a planejar disparos, atendimento e publicacao;
@@ -77,7 +79,7 @@ Nao em profundidade. Ela mostra a visao geral. A analise individual fica em `Int
 
 ### Como saber se a taxa de contato esta boa?
 
-Ela deve ser lida junto com volume e contexto. Taxa alta significa eficiencia melhor de conversao. Taxa baixa com muitos acessos indica que o interesse nao esta virando contato na mesma proporcao.
+Ela deve ser lida junto com volume e contexto. Taxa alta significa eficiencia melhor de contato. Taxa baixa com muitos acessos indica que o interesse nao esta virando contato na mesma proporcao.
 
 ### Posso mudar o periodo analisado?
 

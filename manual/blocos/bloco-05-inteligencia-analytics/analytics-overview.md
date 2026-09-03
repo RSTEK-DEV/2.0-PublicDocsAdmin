@@ -12,7 +12,7 @@ Consolidar a leitura comercial dos compartilhamentos no periodo, combinando dese
 - filtro de origem com `Todos`, `Humano` e `Empresa`;
 - cards de metricas principais;
 - grafico `Evolucao da Equipe`;
-- funil de conversao;
+- funil de contato;
 - leitura de velocidade de engajamento;
 - comparacao com periodo anterior;
 - tabela consolidada de compartilhamentos;
@@ -28,7 +28,7 @@ Consolidar a leitura comercial dos compartilhamentos no periodo, combinando dese
 - `Origem`: separacao entre links de corretores humanos e links institucionais da empresa.
 - `Acessos ao stand`: total de aberturas dos links rastreados.
 - `Visitantes unicos`: total de pessoas sem duplicidade no periodo.
-- `Contatos realizados`: conversoes geradas pelos compartilhamentos.
+- `Contatos realizados`: contatos gerados pelos compartilhamentos. Um mesmo visitante que clica em contato mais de uma vez conta como um unico contato.
 - `Taxa de contato`: percentual de contatos sobre acessos.
 - `Profundidade`: quanto a sessao avancou nas telas do compartilhamento.
 - `Modo`: comparacao entre compartilhamentos livres e guiados na leitura de profundidade.
@@ -45,9 +45,9 @@ Consolidar a leitura comercial dos compartilhamentos no periodo, combinando dese
 
 ## Como interpretar a tela
 
-- acessos em alta com contatos estaveis indicam aumento de alcance sem ganho proporcional de conversao;
+- acessos em alta com contatos estaveis indicam aumento de alcance sem ganho proporcional de contato;
 - origem `Empresa` ajuda a medir o peso dos links institucionais no resultado total;
-- links com boa profundidade e baixa conversao podem indicar experiencia interessante, mas sem captura comercial suficiente;
+- links com boa profundidade e baixa taxa de contato podem indicar experiencia interessante, mas sem captura comercial suficiente;
 - baixa adesao ao video intro mostra que o recurso ainda esta pouco usado na operacao;
 - comparacao entre periodos deve ser lida como tendencia, nao como numero isolado.
 

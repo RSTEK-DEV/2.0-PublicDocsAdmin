@@ -30,7 +30,7 @@ Analisar a performance das campanhas usadas nos compartilhamentos e manter o cad
 - `Campanha`: identificador comercial usado para rastrear a origem do link.
 - `Acessos`: total de entradas geradas pelos links daquela campanha.
 - `Leads unicos`: visitantes sem duplicidade no periodo.
-- `Contatos`: conversoes registradas a partir dos acessos.
+- `Contatos`: contatos registrados a partir dos acessos. Um mesmo visitante que clica em contato mais de uma vez conta como um unico contato.
 - `Taxa`: relacao percentual entre contatos e acessos.
 - `Sem campanha`: compartilhamento sem vinculo com campanha nomeada.
 

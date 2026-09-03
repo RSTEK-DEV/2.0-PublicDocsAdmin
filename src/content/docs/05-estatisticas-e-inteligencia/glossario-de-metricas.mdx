@@ -5,6 +5,8 @@ sidebar:
   order: 5
 ---
 
+import { Aside } from '@astrojs/starlight/components';
+
 ## Para que serve
 
 Este glossário ajuda a transformar nomes técnicos em leitura prática de operação.
@@ -49,19 +51,19 @@ Percentual de sessões sem aprofundamento de navegação.
 
 Na prática, mostra perda rápida de atenção logo na entrada. Taxa alta pede revisão da página inicial, da origem do tráfego e da clareza da proposta. Nem toda rejeição é um problema, mas ela sempre merece contexto.
 
-## Conversão e resultado comercial
+## Contato e resultado comercial
 
-### Conversão
+### Contato realizado
 
-Ação valiosa gerada pelo stand, como contato iniciado, lead tratado ou avanço relevante na jornada.
+Ação valiosa gerada pelo stand — o visitante clicou em WhatsApp, telefone ou formulário e a interação foi registrada como contato comercial.
 
 Na prática, é o momento em que a audiência deixa de ser apenas visita e começa a virar oportunidade.
 
-### Taxa de conversão
+### Taxa de contato
 
-Relação entre audiência e resultado comercial.
+Relação entre audiência e contatos gerados.
 
-Na prática, mede eficiência. Quando sobe, a operação está transformando melhor o interesse em ação. Quando cai, pode haver tráfego pouco qualificado, proposta fraca ou fricção na jornada.
+Na prática, mede eficiência. Quando sobe, a operação está transformando melhor o interesse em contato. Quando cai, pode haver tráfego pouco qualificado, proposta fraca ou fricção na jornada.
 
 ### Lead único
 
@@ -69,15 +71,13 @@ Contato contado sem duplicidade.
 
 Na prática, separa oportunidade real de volume inflado por repetição do mesmo usuário.
 
-### Contato realizado
+<Aside type="note" title="Contato repetido não conta duas vezes">
+O sistema identifica cada visitante por um código único de dispositivo. Se a mesma pessoa clicar em "contato" várias vezes — no mesmo acesso ou em visitas diferentes ao mesmo material — isso é registrado como **um único contato**, não um a cada clique. A taxa de contato reflete quantas pessoas diferentes converteram, não quantos cliques aconteceram.
+</Aside>
 
-Conversão registrada como ação comercial efetivamente concluída.
+### Funil de Contato
 
-Na prática, mostra resposta concreta da operação. Se os acessos sobem e os contatos não acompanham, o gargalo pode estar no atendimento ou na passagem do lead.
-
-### Funil de conversão
-
-Representação das etapas entre audiência inicial e resultado comercial.
+Representação das etapas entre audiência inicial e contato comercial.
 
 Na prática, mostra em que parte do caminho o volume cai mais. O trecho com maior estreitamento costuma indicar o principal gargalo da jornada.
 
@@ -113,7 +113,7 @@ Na prática, ajudam a comparar qualidade entre canais. Por exemplo: `google` pod
 
 Visualização de intensidade por horário ou dia.
 
-Na prática, mostra quando há mais acessos, interação ou conversão. É útil para identificar melhores janelas de campanha, distribuição e resposta comercial.
+Na prática, mostra quando há mais acessos, interação ou contato. É útil para identificar melhores janelas de campanha, distribuição e resposta comercial.
 
 ### Taxa de nacionalização
 
@@ -123,7 +123,7 @@ Na prática, ajuda a confirmar se a origem do público está alinhada com a pra�
 
 ## Leitura rápida
 
-- muitos visitantes com pouca conversão sugerem gargalo de eficiência;
-- poucas visitas com boa taxa de conversão indicam público menor, mas mais qualificado;
+- muitos visitantes com poucos contatos sugerem gargalo de eficiência;
+- poucas visitas com boa taxa de contato indicam público menor, mas mais qualificado;
 - mais sessões por visitante sugerem retorno e reconsideração;
 - heatmap concentrado ajuda a escolher horários melhores para ação comercial.

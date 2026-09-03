@@ -56,19 +56,19 @@ Mostra perda rapida de atencao logo no inicio da visita.
 Como interpretar:
 Taxa alta pede leitura cuidadosa da pagina de entrada, da qualidade do trafego e da clareza da proposta. Nem toda rejeicao e problema, mas em geral valores mais altos indicam menor engajamento inicial.
 
-### Conversao
+### Contato realizado
 
-No contexto do stand, conversao e a acao valiosa que transforma interesse em contato ou lead tratado.
+No contexto do stand, contato e a acao valiosa que transforma interesse em contato comercial — o visitante clicou em WhatsApp, telefone ou formulario e a interacao foi registrada.
 
 O que a informacao representa:
 Mostra quantas oportunidades sairam da audiencia.
 
 Como interpretar:
-Conversao alta com trafego baixo pode indicar audiencia bem qualificada. Conversao baixa com trafego alto pode indicar gargalo comercial, mensagem fraca ou publico inadequado.
+Contato alto com trafego baixo pode indicar audiencia bem qualificada. Contato baixo com trafego alto pode indicar gargalo comercial, mensagem fraca ou publico inadequado.
 
-### Taxa de conversao
+### Taxa de contato
 
-E a relacao percentual entre visitantes ou acessos e o total de conversoes geradas.
+E a relacao percentual entre visitantes ou acessos e o total de contatos gerados.
 
 O que a informacao representa:
 Mostra eficiencia do stand ou do corretor em transformar interesse em contato.
@@ -86,17 +86,9 @@ Ajuda a medir oportunidades reais, evitando inflar volume com repeticoes do mesm
 Como interpretar:
 Serve para separar volume bruto de qualidade comercial.
 
-### Contato realizado
+**Importante — contato repetido nao conta duas vezes:** cada visitante e identificado por um codigo unico de dispositivo. Se a mesma pessoa clicar em "contato" varias vezes, seja no mesmo acesso ou em visitas diferentes ao mesmo material, o sistema registra um unico contato. A taxa de contato mede quantas pessoas diferentes converteram, nao quantos cliques aconteceram.
 
-E a conversao efetivamente registrada como contato ou acao comercial concluida.
-
-O que a informacao representa:
-Mostra quantas interacoes sairam do interesse para uma resposta comercial concreta.
-
-Como interpretar:
-Se cresce junto com os acessos, a operacao esta acompanhando a demanda. Se nao cresce, pode haver gargalo de atendimento ou friccao no funil.
-
-### Funil de conversao
+### Funil de Contato
 
 E a representacao das etapas entre audiencia inicial e resultado comercial.
 
@@ -151,7 +143,7 @@ Serve para comparar qualidade entre canais e campanhas.
 E uma visualizacao de intensidade por horario e dia.
 
 O que a informacao representa:
-Mostra quando ha mais acessos ou conversoes.
+Mostra quando ha mais acessos ou contatos.
 
 Como interpretar:
 Ajuda a identificar janelas melhores para distribuicao, campanha ou acao comercial.
