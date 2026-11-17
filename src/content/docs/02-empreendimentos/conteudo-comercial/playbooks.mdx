@@ -22,7 +22,8 @@ Estrutura fluxos guiados de atendimento para uso comercial. Os playbooks ajudam 
 - nome, descrição e categoria do roteiro;
 - passos do fluxo de atendimento;
 - cenários condicionais;
-- ativação ou desativação por categoria.
+- ativação ou desativação por categoria;
+- geração dos scripts dos passos com IA.
 
 ## Como usar
 
@@ -31,6 +32,15 @@ Estrutura fluxos guiados de atendimento para uso comercial. Os playbooks ajudam 
 3. Edite os passos no painel principal.
 4. Salve os passos.
 5. Ative o roteiro desejado quando ele estiver pronto para uso.
+
+## Otimizar scripts com IA
+
+A IA pode escrever os campos **O que falar** e **Atenção** dos passos, usando o contexto de IA do empreendimento (definido em [Avançado](/02-empreendimentos/configuração/avancado-empreendimento/)) ou, se ele não existir, o da empresa.
+
+- **Todos os passos:** use **Otimizar scripts com IA** e clique em **Gerar scripts**. Revise o resultado e clique em **Confirmar e aplicar**.
+- **Um passo:** gere o script direto no editor do passo.
+
+Os campos "O que falar" e "Atenção" já preenchidos são substituídos. O nome, o objetivo e as condições de cada passo não mudam. Cada geração consome créditos de IA conforme o tipo de IA da empresa (5 créditos na IA Pro).
 
 ## O que observar
 

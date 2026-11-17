@@ -1,0 +1,87 @@
+---
+title: Concorrente e Concorrência
+description: Cadastre concorrentes, reporte preço e estoque de forma colaborativa entre empresas, vincule comparáveis aos seus empreendimentos e acompanhe o ritmo da concorrência.
+sidebar:
+  order: 7
+---
+
+import { Aside, Card, CardGrid, Steps } from '@astrojs/starlight/components';
+
+<div class="doc-route-box">
+  <p class="doc-route-label">Como Acessar</p>
+  <code>https://admin.standdigital.com.br/comercial/concorrente-preco</code>
+  <p class="doc-route-note">Cadastro e reportes: menu **Comercial → Concorrente**.</p>
+  <code>https://admin.standdigital.com.br/resultado-comercial/concorrencia</code>
+  <p class="doc-route-note">Leitura: menu **Métricas → Resultado comercial → Concorrência**.</p>
+</div>
+
+## Para que serve
+
+Reúne em um só lugar o **preço real e o estoque de empreendimentos concorrentes**, reportados por quem foi a campo. O dado é **colaborativo entre as empresas da plataforma**: cada empresa reporta o que coletou e, em troca, passa a ver o que as outras já mapearam na região.
+
+Esse cadastro alimenta a tela de Concorrência e o pilar de posicionamento de preço do [Relatório Comercial](/04-inteligencia-negocio/relatorio-comercial/).
+
+## Como funciona a reciprocidade
+
+O acesso é liberado por reciprocidade, sem custo. São dois acessos independentes:
+
+<CardGrid>
+  <Card title="Concorrentes externos">
+    Reporte o preço de pelo menos **3 concorrentes nos últimos 60 dias** para ver o que outras empresas reportaram na sua região. É uma janela móvel: para manter o acesso, continue reportando. O quadro **Reciprocidade** mostra quantos você já reportou e quantos faltam.
+  </Card>
+  <Card title="Meu preço próprio">
+    Ao ativar **Compartilhar meu preço**, os preços dos seus próprios empreendimentos passam a ser publicados para as outras empresas, e você passa a ver o preço próprio das empresas que também compartilham. Vale para todos os seus empreendimentos e pode ser desativado a qualquer momento.
+  </Card>
+</CardGrid>
+
+Compartilhar o preço próprio não libera os concorrentes externos, e vice-versa: cada acesso depende da sua contribuição naquele tipo de dado.
+
+## Cadastrar um concorrente
+
+<Steps>
+1. Em **Comercial → Concorrente**, clique em **Novo concorrente**.
+2. Informe o nome do empreendimento e, se quiser, a incorporadora e o tipo (residencial, comercial ou misto).
+3. Informe o endereço. O endereço completo ajuda outras empresas a identificar o mesmo concorrente e evita cadastros duplicados.
+4. Complete a ficha: data de lançamento, entrega prevista, quantidade total de unidades, tipologias (nome, área, vagas) e amenidades observadas.
+</Steps>
+
+Antes de cadastrar, use a busca por cidade: o concorrente pode já ter sido cadastrado por outra empresa.
+
+## Reportar preço e estoque
+
+Use **Reportar novo** (ou **Reportar progressão** na ficha) para registrar uma coleta. A origem do dado pode ser:
+
+| Origem | Como funciona |
+|---|---|
+| **Planilha (Excel/CSV)** | Colunas: unidade, área, garagem, situação e valor total. O formato padrão do CVCRM é lido direto; use **Baixar modelo de planilha** para outros casos. |
+| **PDF da tabela** | A IA extrai os preços do PDF. Consome **15 créditos** por extração. |
+| **Preencher manualmente** | Digite preço mínimo e máximo, preço/m², unidade mais barata e mais cara por tipologia e, se quiser, o estoque (disponíveis e vendidas). |
+
+Em cada reporte, escolha a **visibilidade**:
+
+- **Colaborativo** — entra no pool compartilhado com as outras empresas e conta para a reciprocidade;
+- **Privado (só eu)** — fica só para a sua empresa e não conta para a reciprocidade.
+
+Os reportes nunca sobrescrevem os anteriores: a ficha guarda o histórico completo por tipologia. Cada reporte mostra quem contribuiu e pode ser confirmado ou contestado por outras empresas, o que indica a confiabilidade do dado.
+
+## Vincular concorrentes comparáveis
+
+Em **Concorrentes comparáveis**, vincule a cada empreendimento seu os concorrentes que disputam o mesmo cliente. Só os concorrentes vinculados entram na tela de Concorrência e no posicionamento de preço do Relatório Comercial.
+
+## Ler a concorrência
+
+Em **Métricas → Resultado comercial → Concorrência**, escolha o empreendimento e veja os concorrentes vinculados a ele:
+
+- **Indicadores médios:** velocidade média (unidades/mês), % vendido médio, tempo médio no mercado e VGV potencial total;
+- **Tabela de concorrentes:** incorporadora, tipo, unidades totais, % vendido, % disponível, unidades/mês, meses no mercado, VGV potencial e data da última coleta;
+- **Detalhe de cada concorrente:** composição de VGV, menor e maior unidade, entrega e o botão **Ver ficha completa**.
+
+O VGV potencial é uma estimativa baseada no preço médio da última coleta. Concorrentes sem coleta de vendas aparecem sem esses indicadores até alguém reportar uma progressão.
+
+<Aside type="tip" title="Dado bom é dado recente">
+  Combine com a equipe uma rotina de coleta (por exemplo, uma visita ou consulta por mês a cada concorrente vinculado). Isso mantém o acesso ao pool externo e deixa o Relatório Comercial mais preciso.
+</Aside>
+
+## Benefício de uso
+
+O gestor acompanha preço e ritmo de venda da concorrência com números, e não apenas com impressões de campo, e sabe se o próprio empreendimento está caro, barato ou vendendo mais devagar que o mercado.

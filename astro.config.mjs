@@ -80,9 +80,13 @@ export default defineConfig({
 					items: [
 						{ label: 'Resumo de Vendas', slug: '04-inteligencia-negocio/resumo-de-vendas' },
 						{ label: 'Relatório Executivo', slug: '04-inteligencia-negocio/relatorio-executivo' },
+						{ label: 'Relatório Comercial', slug: '04-inteligencia-negocio/relatorio-comercial' },
+						{ label: 'Ask me', slug: '04-inteligencia-negocio/ask-me' },
+						{ label: 'Relatórios Dinâmicos', slug: '04-inteligencia-negocio/relatorios-dinamicos' },
 						{ label: 'Radar de Oportunidades', slug: '04-inteligencia-negocio/prospeccao-de-local' },
 						{ label: 'Redator Inteligente', slug: '04-inteligencia-negocio/redator-inteligente' },
 						{ label: 'Analisador de Imagem', slug: '04-inteligencia-negocio/analisador-de-imagem' },
+						{ label: 'Gerador de QR Code', slug: '04-inteligencia-negocio/gerador-de-qr-code' },
 					],
 				},
 				{
@@ -95,6 +99,7 @@ export default defineConfig({
 						{ label: 'Diagnóstico de Canais e Campanhas', slug: '05-estatisticas-e-inteligencia/diagnostico-de-canais-e-campanhas' },
 						{ label: 'Glossário de Métricas', slug: '05-estatisticas-e-inteligencia/glossario-de-metricas' },
 						{ label: 'Métricas e Insights', slug: '05-estatisticas-e-inteligencia/metricas-e-insights' },
+						{ label: 'Concorrente e Concorrência', slug: '05-estatisticas-e-inteligencia/concorrencia' },
 						{
 							label: 'Compartilhamento e Campanhas',
 							collapsed: true,

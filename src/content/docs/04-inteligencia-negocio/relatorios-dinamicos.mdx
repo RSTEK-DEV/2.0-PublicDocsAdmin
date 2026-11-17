@@ -1,0 +1,83 @@
+---
+title: Relatórios Dinâmicos
+description: Faça uma pergunta sobre os dados da empresa e receba um dashboard montado por IA, que pode ser atualizado, programado por e-mail e compartilhado.
+sidebar:
+  order: 5
+---
+
+import { Aside, Steps } from '@astrojs/starlight/components';
+
+<div class="doc-route-box">
+  <p class="doc-route-label">Como Acessar</p>
+  <code>https://admin.standdigital.com.br/ia/report-dynamic</code>
+  <p class="doc-route-note">No menu lateral, em **Inteligência de mercado → Relatórios dinâmicos**. Também é possível criar um relatório pela aba **Relatório** do <a href="/04-inteligencia-negocio/ask-me/">Ask me</a>.</p>
+</div>
+
+## Para que serve
+
+Você faz uma pergunta — por exemplo, "Como foi o 3º trimestre comparado ao 2º?" — e recebe um relatório montado para ela: cards de números, gráficos, tabelas e a leitura da IA, em formato de dashboard.
+
+A página **Relatórios dinâmicos** reúne todos os relatórios que você criou ou que foram compartilhados com você, com o consumo de créditos e as programações de envio.
+
+## Quem pode usar
+
+- Perfis **Administrativo**, **Marketing** e **Comercial**.
+- Exige o módulo **IA Plus** no plano da empresa.
+
+## Como criar um relatório
+
+<Steps>
+1. Clique em **Criar relatório**.
+2. Escreva a pergunta ou escolha uma das sugestões.
+3. Defina **quem pode ver** o relatório (veja abaixo).
+4. Clique em **Gerar relatório**. A montagem leva de 20 a 40 segundos, e você pode continuar usando o painel.
+</Steps>
+
+A IA escolhe o modelo de relatório mais adequado à pergunta — desempenho, equipe comercial, marketing e canais, vendas e estoque, concorrência, diagnóstico, comparação de empreendimentos, mercado e contexto ou análise livre — e monta os blocos a partir de um catálogo fechado.
+
+<Aside type="note" title="Números vêm do sistema">
+  Cada número do relatório vem de uma consulta aos dados reais da empresa. A IA escreve títulos e textos, mas não digita números. A lista de dados consultados aparece no relatório.
+</Aside>
+
+## Custos
+
+| Ação | Custo |
+|---|---|
+| Gerar um relatório | **10 créditos**, cobrados só se o relatório for gerado |
+| Atualizar um relatório | **5 créditos**, cobrados só se a atualização for concluída |
+| Execução programada | **5 créditos** por execução |
+| Envio do e-mail da programação | sem custo |
+
+Se a IA não conseguir montar o relatório, nenhum crédito é cobrado. O saldo da empresa, o consumo do mês e a projeção semanal das programações aparecem no topo da página.
+
+## Atualizar, versões e PDF
+
+- **Atualizar** refaz as consultas para o período atual e reescreve a análise. Cada atualização vira uma nova versão.
+- O **Histórico de versões** mostra cada versão com o tipo (geração, atualização ou programada) e os créditos gastos.
+- **Exportar PDF** abre o relatório em uma nova aba, pronto para salvar ou imprimir. Se nada acontecer, permita pop-ups no navegador.
+
+## Programar envio por e-mail
+
+<Steps>
+1. No relatório, clique em **Programar**.
+2. Escolha a frequência — **semanal** (dia da semana) ou **mensal** (dia do mês) — e o horário (Brasília).
+3. Em **Também enviar para**, inclua outras pessoas. Você sempre recebe.
+4. Confirme que está ciente do custo de cada execução e clique em **Confirmar programação**.
+</Steps>
+
+A cada execução, o relatório é atualizado e um e-mail com resumo e link é enviado. Sem saldo, a execução é pulada e você é avisado. A programação pode ser pausada ou removida a qualquer momento.
+
+## Quem pode ver
+
+Por padrão, o relatório fica visível **só para você**. Você pode liberar para:
+
+- **Pessoas e papéis** — usuários específicos ou papéis inteiros (Administradores, Marketing, Comercial). Quem entrar no papel depois também passa a ver.
+- **Toda a empresa** — todos os usuários da empresa com acesso a relatórios.
+
+Quem vê só pode **ler e exportar**. Atualizar, programar e excluir continuam só com quem criou. Quem recebe o e-mail da programação também passa a ver o relatório, e quem deixa de ver deixa de receber o e-mail.
+
+Para mostrar um relatório a alguém de fora da equipe, use [Visitantes](/06-equipe-e-permissoes/visitantes/).
+
+## Benefício de uso
+
+Perguntas que antes exigiam cruzar várias telas viram um dashboard em menos de um minuto, que pode ser atualizado e enviado automaticamente para quem precisa acompanhar.

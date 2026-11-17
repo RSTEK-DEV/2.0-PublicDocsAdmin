@@ -1,0 +1,68 @@
+---
+title: Relatório Comercial
+description: Receba toda semana uma leitura do ritmo de venda do empreendimento, da atividade da equipe comercial e do posicionamento de preço frente aos concorrentes.
+sidebar:
+  order: 3
+---
+
+import { Aside, Card, CardGrid } from '@astrojs/starlight/components';
+
+<div class="doc-route-box">
+  <p class="doc-route-label">Como Acessar</p>
+  <code>https://admin.standdigital.com.br/ia/report-comercial</code>
+  <p class="doc-route-note">No menu lateral, em **Inteligência de mercado → Relatório comercial**.</p>
+</div>
+
+## Para que serve
+
+O Relatório Comercial cruza, toda semana, três leituras de cada empreendimento: o **ritmo de venda** do estoque, a **atividade da equipe comercial** e, quando houver concorrente vinculado, o **posicionamento de preço** frente a ele. É uma leitura focada em venda e ritmo de venda, pronta para a reunião comercial.
+
+Ele complementa o [Relatório Executivo](/04-inteligencia-negocio/relatorio-executivo/): o executivo olha mercado, mídia, bairro e economia; o comercial olha estoque, equipe e preço.
+
+## Como funciona
+
+- O relatório é **gerado automaticamente todo domingo**, junto do Relatório Executivo, analisando a semana encerrada.
+- Use o seletor **Semana** para abrir edições anteriores e o botão **Exportar PDF** para levar o relatório para fora do painel.
+- O relatório é gerado quando há movimento de estoque, atividade comercial (contatos, leads quentes, engajamento) ou pelo menos um concorrente vinculado ao empreendimento. Sem nada disso, a semana fica registrada como "sem atividade".
+- Enquanto o primeiro relatório não sai, a página apresenta o que virá.
+
+<Aside type="note" title="Números calculados pelo sistema">
+  Todos os números do relatório são calculados pela plataforma a partir do estoque, dos acessos e dos cadastros de concorrente. A IA só escreve a leitura cruzada — ela nunca digita números.
+</Aside>
+
+## O que você encontra no relatório
+
+<CardGrid stagger>
+  <Card title="Ritmo de venda">
+    Movimentação de estoque da semana (unidades vendidas, reservas criadas e canceladas, VGV vendido), comparada com a semana anterior, e o ritmo próprio dos últimos 30 dias, com vendas acumuladas, % vendido e VGV potencial.
+  </Card>
+  <Card title="Atividade comercial">
+    Ranking de corretores e leads quentes gerados na semana.
+  </Card>
+  <Card title="Funil de engajamento digital">
+    Leads totais → retornaram → engajados → quentes. Mede intenção de contato, não venda.
+  </Card>
+  <Card title="Posicionamento de preço e ritmo">
+    Faixa de preço por m² do empreendimento comparada com a dos concorrentes vinculados, ritmo relativo de venda e as corretoras/imobiliárias que vendem cada concorrente. Usa o dado colaborativo do cadastro de <a href="/05-estatisticas-e-inteligencia/concorrencia/">Concorrente</a>.
+  </Card>
+  <Card title="Concorrência de mercado">
+    Lançamentos e concorrentes da região pesquisados na web na semana, com menções e reclamações relevantes encontradas.
+  </Card>
+  <Card title="Leitura cruzada da semana">
+    Síntese escrita pela IA cruzando atividade digital e movimento de estoque, com correlações observadas, alertas de descompasso e uma matriz SWOT consolidada.
+  </Card>
+</CardGrid>
+
+## Como interpretar
+
+- **Leads e contatos não são vendas.** O funil mede intenção de contato. Vendas aparecem só no pilar de ritmo, a partir do estoque.
+- **Correlação, não causa.** O relatório pode apontar que a atividade de um corretor subiu na mesma semana em que o estoque andou, mas não atribui a venda ao corretor: a unidade vendida não registra quem vendeu.
+- **Concorrente sem coleta nova.** Quando nenhum concorrente teve preço ou estoque reportado na semana, o pilar de posicionamento usa a última coleta e sinaliza "sem sinal recente".
+
+<Aside type="tip" title="Mais concorrência, leitura melhor">
+  O pilar de posicionamento só aparece quando há concorrentes vinculados ao empreendimento. Cadastre e vincule concorrentes em <a href="/05-estatisticas-e-inteligencia/concorrencia/">Concorrente e Concorrência</a>.
+</Aside>
+
+## Benefício de uso
+
+O gestor chega à reunião com ritmo de venda, desempenho da equipe e preço da concorrência na mesma página, sem montar planilha.

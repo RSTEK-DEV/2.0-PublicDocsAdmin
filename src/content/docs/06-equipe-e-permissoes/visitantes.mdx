@@ -1,0 +1,74 @@
+---
+title: Visitantes
+description: Libere métricas e relatórios para pessoas de fora da equipe, com login próprio, acesso só de leitura, validade e opção de ocultar dados pessoais.
+sidebar:
+  order: 4
+---
+
+import { Aside, Steps } from '@astrojs/starlight/components';
+
+<div class="doc-route-box">
+  <p class="doc-route-label">Como Acessar</p>
+  <code>https://admin.standdigital.com.br/config/visitantes</code>
+  <p class="doc-route-note">No menu **Configurações → Plataforma → Visitantes**. O botão **Liberar acesso** também aparece nas telas de métricas e relatórios. Somente administradores liberam acesso.</p>
+</div>
+
+## Para que serve
+
+Permite mostrar métricas e relatórios a quem não faz parte da equipe — a incorporadora parceira, um investidor, uma agência — sem dar acesso ao painel inteiro. A pessoa entra com **login próprio**, como **visitante**, e vê **somente o que foi liberado**, só para leitura e até a data de validade.
+
+## O que pode ser liberado
+
+| Grupo | Conteúdo |
+|---|---|
+| Métricas · **Resultado comercial** | Disponibilidade e concorrência |
+| Métricas · **Performance da Equipe** | Visão geral, corretores, imobiliárias e campanhas |
+| Métricas · **Analytics** | Acessos, páginas, público, dispositivos, jornada e UTM |
+| **Relatório executivo semanal** | Relatórios gerados aos domingos |
+| **Relatório comercial** | Ritmo de venda e atividade comercial |
+| **Relatório inteligente** | Um relatório dinâmico específico |
+
+Para cada item, escolha os **empreendimentos** e o **período**: todo o período, a partir de uma data (novas semanas entram sozinhas) ou um intervalo fixo. Para relatórios, vale a data de cada edição. Conteúdos que não fazem parte do plano contratado aparecem como "fora do plano" e o visitante não os vê.
+
+## Como liberar acesso
+
+<Steps>
+1. Clique em **Liberar acesso**.
+2. **O que:** adicione os conteúdos, os empreendimentos e o período de cada um.
+3. **Com quem:** escolha um visitante que já tem acesso ou convide uma nova pessoa (nome e e-mail).
+4. **Privacidade e validade:** decida se os dados pessoais ficam ocultos, defina até quando o acesso vale (atalhos de 7, 30, 90 dias ou 1 ano) e marque a declaração de base legal (LGPD).
+5. **Revisar:** confira e clique em **Liberar acesso**. Quem é novo recebe um convite por e-mail com senha temporária; quem já tem acesso recebe um e-mail avisando.
+</Steps>
+
+## Ocultar dados pessoais
+
+Com **Ocultar dados pessoais**, o visitante vê:
+
+- corretores como "Corretor #id";
+- imobiliárias como "Imobiliária" + código;
+- CRECIs como "xxxx" + os 2 últimos dígitos.
+
+O ocultamento vale também para o PDF que o visitante exportar. **Relatórios não podem ser liberados com dados ocultos**, porque têm texto escrito por IA que pode citar nomes. Para incluir relatórios, libere sem ocultar.
+
+<Aside type="caution" title="Responsabilidade pelo compartilhamento">
+  Sem o ocultamento, o visitante pode ver nomes de corretores, imobiliárias e dados de contatos dos itens liberados. Antes de liberar, o administrador declara ter base legal para esse compartilhamento.
+</Aside>
+
+## Limite de visitantes
+
+O plano permite **2 visitantes para cada usuário interno** contratado. Visitante não ocupa vaga da equipe. Ao atingir o limite, remova um visitante ou faça upgrade do plano.
+
+## Gerenciar liberações e visitantes
+
+A tela tem duas abas:
+
+- **Liberações** — cada acesso liberado, com situação (ativo, expirado ou revogado), validade, se os dados estão ocultos e quem liberou. Ações: **Prorrogar**, **Revogar** (o visitante deixa de ver o conteúdo na hora) e **Ver acessos**.
+- **Visitantes** — as pessoas convidadas, com último acesso. Ações: **Reenviar convite** (gera nova senha temporária) e **Remover visitante** (revoga todas as liberações e encerra o acesso ao painel).
+
+## O que o visitante vê
+
+Ao entrar, o visitante encontra a lista **Liberado para você**, com o período liberado, a validade e quem liberou. Botões de administração — como gerenciar links, administrar campanhas ou configurar concorrentes — não aparecem para ele. Se a empresa estiver com o acesso bloqueado por pendência financeira, o visitante também fica bloqueado.
+
+## Benefício de uso
+
+Parceiros e clientes acompanham os resultados que interessam a eles direto no painel, sem planilhas enviadas por e-mail e sem expor o restante da operação.

@@ -1,0 +1,50 @@
+---
+title: Gerador de QR Code
+description: Gere QR Codes para o link do empreendimento, qualquer URL, eventos, localização e cartões de contato, prontos para materiais impressos e visitas.
+sidebar:
+  order: 9
+---
+
+import { Aside, Steps } from '@astrojs/starlight/components';
+
+<div class="doc-route-box">
+  <p class="doc-route-label">Como Acessar</p>
+  <code>https://admin.standdigital.com.br/tool/qr-code</code>
+  <p class="doc-route-note">No menu lateral, em **Ferramentas → Operacionais → Gerador de QR Code**.</p>
+</div>
+
+## Para que serve
+
+Cria QR Codes prontos para materiais impressos, placas, visitas ao stand de vendas e cartões de contato. A ferramenta não consome créditos.
+
+## Tipos de QR Code
+
+| Tipo | O que o QR Code faz |
+|---|---|
+| **Endereço de empreendimento** | Abre o link público de um empreendimento cadastrado no Stand Digital. |
+| **URL** | Abre qualquer link, interno ou externo. |
+| **Evento** | Adiciona um compromisso à agenda do celular (nome, início, fim, local e descrição) — útil para visitas, lançamentos e reuniões. |
+| **Localização** | Abre um endereço ou uma coordenada (latitude e longitude) no mapa. |
+| **vCard** | Salva um contato no celular (nome, empresa, cargo, telefone, e-mail, site e endereço). |
+
+## Como usar
+
+<Steps>
+1. Escolha o tipo de QR Code.
+2. Preencha os dados pedidos e clique em **Gerar QR Code**.
+3. Em **Aparência**, ajuste o tamanho (de 220 a 600 px) e o nível de **correção de erro**.
+4. Confira os **Dados usados** e clique em **Baixar** para salvar a imagem em PNG, ou em **Copiar conteúdo** para copiar o texto codificado.
+</Steps>
+
+<Aside type="tip" title="Correção de erro">
+  Um nível de correção mais alto deixa o QR Code legível mesmo com parte dele danificada ou coberta — útil em materiais impressos que vão para a rua. Em compensação, o desenho fica mais denso; para telas e impressos pequenos, o nível médio costuma bastar.
+</Aside>
+
+## O que observar
+
+- Teste o QR Code com a câmera do celular antes de mandar imprimir.
+- Para divulgar um link rastreado por campanha, gere o link em [Compartilhamento da empresa](/05-estatisticas-e-inteligencia/compartilhamento-e-campanhas/compartilhamento-da-empresa/), que já oferece o QR Code do link curto, e não um QR Code de URL genérica.
+
+## Benefício de uso
+
+Materiais físicos passam a levar o cliente direto ao stand, à agenda ou ao contato certo, sem depender de digitação.
