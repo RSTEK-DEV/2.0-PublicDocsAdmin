@@ -24,6 +24,23 @@ Gerencia a estrutura comercial do empreendimento: blocos, tipologias, colunas, u
 - preço e status em massa;
 - regras e séries de pagamento.
 
+## Status das unidades
+
+Na edição de uma unidade, os status padrão são:
+
+| Status | Uso |
+|---|---|
+| **Disponível** | Unidade à venda. |
+| **Reservado** | Unidade em negociação, aguardando fechamento. |
+| **Vendido** | Unidade comercializada. |
+| **Bloqueado** | Unidade retirada da venda temporariamente (por decisão comercial, permuta, reforma etc.). |
+
+A unidade bloqueada continua aparecendo na tabela do corretor, identificada com o status **Bloqueado**, para que ele saiba que ela não está à venda. Em empreendimentos integrados ao CVCRM, os status acompanham a sincronização com o CRM.
+
+A disponibilidade aparece apenas para o corretor, na tabela de preços do app. O cliente que abre o link do stand não vê preços nem status das unidades.
+
+<p class="doc-route-note">"Suspenso" não é status de unidade: é uma situação do empreendimento inteiro. Veja <a href="/02-empreendimentos/situacao-do-empreendimento/">Situação do empreendimento</a>.</p>
+
 ## Como usar
 
 1. Configure primeiro a estrutura base do empreendimento.
@@ -36,7 +53,7 @@ Gerencia a estrutura comercial do empreendimento: blocos, tipologias, colunas, u
 
 <CardGrid stagger>
   <Card title="Estoque comercial">
-    Ajuda a manter visão organizada das unidades disponíveis, reservadas, vendidas ou suspensas.
+    Ajuda a manter visão organizada das unidades disponíveis, reservadas, vendidas ou bloqueadas.
   </Card>
   <Card title="Agilidade operacional">
     Ações em lote reduzem tempo gasto com ajustes repetitivos em preço e status.

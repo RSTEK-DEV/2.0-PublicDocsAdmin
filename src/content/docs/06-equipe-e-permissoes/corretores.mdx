@@ -21,10 +21,27 @@ Mantém o cadastro operacional dos corretores, com leitura de aprovação, statu
 
 - abas `Aprovados`, `Pendentes` e `Reprovados`;
 - busca por nome, e-mail, CRECI ou CPF;
-- filtros adicionais de status, onboarding, foto e aceite de dados;
-- ações para aprovar, reprovar, ativar, desativar, editar e excluir;
+- quadro **Imobiliárias**, com o número de imobiliárias autorizadas, a situação dos tipos Autônomo e Interno e o botão `Gerenciar`;
+- filtros adicionais: **Estado CRECI**, **Status**, **Onboarding**, **Foto de Perfil**, **Aceite Dados Públicos** e **Corretora**;
+- ações para aprovar, reprovar, ativar, desativar, editar e excluir (individualmente ou em lote);
 - importação em lote por planilha;
 - visualização detalhada do corretor.
+
+## Quem pode ser aprovado: imobiliárias, autônomos e internos
+
+No cadastro, cada corretor informa seu vínculo. A empresa decide quais vínculos aceita, no quadro **Imobiliárias** → `Gerenciar`:
+
+| Vínculo | O que é |
+|---|---|
+| **Imobiliária autorizada** | Corretor vinculado a uma imobiliária (corretora) que a empresa autorizou. Busque e autorize imobiliárias por CNPJ ou nome fantasia. |
+| **Autônomo** | Corretor sem vínculo com nenhuma imobiliária. |
+| **Interno** | Corretor que trabalha diretamente para a própria empresa. |
+
+Somente corretores vinculados a uma imobiliária autorizada, ou a um dos tipos habilitados, podem ser aprovados.
+
+<Aside type="caution" title="Revogação automática">
+  Desligar **Autônomo** ou **Interno**, ou retirar a autorização de uma imobiliária, revoga o acesso dos corretores já aprovados com aquele vínculo nesta empresa. A mudança vale só para esta empresa.
+</Aside>
 
 ## Como usar
 

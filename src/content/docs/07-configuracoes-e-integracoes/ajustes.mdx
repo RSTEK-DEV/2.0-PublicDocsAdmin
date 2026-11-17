@@ -22,6 +22,8 @@ import { Aside, Card, CardGrid } from '@astrojs/starlight/components';
 - identidade, contatos e visual da empresa;
 - regras de cadastro, convite e CRM de corretores;
 - PWA, SEO, Open Graph e analytics;
+- banner de consentimento LGPD;
+- contexto de IA da empresa;
 - modo de publicação do stand;
 - publicação manual do catálogo.
 
@@ -35,14 +37,17 @@ import { Aside, Card, CardGrid } from '@astrojs/starlight/components';
 ## O que observar
 
 <CardGrid stagger>
-  <Card title="Empresa">
+  <Card title="Geral">
     Concentra identidade, contatos, visual e dados institucionais que sustentam a presença da marca.
   </Card>
   <Card title="Corretores">
     Define como a rede comercial entra no ambiente, por cadastro aberto, convite e integração com CRM.
   </Card>
-  <Card title="Avançado">
+  <Card title="App">
     Reúne ajustes técnicos que influenciam apresentação, indexação e rastreamento.
+  </Card>
+  <Card title="LGPD">
+    Liga o banner de consentimento. O visitante é informado sobre o rastreamento e pode aceitar ou recusar antes da coleta. GA4, Facebook Pixel e Google Tag Manager só são ativados após o aceite; o Umami Analytics não coleta dados pessoais e funciona sem consentimento. Por isso, a Retenção de Usuários (exclusiva do GA4) só tem dados de quem aceitou.
   </Card>
   <Card title="Publicação">
     Controla o modo do stand e permite disparar publicação manual quando necessário.
