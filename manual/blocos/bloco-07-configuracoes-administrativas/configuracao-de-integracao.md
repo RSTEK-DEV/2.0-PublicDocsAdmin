@@ -41,6 +41,23 @@ Configurar a integracao `CVCRM`, que nesta etapa do projeto esta tratada como in
 3. Copie a URL exibida.
 4. Cadastre essa URL no painel do CVCRM com o mesmo `Inbound Secret`.
 
+### Cadastrar os webhooks no CVCRM
+
+No painel do CVCRM, menu `Webhook`, crie os 4 webhooks abaixo, todos com a mesma URL copiada do bloco `URL do Webhook`:
+
+| Webhook no painel do CVCRM | Evento no sistema | O que atualiza |
+|---|---|---|
+| Unidades - Alteracao Situacao | `unit_changed` | situacao da unidade e preco vigente |
+| Tabela de Preco - Quando aprovar uma tabela de preco | `price_table_changed` | tabelas de preco do empreendimento |
+| Tabela de Preco - Quando reprovar uma tabela de preco | `price_table_changed` | tabelas de preco do empreendimento |
+| Corretor - Quando alterar um corretor | `broker_changed` | corretores da empresa |
+
+1. Use a mesma URL nos 4 webhooks. O sistema identifica o evento pelo formato do conteudo recebido, nao pela URL.
+2. Se houver `Inbound Secret`, informe o mesmo valor em cada webhook.
+3. Em `Configurar Webhook`, mantenha os 3 eventos marcados (padrao).
+4. Faca uma alteracao de teste no CVCRM e confira a aba `Logs`.
+5. O sistema aguarda cerca de 2 minutos sem novos eventos do mesmo tipo antes de buscar os dados atualizados no CVCRM.
+
 ### Executar a sincronizacao inicial
 
 1. Abra a aba `Sincronizacao`.

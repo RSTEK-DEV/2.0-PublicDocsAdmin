@@ -35,6 +35,30 @@ Conduz a implantação e a manutenção da integração com o CVCRM, incluindo a
 5. Execute sincronização inicial e acompanhe logs.
 </Steps>
 
+## Webhooks a cadastrar no CVCRM
+
+Depois de criar a integração, cadastre no painel do CVCRM, no menu **Webhook**, os 4 webhooks abaixo. Eles avisam a Stand Digital sempre que algo muda no CVCRM.
+
+| Webhook no painel do CVCRM | O que atualiza na Stand Digital |
+|---|---|
+| Unidades - Alteração Situação | Situação da unidade e preço vigente |
+| Tabela de Preço - Quando aprovar uma tabela de preço | Tabelas de preço do empreendimento |
+| Tabela de Preço - Quando reprovar uma tabela de preço | Tabelas de preço do empreendimento |
+| Corretor - Quando alterar um corretor | Corretores da empresa |
+
+<Steps>
+1. Na tela da integração, copie a URL do bloco `URL do Webhook`.
+2. No painel do CVCRM, abra o menu **Webhook** e crie os 4 webhooks da tabela.
+3. Use a **mesma URL** nos 4. O sistema reconhece o tipo de evento pelo conteúdo que o CVCRM envia, então não existe uma URL para cada evento.
+4. Se você definiu um `Inbound Secret` na Stand Digital, informe o mesmo valor em cada webhook no CVCRM.
+5. Em `Configurar Webhook`, confira se os 3 eventos (situação de unidade, tabela de preço e corretor) estão marcados. Por padrão, todos vêm marcados.
+6. Faça uma alteração de teste no CVCRM e confira o recebimento na aba `Logs`.
+</Steps>
+
+<Aside type="tip" title="Atualização em poucos minutos">
+  Quando um evento chega, o sistema espera cerca de 2 minutos sem novos eventos do mesmo tipo e só então busca os dados atualizados no CVCRM. Assim, várias alterações seguidas são processadas uma única vez. É normal a mudança aparecer na Stand Digital alguns minutos depois de feita no CVCRM.
+</Aside>
+
 ## O que observar
 
 - sincronização e logs dependem da integração já criada;
