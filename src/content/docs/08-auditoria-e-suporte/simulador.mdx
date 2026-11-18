@@ -1,59 +1,68 @@
 ---
 title: Simulador
-description: Abra uma sessão controlada de simulação do stand em diferentes molduras de visualização e perfis de uso.
+description: Veja o stand como um corretor aprovado ou como um cliente, em celular, tablet ou desktop, sem precisar de uma conta de corretor.
 sidebar:
   order: 3
 ---
 
-import { Aside, Card, CardGrid } from '@astrojs/starlight/components';
+import { Aside, Card, CardGrid, Steps } from '@astrojs/starlight/components';
 
 <div class="doc-route-box">
   <p class="doc-route-label">Como Acessar</p>
-  <code>https://admin.standdigital.com.br/simulate</code>
-  <p class="doc-route-note">A simulação é aberta por fluxos internos do painel e depende de token de acesso gerado pela aplicação.</p>
+  <code>Topo do painel → Acessar Stand digital → Modo simulador</code>
+  <p class="doc-route-note">O simulador abre em uma nova aba. Disponível somente para administradores, e só quando o stand da empresa já tem endereço configurado.</p>
 </div>
 
 ## Para que serve
 
-Permite visualizar o stand em modo controlado, sem depender de acesso público real, para validar experiência, navegação e comportamento da interface.
+Mostra o stand exatamente como ele aparece para quem usa, sem depender de uma conta de corretor nem de um link de compartilhamento. Serve para conferir conteúdo, navegação e aparência antes de distribuir links ou depois de fazer ajustes no empreendimento.
 
-## O que pode ser simulado
+## Como abrir
+
+<Steps>
+1. No topo do painel, clique no ícone **Acessar Stand digital**.
+2. Escolha **Modo simulador** ("Abre o stand em iframe isolado").
+3. Uma nova aba abre com o stand e a barra **SIMULADOR** no topo.
+</Steps>
+
+Se o navegador bloquear a nova aba, permita pop-ups para o painel e tente de novo.
+
+## Controles da barra
+
+A barra **SIMULADOR** fica sempre visível no topo e pode ser recolhida pela seta.
+
+| Controle | O que faz |
+|---|---|
+| **Layout** | Mostra o stand na moldura de **Desktop**, **Tablet** ou **Celular**. |
+| **Ver como** | **Corretor** mostra o stand como um corretor aprovado o vê; **Cliente** mostra a visão de quem recebeu um link de compartilhamento. |
+| **Stands** | **Ativos** lista só os empreendimentos ativos; **Todos** inclui também os inativos, útil para revisar um empreendimento antes de ativá-lo. |
+| **Recarregar** | Busca de novo os dados do stand, para ver na hora uma alteração feita no painel. |
+| **Encerrar** | Encerra a simulação. A aba pode ser fechada em seguida. |
 
 <CardGrid stagger>
-  <Card title="Dispositivo móvel">
-    Ajuda a validar a experiência em celular, que costuma concentrar grande parte do tráfego vindo de campanhas e compartilhamentos.
-  </Card>
-  <Card title="Desktop">
-    Permite revisar a navegação em telas maiores, útil para jornadas mais analíticas e apresentação comercial detalhada.
+  <Card title="Celular">
+    A maior parte dos acessos vindos de links e campanhas acontece no celular. Comece por aqui.
   </Card>
   <Card title="Tablet">
-    Serve para conferir um formato intermediário de navegação e apresentação visual.
+    Formato intermediário, comum em apresentações no plantão de vendas.
+  </Card>
+  <Card title="Desktop">
+    Para revisar a navegação em telas grandes e apresentações comerciais detalhadas.
   </Card>
 </CardGrid>
 
-## Perfis de simulação
+## Duração da sessão
 
-A simulação pode representar contextos diferentes de acesso:
+A barra mostra quanto tempo falta para a sessão expirar. A sessão dura até **1 hora** e expira antes se ficar **15 minutos sem uso**. Para continuar depois disso, abra o simulador de novo pelo painel.
 
-- **como corretor**, para validar a experiência comercial e os recursos disponíveis nesse perfil;
-- **como cliente**, quando o acesso acontece por um link de compartilhamento, simulando a visão de quem recebeu o material.
-
-## Como usar
-
-1. Inicie a simulação a partir do fluxo que fornece o token.
-2. Aguarde o carregamento da tela.
-3. Escolha a moldura de visualização desejada, como móvel, desktop ou tablet.
-4. Revise o comportamento do stand no perfil de simulação aberto.
-5. Valide navegação, hierarquia visual, conteúdo e CTA de acordo com o cenário testado.
-
-## Limitações importantes
-
-Por se tratar de uma simulação, algumas funções podem aparecer desativadas ou limitadas. Isso não significa necessariamente erro: em muitos casos é apenas uma limitação natural do ambiente simulado.
-
-<Aside type="note" title="Importante">
-  O simulador serve para validar experiência e apresentação. Algumas ações dependentes de contexto real de uso, autenticação completa ou fluxo externo podem ficar indisponíveis.
+<Aside type="note" title="O simulador não entra na conta de um corretor">
+  A visão "Corretor" é a de um corretor aprovado genérico, não a de uma pessoa específica. O simulador não permite entrar como um corretor cadastrado nem agir em nome dele, e cada abertura fica registrada na auditoria.
 </Aside>
+
+## Limitações
+
+Por ser uma simulação, algumas ações que dependem de um uso real, com login completo ou serviço externo, podem ficar indisponíveis ou não ter efeito. Isso é esperado e não indica erro no stand.
 
 ## Benefício de uso
 
-A simulação ajuda a validar apresentação, responsividade e comportamento por perfil antes de publicar ajustes, distribuir links ou revisar a experiência do empreendimento.
+O administrador confere a experiência de corretores e clientes em qualquer formato de tela antes de publicar ajustes ou distribuir links, sem pedir a ninguém que teste por ele.
